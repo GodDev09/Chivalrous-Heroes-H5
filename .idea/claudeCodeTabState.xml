@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ClaudeCodeTabState">
+    <option name="tabSessions">
+      <map>
+        <entry key="0">
+          <value>
+            <TabSessionState>
+              <option name="projectPath" value="D:\Games\Idle\Chivalrous-Heroes-H5" />
+              <option name="provider" value="claude" />
+              <option name="sessionId" value="038dcf6a-79ef-4018-a6ad-8f26965f2e83" />
+              <option name="cwd" value="D:\Games\Idle\Chivalrous-Heroes-H5" />
+              <option name="model" value="claude-opus-5[1m]" />
+              <option name="permissionMode" value="bypassPermissions" />
+            </TabSessionState>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
