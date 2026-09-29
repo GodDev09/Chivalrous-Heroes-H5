@@ -1,0 +1,5 @@
+BeginPath=redis-server.exe
+BeginArguments=
+EndPath=
+EndArguments=
+ProcessName=redis-server.exe
