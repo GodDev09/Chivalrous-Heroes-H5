@@ -20,7 +20,7 @@ Tên nội bộ trong script: **XxSG**. Package Java gốc: `com.linlongyx.sangu
 | Web layer | PHP thuần, không framework |
 | Hạ tầng | phpstudy_pro (Nginx 1.15.11 + MySQL 5.7.26 + PHP + Redis 3.0.504) |
 | Bản địa hoá | Đã Việt hoá (`wwwroot/Vietnamese.json`, UI tiếng Việt). Batch script viết tiếng Thổ Nhĩ Kỳ (`Sunucusu` = server) → nguồn gốc là bản leak từ cộng đồng TR/RageZone |
-| Đường dẫn cứng | Toàn bộ script hardcode `C:\XxSG\...`. Muốn đặt thư mục khác phải sửa tay |
+| Đường dẫn cài đặt | Vị trí chuẩn `C:\XxSG\`. Đặt chỗ khác thì chạy `SetupPaths.bat` một lần — xem §7 |
 
 ---
 
@@ -223,38 +223,56 @@ Xem `wwwroot/gm.txt`. Ví dụ:
 
 ### Yêu cầu
 - Windows
-- Thư mục project **phải** đặt tại `C:\XxSG\` (hardcode trong mọi `.bat` và vhost Nginx)
+- Đặt project ở **bất kỳ đâu**, miễn đường dẫn chỉ gồm chữ không dấu, số, `_ - .` và không
+  nằm ngay gốc ổ đĩa. Ví dụ `D:\XxSG`, `E:\Games\ChivalrousHeroes`. **Không** dùng
+  `D:\My Games\...` (dấu cách) hay `D:\Trò chơi\...` (chữ có dấu).
 - Không cần cài Java/MySQL riêng — đã đóng gói trong `Java/` và `phpstudy_pro/`
 
 ### Clone sang máy mới — checklist
 
 Credentials **đã nằm trong repo** (`props/*.properties`, `db.php`, `config.php`), không phải
-tạo lại. Nhưng clone về là **chưa chạy được**, có 6 thứ chặn:
+tạo lại.
 
 ```
 1. Cài git-lfs                     → https://git-lfs.com    (TRƯỚC khi clone)
 2. Cài VC++ Redistributable x64    → aka.ms/vs/17/release/vc_redist.x64.exe
-3. git clone <url> C:\XxSG         ← BẮT BUỘC đúng đường dẫn này
-4. Trên máy cũ: mysqldump -u root -p --all-databases > backup.sql
-5. Máy mới: [1]StartWeb.bat → import backup.sql → [2] → [3] → [4]
-6. Mở http://127.0.0.1/user/login
+3. git clone <url> D:\XxSG         (đường dẫn tuỳ ý, xem Yêu cầu ở trên)
+4. Chạy SetupPaths.bat             (bỏ qua được nếu clone đúng vào C:\XxSG)
+5. Trên máy cũ: mysqldump -u root -p --all-databases > backup.sql
+6. Máy mới: [1]StartWeb.bat → import backup.sql → [2] → [3] → [4]
+7. Mở http://127.0.0.1/user/login
 ```
 
-#### 1. Phải clone vào đúng `C:\XxSG\`
+#### 1. Đường dẫn cài đặt — `SetupPaths.bat`
 
-**23 file hardcode đường dẫn tuyệt đối.** Đặt chỗ khác là phải sửa hết:
+Vị trí chuẩn của repo là `C:\XxSG`. Clone vào đó thì không cần làm gì. Clone chỗ khác thì
+chạy `SetupPaths.bat` **một lần**. Chuyển thư mục lần nữa thì chạy lại.
 
-| Nhóm | File |
-|---|---|
-| Launcher | `[1]StartWeb.bat`, `[2]StartCenter.bat`, `[3]StartS1.bat`, `[4]StartS2.bat`, `change_mysql_pass.bat` |
-| Server start | `center/start.bat`, `game/start.bat`, `game2/start.bat` — classpath `C:\XxSG\game\lib\*` |
-| MySQL | `phpstudy_pro/Extensions/MySQL5.7.26/my.ini` — `basedir=C:/XxSG/...`, `datadir=C:/XxSG/.../data/` |
-| Nginx | 3 vhost `0localhost_{80,81,8080}.conf` — `root "C:/XxSG/Web"` v.v. |
-| Apache | `httpd.conf` + 3 vhost |
-| PHP | 3 `php.ini` (5.4 / 5.6 / 7.3) |
-| Redis | `Extensions/redis3.0.504/start_redis.bat` |
-| phpstudy | `COM/setting.ini`, `COM/xp.ini` |
-| Khác | `Web/dgdgd/.htaccess` |
+24 file từng chứa cứng đường dẫn cài đặt, xử lý theo 2 cách:
+
+| Cách | File | Ghi chú |
+|---|---|---|
+| **`%~dp0`** — tự biết mình nằm đâu, không cần setup | `[1]StartWeb.bat`, `[2]StartCenter.bat`, `[3]StartS1.bat`, `[4]StartS2.bat`, `change_mysql_pass.bat`, `center/start.bat`, `game/start.bat`, `game2/start.bat`, `phpstudy_pro/1.bat`, `phpstudy_pro/Extensions/redis3.0.504/start_redis.bat` | 10 file `.bat` |
+| **`SetupPaths.bat`** ghi lại đường dẫn | `my.ini` · 3 vhost Nginx · `httpd.conf` + 3 vhost Apache · 3 `php.ini` · `COM/setting.ini` · `COM/xp.ini` · `Web/dgdgd/.htaccess` | 14 file. Nginx/Apache/MySQL/PHP chỉ đọc được đường dẫn tuyệt đối |
+
+`SetupPaths.bat`:
+- Đọc đường dẫn cũ từ dòng `basedir=` trong `my.ini`, và bắt thêm mọi chuỗi `X:\XxSG` /
+  `X:/XxSG` còn sót từ các lần cài trước ở `C:\` và `D:\`.
+- Giữ nguyên kiểu dấu phân cách của từng dòng (`\` hay `/`), kiểu xuống dòng, và mọi byte
+  không phải ASCII (chú thích tiếng Trung trong config). Chỉ đoạn đường dẫn bị thay.
+- Chạy lại nhiều lần vẫn an toàn — đường dẫn đã đúng thì không ghi file nào.
+- Từ chối đường dẫn có dấu cách, chữ có dấu hoặc ký tự đặc biệt, **không sửa file nào**: nhiều
+  dòng config không có ngoặc kép (`include C:/XxSG/...;`, `DocumentRoot C:/XxSG/...`),
+  `xp.ini` dùng đường dẫn làm dòng lệnh, và classpath Java dùng `;` làm dấu phân cách.
+- Sau khi chạy ở vị trí khác `C:\XxSG`, git sẽ thấy 14 file trên là `modified`. **Đừng commit
+  chúng**, trừ khi muốn đổi vị trí chuẩn của repo.
+
+> **Chưa kiểm được:** GUI `phpstudy_pro.exe` có thể tự ghi lại vhost khi bạn bấm Start hoặc
+> sửa site trong giao diện. Nếu sau đó web báo 404 / không tìm thấy thư mục, chạy lại
+> `SetupPaths.bat`.
+>
+> `phpstudy_pro/COM/1.lnk` là shortcut Windows trỏ cứng `D:\XxSG\...\phpstudy_pro.exe` (dạng
+> nhị phân, không sửa được bằng text). Không file nào dùng nó nữa — `1.bat` gọi thẳng exe.
 
 #### 2. Phải cài `git-lfs` trước khi clone
 
@@ -567,6 +585,7 @@ cả những thứ bình thường không bao giờ được commit. Đây là d
 | `secretKey` | `center/target/classes/webgame/props/webgame.properties` |
 | Mật khẩu MySQL `root` | `Web/db.php`, `wwwroot/db.php`, `wwwroot/global/config.php` |
 | Mật khẩu MySQL `root` hardcode inline | `function/{buy,oauth/checkcdk,task}/index.php`, `Web/user/ajax/{role,task}.php`, `Web/user/api/role.php`, `wwwroot/pay/index.php` |
+| Mật khẩu MySQL `root` **cũ và mới** | `change_mysql_pass.bat` — in cả hai ra màn hình (`Eski:` / `Yeni:`) và truyền qua dòng lệnh `mysql -p...` |
 
 ### Dữ liệu người dùng thật
 

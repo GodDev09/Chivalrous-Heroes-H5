@@ -1,3 +1,3 @@
 @echo off
-start D:\XxSG\phpstudy_pro\COM\1.lnk
+start "" "%~dp0COM\phpstudy_pro.exe"
 exit
