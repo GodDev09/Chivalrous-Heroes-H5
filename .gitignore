@@ -1,110 +1,56 @@
 # ============================================================
 #  Chivalrous-Heroes-H5 (XxSG) — .gitignore
 # ============================================================
-# Nguyên tắc: GIỮ lại phần là "sản phẩm" (target/classes/*.class,
-# lib/*.jar, data JSON, PHP, client Egret) vì project không có
-# source Java và không có build system — bỏ .class là mất server.
-# LOẠI phần là: bí mật, runtime, tool, bundle tải lại được.
+# QUYẾT ĐỊNH: đưa TOÀN BỘ project lên git, kể cả phpstudy_pro/,
+# Java/, database MySQL, log, và file chứa credentials.
+# Repo là PRIVATE. Xem cảnh báo ở README §13.
+#
+# Chỉ loại 2 nhóm duy nhất, vì GitHub chặn cứng file > 100 MB
+# và chúng vô giá trị trong version control.
 # ============================================================
 
 
 # ------------------------------------------------------------
-# 1. BÍ MẬT — ƯU TIÊN CAO NHẤT
+# 1. Rác của game khác — 244 MB, 4 file
 # ------------------------------------------------------------
-# Chứa MySQL root password, Redis password, JMX password, secretKey.
-# Sau khi clone phải tạo lại tay (xem README "Cài đặt").
-**/webgame/props/mysql.properties
-**/webgame/props/redis.properties
-**/webgame/props/webgame.properties
-
-# Chứa MySQL root password (PHP layer)
-db.php
-**/db.php
-**/global/config.php
-
-# Chứng chỉ SSL / keystore
-**/webgame/jks/
-*.jks
-*.p12
-*.pfx
-*.pem
-*.key
+# Nội dung là game Cocos2d-x Lua (Tank Hero): luascript/*.lua,
+# allianceWar/, arImage/, homeBuilding/. Project này chạy Egret
+# + TypeScript, không có Lua runtime. Grep "tankhero"/"luascript"
+# trên toàn bộ .php/.js/.json/.html → 0 reference.
+# 2 file full/luascript.zip mỗi cái 121,3 MB → vượt giới hạn
+# 100 MB/file của GitHub.
+wwwroot/tankherocdn/
 
 
 # ------------------------------------------------------------
-# 2. BUNDLE TẢI LẠI ĐƯỢC (nặng, không phải code của project)
+# 2. MySQL redo log — 512 MB, 2 file
 # ------------------------------------------------------------
-# Nginx + MySQL 5.7.26 + PHP + Redis + FTP + data MySQL (~1.9 GB)
-phpstudy_pro/
-
-# JDK/JRE 1.8.0_181 đóng gói kèm + [99]C.exe (71 MB)
-Java/
-
-# CFR Java decompiler (tool, không phải project)
-cfr.jar
-
-
-# ------------------------------------------------------------
-# 3. RUNTIME / LOG
-# ------------------------------------------------------------
-log/
-gamelog/
-*/log/
-*/gamelog/
-*.log
-*.log.*
-hs_err_pid*.log
-replay_pid*.log
+# InnoDB redo log, mỗi file đúng 256 MB → vượt 100 MB/file.
+# MySQL tự sinh lại khi khởi động, nội dung đổi mỗi lần chạy
+# → commit vào git chỉ làm repo phồng vô hạn, không phục hồi
+# được gì. Phần còn lại của data/ (ibdata1, *.ibd, *.frm) VẪN
+# được đưa lên theo yêu cầu.
+phpstudy_pro/Extensions/MySQL5.7.26/data/ib_logfile0
+phpstudy_pro/Extensions/MySQL5.7.26/data/ib_logfile1
 
 
 # ------------------------------------------------------------
-# 4. BUILD OUTPUT LẺ (bản patch compile ở thư mục gốc)
+# 3. Git nội bộ
 # ------------------------------------------------------------
-# Bản đã build nằm sẵn trong game/target/classes/.../login/LoginUtil.class
-# Giữ LoginUtil.java làm source của patch.
-/LoginUtil.class
-/*.class
+# Đề phòng LFS cache bị commit ngược vào repo.
+.git/lfs/
 
 
-# ------------------------------------------------------------
-# 5. BACKUP / ARCHIVE TRÙNG LẶP
-# ------------------------------------------------------------
-*.bak
-*.bak.*
-*~
-*.orig
-*.old
-wwwroot/backUp/
-**/webgame/data/cn.7z
-*.7z
-*.rar
-*.zip
-*_bak.json
-
-
-# ------------------------------------------------------------
-# 6. IDE / OS
-# ------------------------------------------------------------
-.idea/
-.vs/
-*.iml
-*.suo
-*.user
-.vscode/
-nbproject/
-Thumbs.db
-desktop.ini
-ehthumbs.db
-.DS_Store
-
-
-# ------------------------------------------------------------
-# 7. TẠM / UPLOAD / SESSION (PHP)
-# ------------------------------------------------------------
-tmp/
-temp/
-cache/
-sess_*
-*.tmp
-*.swp
-*.pid
+# ============================================================
+#  CỐ Ý KHÔNG ignore (trước đây từng bị chặn)
+# ============================================================
+#   phpstudy_pro/      Nginx + MySQL + PHP + Redis + data DB thật
+#   Java/              JDK/JRE 1.8.0_181 + [99]C.exe 68 MB
+#   cfr.jar            CFR Java decompiler
+#   **/props/*.properties    ⚠️ mật khẩu MySQL/Redis/JMX, secretKey
+#   **/db.php, global/config.php  ⚠️ mật khẩu MySQL root
+#   log/, gamelog/, *.log     log runtime
+#   *.bak, *.7z, *.zip        backup và archive
+#   .idea/                    cấu hình IDE
+#   *.class                   output đã compile
+# ============================================================

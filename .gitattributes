@@ -27,8 +27,14 @@
 *.psd       filter=lfs diff=lfs merge=lfs -text
 
 # ------------------------------------------------------------
-# Java dependency — 173 MB / 201 jar (tools.jar 17.4 MB × 3)
+# Java dependency — 477 MB / 935 file (raw)
 # ------------------------------------------------------------
+# Gồm game/game2/center lib (201 jar, 3 bản y hệt → dedup còn
+# ~58 MB unique) và Java/ JDK+JRE (733 jar, jdk/jre trùng nhiều).
+# LFS đếm theo object unique nên tổng thực ~670-796 MB, dưới
+# quota GitHub Free 1 GB. Đã commit ở dạng LFS từ "init project",
+# ĐỪNG đổi dòng này nếu không muốn phải chạy
+# `git add --renormalize` trên 27.000 file và rewrite history.
 *.jar       filter=lfs diff=lfs merge=lfs -text
 
 # ------------------------------------------------------------
@@ -95,3 +101,31 @@ wwwroot/config/cfg/cfg.json           filter=lfs diff=lfs merge=lfs -text
 *.css       text
 *.xml       text
 *.properties text
+
+# Giữ nguyên byte — KHÔNG normalize EOL.
+# Không có rule thì git rơi về core.autocrlf và convert LF→CRLF,
+# làm sai byte của file backup (main.min.js.bak 19 MB) và log.
+*.bak       -text
+*.bak.*     -text
+*.log       -text
+*.log.*     -text
+*.tmp       -text
+*.cfg       -text
+*.7z        -text
+*.zip       -text
+*.rar       -text
+*.exe       -text
+*.dll       -text
+*.so        -text
+*.ibd       -text
+*.frm       -text
+*.MYD       -text
+*.MYI       -text
+*.jks       -text
+*.pem       -text
+*.key       -text
+*.class     -text
+*.pdb       -text
+*.lib       -text
+*.jsa       -text
+*.sym       -text

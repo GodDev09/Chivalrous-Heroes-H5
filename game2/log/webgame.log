@@ -1,0 +1,1321 @@
+2026-06-20 06:13:42 INFO  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@61064425: startup date [Sat Jun 20 06:13:42 EET 2026]; root of context hierarchy
+2026-06-20 06:13:42 INFO  Loading XML bean definitions from class path resource [webgame/beans/server-beans.xml]
+2026-06-20 06:13:42 INFO  Loading XML bean definitions from class path resource [webgame/beans/mysql-beans.xml]
+2026-06-20 06:13:43 INFO  Loading XML bean definitions from class path resource [webgame/beans/service-beans.xml]
+2026-06-20 06:13:43 INFO  Loading XML bean definitions from class path resource [webgame/beans/mysql-beans.xml]
+2026-06-20 06:13:43 INFO  Loading XML bean definitions from class path resource [webgame/beans/data-beans.xml]
+2026-06-20 06:13:44 INFO  Loading properties file from class path resource [webgame/props/webgame.properties]
+2026-06-20 06:13:44 INFO  Loading properties file from class path resource [webgame/props/mysql.properties]
+2026-06-20 06:13:44 INFO  Loading properties file from class path resource [webgame/props/redis.properties]
+2026-06-20 06:13:44 INFO  Loading properties file from class path resource [version.properties]
+2026-06-20 06:13:44 DEBUG 加载配置文件 
+2026-06-20 06:13:44 DEBUG key -> platform, value -> test 
+2026-06-20 06:13:44 DEBUG key -> businessThreadCount, value -> 10 
+2026-06-20 06:13:44 DEBUG key -> svn, value -> 32883 
+2026-06-20 06:13:44 DEBUG key -> jdbc.url, value -> jdbc:mysql://127.0.0.1:3306/sanguo_game2?useUnicode=true&characterEncoding=utf8 
+2026-06-20 06:13:44 DEBUG key -> secretKey, value -> 5Jqxjo10Yl2ElQCwJm 
+2026-06-20 06:13:44 DEBUG key -> so.backlog, value -> 128 
+2026-06-20 06:13:44 DEBUG key -> url, value -> http://127.0.0.1:8080/ 
+2026-06-20 06:13:44 DEBUG key -> redis.testOnBorrow, value -> true 
+2026-06-20 06:13:44 DEBUG key -> serverId, value -> 10001 
+2026-06-20 06:13:44 DEBUG key -> redis.maxTotal, value -> 600 
+2026-06-20 06:13:44 DEBUG key -> serverName, value -> å°æ¸¸æ2æ 
+2026-06-20 06:13:44 DEBUG key -> logserver.isOpen, value -> false 
+2026-06-20 06:13:44 DEBUG key -> redis.port, value -> 6379 
+2026-06-20 06:13:44 DEBUG key -> jmxPort, value -> 19302 
+2026-06-20 06:13:44 DEBUG key -> redis.db, value -> 14 
+2026-06-20 06:13:44 DEBUG key -> redis.timeout, value -> 5000 
+2026-06-20 06:13:44 DEBUG key -> logserver.port, value -> 6000 
+2026-06-20 06:13:44 DEBUG key -> jdbc.user, value -> root 
+2026-06-20 06:13:44 DEBUG key -> keystorePass, value ->  
+2026-06-20 06:13:44 DEBUG key -> characterEncoding, value -> UTF-8 
+2026-06-20 06:13:44 DEBUG key -> logicRmi.port, value -> 17005 
+2026-06-20 06:13:44 DEBUG key -> debug, value -> true 
+2026-06-20 06:13:44 DEBUG key -> wss, value -> false 
+2026-06-20 06:13:44 DEBUG key -> dataLocation, value -> cn 
+2026-06-20 06:13:44 DEBUG key -> useUnicode, value -> true 
+2026-06-20 06:13:44 DEBUG key -> redis.pass, value -> e5968b5bd4f916e4 
+2026-06-20 06:13:44 DEBUG key -> jmxPass, value -> g6UoONwr6joi1ApG 
+2026-06-20 06:13:44 DEBUG key -> appId, value -> 100962 
+2026-06-20 06:13:44 DEBUG key -> jks, value -> sanguo-lb1.linlongyx.com 
+2026-06-20 06:13:44 DEBUG key -> so.keepalive, value -> true 
+2026-06-20 06:13:44 DEBUG key -> http.port, value -> 19202 
+2026-06-20 06:13:44 DEBUG key -> jdbc.driverClassName, value -> com.mysql.jdbc.Driver 
+2026-06-20 06:13:44 DEBUG key -> cchId, value -> 392 
+2026-06-20 06:13:44 DEBUG key -> workerThreadCount, value -> 14 
+2026-06-20 06:13:44 DEBUG key -> bossThreadCount, value -> 1 
+2026-06-20 06:13:44 DEBUG key -> redis.host, value -> 127.0.0.1 
+2026-06-20 06:13:44 DEBUG key -> logserver.host, value -> 127.0.0.1 
+2026-06-20 06:13:44 DEBUG key -> openTime, value -> 2017-09-02 00:00:00 
+2026-06-20 06:13:44 DEBUG key -> logserver.dataPath, value -> ./log 
+2026-06-20 06:13:44 DEBUG key -> wordLocation, value -> cn 
+2026-06-20 06:13:44 DEBUG key -> ws.port, value -> 19102 
+2026-06-20 06:13:44 DEBUG key -> jdbc.password, value -> X7kR9mP2qN5wL8jZ 
+2026-06-20 06:13:44 DEBUG key -> logicRmi.cmport, value -> 17006 
+2026-06-20 06:13:44 DEBUG key -> path, value -> webgame/platform/ 
+2026-06-20 06:13:44 DEBUG key -> rmi.url, value -> rmi://127.0.0.1:19850/crossRankRMI 
+2026-06-20 06:13:44 DEBUG key -> tag, value -> 24b0d14d02f7970e270d2b70dfab4ea62fc2390a 
+2026-06-20 06:13:44 DEBUG key -> logicRmi.host, value -> 127.0.0.1 
+2026-06-20 06:13:44 DEBUG key -> jmxName, value -> llyx-sanguo 
+2026-06-20 06:13:44 DEBUG key -> crossUrl, value -> wss://sanguo-lb1.linlongyx.com:5003/ws 
+2026-06-20 06:13:44 DEBUG key -> redis.maxWait, value -> 10000 
+2026-06-20 06:13:44 DEBUG key -> version, value -> 1.1000 
+2026-06-20 06:13:44 DEBUG key -> httpSwitch, value -> false 
+2026-06-20 06:13:44 DEBUG key -> ws, value -> true 
+2026-06-20 06:13:44 DEBUG key -> logicRmi.serviceName, value -> crossRankLogicRMI 
+2026-06-20 06:13:44 DEBUG key -> redis.maxIdle, value -> 300 
+2026-06-20 06:13:46 INFO  {dataSource-1} inited
+2026-06-20 06:13:46 INFO  Loaded JDBC driver: com.mysql.jdbc.Driver
+2026-06-20 06:13:50 ERROR LogicRmiManager::publish rmi service url: {} rmi://127.0.0.1:17005/crossRankLogicRMI 
+2026-06-20 06:14:03 ERROR ContinuityParameter {1={"actId":1,"startTime":1504818000,"endTime":1504904400,"closeTime":0}, 2={"actId":2,"startTime":1504558800,"endTime":1505163600,"closeTime":0}, 3={"actId":3,"startTime":1551733200,"endTime":1552337999,"closeTime":0}} 
+2026-06-20 06:14:06 DEBUG {conn-10004, pstmt-20018} enter cache
+2026-06-20 06:14:06 DEBUG {conn-10004, pstmt-20019} enter cache
+2026-06-20 06:14:06 ERROR update group Pre:update tb_group set id=10001000000 + id where id != 0 and id<=10001000000; 
+2026-06-20 06:14:06 ERROR update groupMember Pre:update tb_groupMember set id=10001000000 + id where id != 0 and id<=10001000000; 
+2026-06-20 06:14:06 ERROR ArenaRankError 10001000313 10001000281 3001 
+2026-06-20 06:14:06 ERROR ArenaRankError 10001000281 10001000292 3001 
+2026-06-20 06:14:06 DEBUG server open days: 3214, rankAct id: 8, state: Expire 
+2026-06-20 06:14:06 DEBUG server open days: 3214, rankAct id: 9, state: Expire 
+2026-06-20 06:14:06 DEBUG server open days: 3214, rankAct id: 10, state: Expire 
+2026-06-20 06:14:06 DEBUG server open days: 3214, rankAct id: 11, state: Expire 
+2026-06-20 06:14:06 DEBUG server open days: 3214, rankAct id: 12, state: Expire 
+2026-06-20 06:14:06 DEBUG server open days: 3214, rankAct id: 13, state: Expire 
+2026-06-20 06:14:06 DEBUG server open days: 3214, rankAct id: 14, state: Expire 
+2026-06-20 06:14:07 WARN  Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x08cfe61e]'
+2026-06-20 06:14:07 WARN  Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x7a03d43a]'
+2026-06-20 06:14:07 INFO  Using default implementation for ThreadExecutor
+2026-06-20 06:14:07 INFO  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-06-20 06:14:07 INFO  Quartz Scheduler v.1.8.6 created.
+2026-06-20 06:14:07 INFO  Registering Quartz Job Initialization Plug-in.
+2026-06-20 06:14:07 INFO  RAMJobStore initialized.
+2026-06-20 06:14:07 INFO  Scheduler meta-data: Quartz Scheduler (v1.8.6) 'AUTO' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-06-20 06:14:07 INFO  Quartz scheduler 'AUTO' initialized from default resource file in Quartz package: 'quartz.properties'
+2026-06-20 06:14:07 INFO  Quartz scheduler version: 1.8.6
+2026-06-20 06:14:07 DEBUG Utilizing schema packaged in local quartz distribution jar.
+2026-06-20 06:14:07 INFO  Parsing XML file: quartz_jobs.xml with systemId: quartz_jobs.xml
+2026-06-20 06:14:07 DEBUG Found 0 delete job group commands.
+2026-06-20 06:14:07 DEBUG Found 0 delete trigger group commands.
+2026-06-20 06:14:07 DEBUG Found 0 delete job commands.
+2026-06-20 06:14:07 DEBUG Found 0 delete trigger commands.
+2026-06-20 06:14:07 DEBUG Directive 'overwrite-existing-data' not specified, defaulting to true
+2026-06-20 06:14:07 DEBUG Directive 'ignore-duplicates' not specified, defaulting to false
+2026-06-20 06:14:07 DEBUG Found 1 job definitions.
+2026-06-20 06:14:07 DEBUG Parsed job definition: JobDetail 'AUTO.JOBS':  jobClass: 'com.linlongyx.sanguo.webgame.quartz.QuartzJob isStateful: false isVolatile: false isDurable: false requestsRecovers: false
+2026-06-20 06:14:07 DEBUG Found 11 trigger definitions.
+2026-06-20 06:14:08 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10000':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:14:08 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10001':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:14:08 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10002':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:14:08 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10010':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:14:08 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10011':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:14:08 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10012':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:14:08 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20001':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:14:08 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20003':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:14:08 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20004':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:14:08 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20005':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:14:08 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20006':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:14:08 INFO  Adding 1 jobs, 11 triggers.
+2026-06-20 06:14:08 INFO  Adding job: AUTO.JOBS
+2026-06-20 06:14:08 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10000
+2026-06-20 06:14:08 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10001
+2026-06-20 06:14:08 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10002
+2026-06-20 06:14:08 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10010
+2026-06-20 06:14:08 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10011
+2026-06-20 06:14:08 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10012
+2026-06-20 06:14:08 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20001
+2026-06-20 06:14:08 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20003
+2026-06-20 06:14:08 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20004
+2026-06-20 06:14:08 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20005
+2026-06-20 06:14:08 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20006
+2026-06-20 06:14:08 INFO  Scheduler AUTO_$_NON_CLUSTERED started.
+2026-06-20 06:14:08 DEBUG Reading descriptors ( dom ) 19
+2026-06-20 06:14:08 DEBUG Using existing MBeanServer 0
+2026-06-20 06:14:08 DEBUG default constructor
+2026-06-20 06:14:08 DEBUG preRegister com.linlongyx.sanguo.webgame.service.LookUpService@2a2bb0eb onlineNum:Click=ShowDetail
+2026-06-20 06:14:08 DEBUG default constructor
+2026-06-20 06:14:08 DEBUG preRegister com.linlongyx.sanguo.webgame.service.JsonTableService@3c291aad reload:Click=reloadJson
+2026-06-20 06:14:08 DEBUG default constructor
+2026-06-20 06:14:08 DEBUG preRegister com.linlongyx.core.utils.ChatUtil@2d0566ba reload:Click=reloadSensitive
+2026-06-20 06:14:08 ERROR Started version:  110000 
+2026-06-20 06:14:08 DEBUG Checking for available updated version of Quartz...
+2026-06-20 06:14:09 DEBUG Quartz version update check failed: Server returned HTTP response code: 403 for URL: http://www.terracotta.org/kit/reflector?kitID=quartz&pageID=update.properties&id=-1062731413&os-name=Windows+10&jvm-name=Java+HotSpot%28TM%29+64-Bit+Server+VM&jvm-version=1.8.0_181&platform=amd64&tc-version=1.8.6&tc-product=Quartz&source=Quartz&uptime-secs=1&patch=UNKNOWN
+2026-06-20 06:14:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:14:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:14:30 INFO  触发cmd：20005
+2026-06-20 06:15:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:15:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:15:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:15:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:15:00 INFO  触发cmd：20003
+2026-06-20 06:15:00 INFO  触发cmd：20005
+2026-06-20 06:15:00 ERROR destiny rank refresh 
+2026-06-20 06:15:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:15:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:15:30 INFO  触发cmd：20005
+2026-06-20 06:15:46 ERROR rankBossTimeOut 1001 
+2026-06-20 06:16:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:16:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:16:00 INFO  触发cmd：20005
+2026-06-20 06:16:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:16:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:16:30 INFO  触发cmd：20005
+2026-06-20 06:16:46 ERROR rankBossReBorn 1001 
+2026-06-20 06:17:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:17:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:17:00 INFO  触发cmd：20005
+2026-06-20 06:17:26 ERROR rankBossTimeOut 1002 
+2026-06-20 06:17:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:17:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:17:30 INFO  触发cmd：20005
+2026-06-20 06:18:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:18:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:18:00 INFO  触发cmd：20005
+2026-06-20 06:18:26 ERROR rankBossTimeOut 1001 
+2026-06-20 06:18:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:18:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:18:30 INFO  触发cmd：20005
+2026-06-20 06:19:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:19:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:19:00 INFO  触发cmd：20005
+2026-06-20 06:19:06 ERROR rankBossTimeOut 1003 
+2026-06-20 06:19:26 ERROR rankBossReBorn 1001 
+2026-06-20 06:19:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:19:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:19:30 INFO  触发cmd：20005
+2026-06-20 06:19:56 ERROR rankBossReBorn 1002 
+2026-06-20 06:20:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:20:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:20:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:20:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:20:00 INFO  触发cmd：20003
+2026-06-20 06:20:00 INFO  触发cmd：20005
+2026-06-20 06:20:00 ERROR destiny rank refresh 
+2026-06-20 06:20:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:20:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:20:30 INFO  触发cmd：20005
+2026-06-20 06:21:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:21:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:21:00 INFO  触发cmd：20005
+2026-06-20 06:21:06 ERROR rankBossTimeOut 1001 
+2026-06-20 06:21:49 INFO  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@61064425: startup date [Sat Jun 20 06:21:49 EET 2026]; root of context hierarchy
+2026-06-20 06:21:49 INFO  Loading XML bean definitions from class path resource [webgame/beans/server-beans.xml]
+2026-06-20 06:21:49 INFO  Loading XML bean definitions from class path resource [webgame/beans/mysql-beans.xml]
+2026-06-20 06:21:49 INFO  Loading XML bean definitions from class path resource [webgame/beans/service-beans.xml]
+2026-06-20 06:21:49 INFO  Loading XML bean definitions from class path resource [webgame/beans/mysql-beans.xml]
+2026-06-20 06:21:49 INFO  Loading XML bean definitions from class path resource [webgame/beans/data-beans.xml]
+2026-06-20 06:21:50 INFO  Loading properties file from class path resource [webgame/props/webgame.properties]
+2026-06-20 06:21:50 INFO  Loading properties file from class path resource [webgame/props/mysql.properties]
+2026-06-20 06:21:50 INFO  Loading properties file from class path resource [webgame/props/redis.properties]
+2026-06-20 06:21:50 INFO  Loading properties file from class path resource [version.properties]
+2026-06-20 06:21:50 DEBUG 加载配置文件 
+2026-06-20 06:21:50 DEBUG key -> platform, value -> test 
+2026-06-20 06:21:50 DEBUG key -> businessThreadCount, value -> 10 
+2026-06-20 06:21:50 DEBUG key -> svn, value -> 32883 
+2026-06-20 06:21:50 DEBUG key -> jdbc.url, value -> jdbc:mysql://127.0.0.1:3306/sanguo_game2?useUnicode=true&characterEncoding=utf8 
+2026-06-20 06:21:50 DEBUG key -> secretKey, value -> 5Jqxjo10Yl2ElQCwJm 
+2026-06-20 06:21:50 DEBUG key -> so.backlog, value -> 128 
+2026-06-20 06:21:50 DEBUG key -> url, value -> http://127.0.0.1:8080/ 
+2026-06-20 06:21:50 DEBUG key -> redis.testOnBorrow, value -> true 
+2026-06-20 06:21:50 DEBUG key -> serverId, value -> 10001 
+2026-06-20 06:21:50 DEBUG key -> redis.maxTotal, value -> 600 
+2026-06-20 06:21:50 DEBUG key -> serverName, value -> å°æ¸¸æ2æ 
+2026-06-20 06:21:50 DEBUG key -> logserver.isOpen, value -> false 
+2026-06-20 06:21:50 DEBUG key -> redis.port, value -> 6379 
+2026-06-20 06:21:50 DEBUG key -> jmxPort, value -> 19302 
+2026-06-20 06:21:50 DEBUG key -> redis.db, value -> 14 
+2026-06-20 06:21:50 DEBUG key -> redis.timeout, value -> 5000 
+2026-06-20 06:21:50 DEBUG key -> logserver.port, value -> 6000 
+2026-06-20 06:21:50 DEBUG key -> jdbc.user, value -> root 
+2026-06-20 06:21:50 DEBUG key -> keystorePass, value ->  
+2026-06-20 06:21:50 DEBUG key -> characterEncoding, value -> UTF-8 
+2026-06-20 06:21:50 DEBUG key -> logicRmi.port, value -> 17005 
+2026-06-20 06:21:50 DEBUG key -> debug, value -> true 
+2026-06-20 06:21:50 DEBUG key -> wss, value -> false 
+2026-06-20 06:21:50 DEBUG key -> dataLocation, value -> cn 
+2026-06-20 06:21:50 DEBUG key -> useUnicode, value -> true 
+2026-06-20 06:21:50 DEBUG key -> redis.pass, value -> e5968b5bd4f916e4 
+2026-06-20 06:21:50 DEBUG key -> jmxPass, value -> g6UoONwr6joi1ApG 
+2026-06-20 06:21:50 DEBUG key -> appId, value -> 100962 
+2026-06-20 06:21:50 DEBUG key -> jks, value -> sanguo-lb1.linlongyx.com 
+2026-06-20 06:21:50 DEBUG key -> so.keepalive, value -> true 
+2026-06-20 06:21:50 DEBUG key -> http.port, value -> 19202 
+2026-06-20 06:21:50 DEBUG key -> jdbc.driverClassName, value -> com.mysql.jdbc.Driver 
+2026-06-20 06:21:50 DEBUG key -> cchId, value -> 392 
+2026-06-20 06:21:50 DEBUG key -> workerThreadCount, value -> 14 
+2026-06-20 06:21:50 DEBUG key -> bossThreadCount, value -> 1 
+2026-06-20 06:21:50 DEBUG key -> redis.host, value -> 127.0.0.1 
+2026-06-20 06:21:50 DEBUG key -> logserver.host, value -> 127.0.0.1 
+2026-06-20 06:21:50 DEBUG key -> openTime, value -> 2017-09-02 00:00:00 
+2026-06-20 06:21:50 DEBUG key -> logserver.dataPath, value -> ./log 
+2026-06-20 06:21:50 DEBUG key -> wordLocation, value -> cn 
+2026-06-20 06:21:50 DEBUG key -> ws.port, value -> 19102 
+2026-06-20 06:21:50 DEBUG key -> jdbc.password, value -> X7kR9mP2qN5wL8jZ 
+2026-06-20 06:21:50 DEBUG key -> logicRmi.cmport, value -> 17006 
+2026-06-20 06:21:50 DEBUG key -> path, value -> webgame/platform/ 
+2026-06-20 06:21:50 DEBUG key -> rmi.url, value -> rmi://127.0.0.1:19850/crossRankRMI 
+2026-06-20 06:21:50 DEBUG key -> tag, value -> 24b0d14d02f7970e270d2b70dfab4ea62fc2390a 
+2026-06-20 06:21:50 DEBUG key -> logicRmi.host, value -> 127.0.0.1 
+2026-06-20 06:21:50 DEBUG key -> jmxName, value -> llyx-sanguo 
+2026-06-20 06:21:50 DEBUG key -> crossUrl, value -> wss://sanguo-lb1.linlongyx.com:5003/ws 
+2026-06-20 06:21:50 DEBUG key -> redis.maxWait, value -> 10000 
+2026-06-20 06:21:50 DEBUG key -> version, value -> 1.1000 
+2026-06-20 06:21:50 DEBUG key -> httpSwitch, value -> false 
+2026-06-20 06:21:50 DEBUG key -> ws, value -> true 
+2026-06-20 06:21:50 DEBUG key -> logicRmi.serviceName, value -> crossRankLogicRMI 
+2026-06-20 06:21:50 DEBUG key -> redis.maxIdle, value -> 300 
+2026-06-20 06:21:52 INFO  {dataSource-1} inited
+2026-06-20 06:21:52 INFO  Loaded JDBC driver: com.mysql.jdbc.Driver
+2026-06-20 06:21:56 ERROR LogicRmiManager::publish rmi service url: {} rmi://127.0.0.1:17005/crossRankLogicRMI 
+2026-06-20 06:22:04 ERROR ContinuityParameter {1={"actId":1,"startTime":1504818000,"endTime":1504904400,"closeTime":0}, 2={"actId":2,"startTime":1504558800,"endTime":1505163600,"closeTime":0}, 3={"actId":3,"startTime":1551733200,"endTime":1552337999,"closeTime":0}} 
+2026-06-20 06:22:05 DEBUG {conn-10004, pstmt-20016} enter cache
+2026-06-20 06:22:05 DEBUG {conn-10004, pstmt-20017} enter cache
+2026-06-20 06:22:05 ERROR update group Pre:update tb_group set id=10001000000 + id where id != 0 and id<=10001000000; 
+2026-06-20 06:22:05 ERROR update groupMember Pre:update tb_groupMember set id=10001000000 + id where id != 0 and id<=10001000000; 
+2026-06-20 06:22:05 ERROR ArenaRankError 10001000247 10001000324 3001 
+2026-06-20 06:22:05 ERROR ArenaRankError 10001000324 10001000292 3001 
+2026-06-20 06:22:05 DEBUG server open days: 3214, rankAct id: 8, state: Expire 
+2026-06-20 06:22:05 DEBUG server open days: 3214, rankAct id: 9, state: Expire 
+2026-06-20 06:22:05 DEBUG server open days: 3214, rankAct id: 10, state: Expire 
+2026-06-20 06:22:05 DEBUG server open days: 3214, rankAct id: 11, state: Expire 
+2026-06-20 06:22:05 DEBUG server open days: 3214, rankAct id: 12, state: Expire 
+2026-06-20 06:22:05 DEBUG server open days: 3214, rankAct id: 13, state: Expire 
+2026-06-20 06:22:05 DEBUG server open days: 3214, rankAct id: 14, state: Expire 
+2026-06-20 06:22:07 WARN  Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x4652b220]'
+2026-06-20 06:22:07 WARN  Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x4fc074aa]'
+2026-06-20 06:22:07 INFO  Using default implementation for ThreadExecutor
+2026-06-20 06:22:07 INFO  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-06-20 06:22:07 INFO  Quartz Scheduler v.1.8.6 created.
+2026-06-20 06:22:07 INFO  Registering Quartz Job Initialization Plug-in.
+2026-06-20 06:22:07 INFO  RAMJobStore initialized.
+2026-06-20 06:22:07 INFO  Scheduler meta-data: Quartz Scheduler (v1.8.6) 'AUTO' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-06-20 06:22:07 INFO  Quartz scheduler 'AUTO' initialized from default resource file in Quartz package: 'quartz.properties'
+2026-06-20 06:22:07 INFO  Quartz scheduler version: 1.8.6
+2026-06-20 06:22:07 DEBUG Utilizing schema packaged in local quartz distribution jar.
+2026-06-20 06:22:07 INFO  Parsing XML file: quartz_jobs.xml with systemId: quartz_jobs.xml
+2026-06-20 06:22:07 DEBUG Found 0 delete job group commands.
+2026-06-20 06:22:07 DEBUG Found 0 delete trigger group commands.
+2026-06-20 06:22:07 DEBUG Found 0 delete job commands.
+2026-06-20 06:22:07 DEBUG Found 0 delete trigger commands.
+2026-06-20 06:22:07 DEBUG Directive 'overwrite-existing-data' not specified, defaulting to true
+2026-06-20 06:22:07 DEBUG Directive 'ignore-duplicates' not specified, defaulting to false
+2026-06-20 06:22:07 DEBUG Found 1 job definitions.
+2026-06-20 06:22:07 DEBUG Parsed job definition: JobDetail 'AUTO.JOBS':  jobClass: 'com.linlongyx.sanguo.webgame.quartz.QuartzJob isStateful: false isVolatile: false isDurable: false requestsRecovers: false
+2026-06-20 06:22:07 DEBUG Found 11 trigger definitions.
+2026-06-20 06:22:07 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10000':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:22:07 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10001':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:22:07 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10002':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:22:07 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10010':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:22:07 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10011':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:22:07 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10012':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:22:07 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20001':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:22:07 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20003':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:22:07 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20004':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:22:07 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20005':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:22:07 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20006':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:22:07 INFO  Adding 1 jobs, 11 triggers.
+2026-06-20 06:22:07 INFO  Adding job: AUTO.JOBS
+2026-06-20 06:22:07 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10000
+2026-06-20 06:22:07 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10001
+2026-06-20 06:22:07 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10002
+2026-06-20 06:22:07 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10010
+2026-06-20 06:22:07 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10011
+2026-06-20 06:22:07 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10012
+2026-06-20 06:22:07 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20001
+2026-06-20 06:22:07 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20003
+2026-06-20 06:22:07 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20004
+2026-06-20 06:22:07 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20005
+2026-06-20 06:22:07 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20006
+2026-06-20 06:22:07 INFO  Scheduler AUTO_$_NON_CLUSTERED started.
+2026-06-20 06:22:07 DEBUG Reading descriptors ( dom ) 16
+2026-06-20 06:22:07 DEBUG Using existing MBeanServer 0
+2026-06-20 06:22:07 DEBUG default constructor
+2026-06-20 06:22:07 DEBUG preRegister com.linlongyx.sanguo.webgame.service.LookUpService@4cc61eb1 onlineNum:Click=ShowDetail
+2026-06-20 06:22:07 DEBUG default constructor
+2026-06-20 06:22:07 DEBUG preRegister com.linlongyx.sanguo.webgame.service.JsonTableService@2d8f2f3a reload:Click=reloadJson
+2026-06-20 06:22:07 DEBUG default constructor
+2026-06-20 06:22:07 DEBUG preRegister com.linlongyx.core.utils.ChatUtil@2024293c reload:Click=reloadSensitive
+2026-06-20 06:22:07 ERROR Started version:  110000 
+2026-06-20 06:22:08 DEBUG Checking for available updated version of Quartz...
+2026-06-20 06:22:08 DEBUG Quartz version update check failed: Server returned HTTP response code: 403 for URL: http://www.terracotta.org/kit/reflector?kitID=quartz&pageID=update.properties&id=-1062731413&os-name=Windows+10&jvm-name=Java+HotSpot%28TM%29+64-Bit+Server+VM&jvm-version=1.8.0_181&platform=amd64&tc-version=1.8.6&tc-product=Quartz&source=Quartz&uptime-secs=1&patch=UNKNOWN
+2026-06-20 06:22:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:22:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:22:30 INFO  触发cmd：20005
+2026-06-20 06:23:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:23:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:23:00 INFO  触发cmd：20005
+2026-06-20 06:23:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:23:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:23:30 INFO  触发cmd：20005
+2026-06-20 06:23:45 ERROR rankBossTimeOut 1001 
+2026-06-20 06:24:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:24:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:24:00 INFO  触发cmd：20005
+2026-06-20 06:24:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:24:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:24:30 INFO  触发cmd：20005
+2026-06-20 06:24:45 ERROR rankBossReBorn 1001 
+2026-06-20 06:25:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:25:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:25:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:25:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:25:00 INFO  触发cmd：20003
+2026-06-20 06:25:00 INFO  触发cmd：20005
+2026-06-20 06:25:00 ERROR destiny rank refresh 
+2026-06-20 06:25:25 ERROR rankBossTimeOut 1002 
+2026-06-20 06:25:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:25:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:25:30 INFO  触发cmd：20005
+2026-06-20 06:26:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:26:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:26:00 INFO  触发cmd：20005
+2026-06-20 06:26:25 ERROR rankBossTimeOut 1001 
+2026-06-20 06:26:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:26:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:26:30 INFO  触发cmd：20005
+2026-06-20 06:27:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:27:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:27:00 INFO  触发cmd：20005
+2026-06-20 06:27:05 ERROR rankBossTimeOut 1003 
+2026-06-20 06:27:25 ERROR rankBossReBorn 1001 
+2026-06-20 06:27:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:27:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:27:30 INFO  触发cmd：20005
+2026-06-20 06:27:55 ERROR rankBossReBorn 1002 
+2026-06-20 06:28:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:28:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:28:00 INFO  触发cmd：20005
+2026-06-20 06:28:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:28:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:28:30 INFO  触发cmd：20005
+2026-06-20 06:29:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:29:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:29:00 INFO  触发cmd：20005
+2026-06-20 06:29:05 ERROR rankBossTimeOut 1001 
+2026-06-20 06:29:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:29:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:29:30 INFO  触发cmd：20005
+2026-06-20 06:30:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:30:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:30:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:30:00 INFO  触发cmd：20001
+2026-06-20 06:30:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:30:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:30:00 ERROR destiny rank refresh 
+2026-06-20 06:30:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:30:00 INFO  触发cmd：20003
+2026-06-20 06:30:00 INFO  触发cmd：20005
+2026-06-20 06:30:05 ERROR rankBossReBorn 1001 
+2026-06-20 06:30:25 ERROR rankBossReBorn 1003 
+2026-06-20 06:30:25 ERROR rankBossTimeOut 1004 
+2026-06-20 06:30:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:30:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:30:30 INFO  触发cmd：20005
+2026-06-20 06:31:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:31:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:31:00 INFO  触发cmd：20005
+2026-06-20 06:31:15 ERROR rankBossTimeOut 1002 
+2026-06-20 06:31:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:31:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:31:30 INFO  触发cmd：20005
+2026-06-20 06:31:45 ERROR rankBossTimeOut 1001 
+2026-06-20 06:32:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:32:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:32:00 INFO  触发cmd：20005
+2026-06-20 06:32:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:32:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:32:30 INFO  触发cmd：20005
+2026-06-20 06:32:45 ERROR rankBossReBorn 1001 
+2026-06-20 06:33:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:33:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:33:00 INFO  触发cmd：20005
+2026-06-20 06:33:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:33:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:33:30 INFO  触发cmd：20005
+2026-06-20 06:33:45 ERROR rankBossReBorn 1002 
+2026-06-20 06:33:45 ERROR rankBossTimeOut 1005 
+2026-06-20 06:34:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:34:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:34:00 INFO  触发cmd：20005
+2026-06-20 06:34:25 ERROR rankBossTimeOut 1001 
+2026-06-20 06:34:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:34:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:34:30 INFO  触发cmd：20005
+2026-06-20 06:35:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:35:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:35:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:35:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:35:00 INFO  触发cmd：20003
+2026-06-20 06:35:00 INFO  触发cmd：20005
+2026-06-20 06:35:00 ERROR destiny rank refresh 
+2026-06-20 06:35:25 ERROR rankBossReBorn 1001 
+2026-06-20 06:35:25 ERROR rankBossTimeOut 1003 
+2026-06-20 06:35:25 ERROR rankBossReBorn 1004 
+2026-06-20 06:35:25 ERROR rankBossTimeOut 1006 
+2026-06-20 06:35:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:35:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:35:30 INFO  触发cmd：20005
+2026-06-20 06:36:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:36:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:36:00 INFO  触发cmd：20005
+2026-06-20 06:36:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:36:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:36:30 INFO  触发cmd：20005
+2026-06-20 06:37:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:37:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:37:00 INFO  触发cmd：20005
+2026-06-20 06:37:05 ERROR rankBossTimeOut 1001 
+2026-06-20 06:37:05 ERROR rankBossTimeOut 1002 
+2026-06-20 06:37:05 ERROR rankBossTimeOut 1007 
+2026-06-20 06:37:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:37:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:37:30 INFO  触发cmd：20005
+2026-06-20 06:38:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:38:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:38:00 INFO  触发cmd：20005
+2026-06-20 06:38:05 ERROR rankBossReBorn 1001 
+2026-06-20 06:38:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:38:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:38:30 INFO  触发cmd：20005
+2026-06-20 06:38:45 ERROR rankBossReBorn 1003 
+2026-06-20 06:38:45 ERROR rankBossTimeOut 1008 
+2026-06-20 06:39:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:39:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:39:00 INFO  触发cmd：20005
+2026-06-20 06:39:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:39:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:39:30 INFO  触发cmd：20005
+2026-06-20 06:39:35 ERROR rankBossReBorn 1002 
+2026-06-20 06:39:35 ERROR rankBossReBorn 1005 
+2026-06-20 06:39:45 ERROR rankBossTimeOut 1001 
+2026-06-20 06:40:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:40:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:40:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:40:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:40:00 INFO  触发cmd：20003
+2026-06-20 06:40:00 INFO  触发cmd：20005
+2026-06-20 06:40:00 ERROR destiny rank refresh 
+2026-06-20 06:40:25 ERROR rankBossTimeOut 1009 
+2026-06-20 06:40:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:40:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:40:30 INFO  触发cmd：20005
+2026-06-20 06:40:45 ERROR rankBossReBorn 1001 
+2026-06-20 06:41:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:41:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:41:00 INFO  触发cmd：20005
+2026-06-20 06:41:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:41:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:41:30 INFO  触发cmd：20005
+2026-06-20 06:42:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:42:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:42:00 INFO  触发cmd：20005
+2026-06-20 06:42:05 ERROR rankBossReBorn 1006 
+2026-06-20 06:42:05 ERROR rankBossTimeOut 1010 
+2026-06-20 06:42:25 ERROR rankBossTimeOut 1001 
+2026-06-20 06:42:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:42:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:42:30 INFO  触发cmd：20005
+2026-06-20 06:42:55 ERROR rankBossTimeOut 1002 
+2026-06-20 06:43:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:43:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:43:00 INFO  触发cmd：20005
+2026-06-20 06:43:25 ERROR rankBossReBorn 1001 
+2026-06-20 06:43:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:43:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:43:30 INFO  触发cmd：20005
+2026-06-20 06:43:45 ERROR rankBossTimeOut 1003 
+2026-06-20 06:43:45 ERROR rankBossTimeOut 1004 
+2026-06-20 06:43:45 ERROR rankBossTimeOut 1011 
+2026-06-20 06:44:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:44:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:44:00 INFO  触发cmd：20005
+2026-06-20 06:44:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:44:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:44:30 INFO  触发cmd：20005
+2026-06-20 06:44:35 ERROR rankBossReBorn 1007 
+2026-06-20 06:45:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:45:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:45:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:45:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:45:00 INFO  触发cmd：20003
+2026-06-20 06:45:00 INFO  触发cmd：20005
+2026-06-20 06:45:00 ERROR destiny rank refresh 
+2026-06-20 06:45:05 ERROR rankBossTimeOut 1001 
+2026-06-20 06:45:05 ERROR rankBossTimeOut 1001 
+2026-06-20 06:45:25 ERROR rankBossReBorn 1002 
+2026-06-20 06:45:25 ERROR rankBossTimeOut 1012 
+2026-06-20 06:45:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:45:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:45:30 INFO  触发cmd：20005
+2026-06-20 06:46:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:46:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:46:00 INFO  触发cmd：20005
+2026-06-20 06:46:05 ERROR rankBossReBorn 1001 
+2026-06-20 06:46:18 INFO  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@61064425: startup date [Sat Jun 20 06:46:18 EET 2026]; root of context hierarchy
+2026-06-20 06:46:18 INFO  Loading XML bean definitions from class path resource [webgame/beans/server-beans.xml]
+2026-06-20 06:46:18 INFO  Loading XML bean definitions from class path resource [webgame/beans/mysql-beans.xml]
+2026-06-20 06:46:18 INFO  Loading XML bean definitions from class path resource [webgame/beans/service-beans.xml]
+2026-06-20 06:46:19 INFO  Loading XML bean definitions from class path resource [webgame/beans/mysql-beans.xml]
+2026-06-20 06:46:19 INFO  Loading XML bean definitions from class path resource [webgame/beans/data-beans.xml]
+2026-06-20 06:46:19 INFO  Loading properties file from class path resource [webgame/props/webgame.properties]
+2026-06-20 06:46:19 INFO  Loading properties file from class path resource [webgame/props/mysql.properties]
+2026-06-20 06:46:19 INFO  Loading properties file from class path resource [webgame/props/redis.properties]
+2026-06-20 06:46:19 INFO  Loading properties file from class path resource [version.properties]
+2026-06-20 06:46:19 DEBUG 加载配置文件 
+2026-06-20 06:46:19 DEBUG key -> platform, value -> test 
+2026-06-20 06:46:19 DEBUG key -> businessThreadCount, value -> 10 
+2026-06-20 06:46:19 DEBUG key -> svn, value -> 32883 
+2026-06-20 06:46:19 DEBUG key -> jdbc.url, value -> jdbc:mysql://127.0.0.1:3306/sanguo_game2?useUnicode=true&characterEncoding=utf8 
+2026-06-20 06:46:19 DEBUG key -> secretKey, value -> 5Jqxjo10Yl2ElQCwJm 
+2026-06-20 06:46:19 DEBUG key -> so.backlog, value -> 128 
+2026-06-20 06:46:19 DEBUG key -> url, value -> http://127.0.0.1:8080/ 
+2026-06-20 06:46:19 DEBUG key -> redis.testOnBorrow, value -> true 
+2026-06-20 06:46:19 DEBUG key -> serverId, value -> 10001 
+2026-06-20 06:46:19 DEBUG key -> redis.maxTotal, value -> 600 
+2026-06-20 06:46:19 DEBUG key -> serverName, value -> å°æ¸¸æ2æ 
+2026-06-20 06:46:19 DEBUG key -> logserver.isOpen, value -> false 
+2026-06-20 06:46:19 DEBUG key -> redis.port, value -> 6379 
+2026-06-20 06:46:19 DEBUG key -> jmxPort, value -> 19302 
+2026-06-20 06:46:19 DEBUG key -> redis.db, value -> 14 
+2026-06-20 06:46:19 DEBUG key -> redis.timeout, value -> 5000 
+2026-06-20 06:46:19 DEBUG key -> logserver.port, value -> 6000 
+2026-06-20 06:46:19 DEBUG key -> jdbc.user, value -> root 
+2026-06-20 06:46:19 DEBUG key -> keystorePass, value ->  
+2026-06-20 06:46:19 DEBUG key -> characterEncoding, value -> UTF-8 
+2026-06-20 06:46:19 DEBUG key -> logicRmi.port, value -> 17005 
+2026-06-20 06:46:19 DEBUG key -> debug, value -> true 
+2026-06-20 06:46:19 DEBUG key -> wss, value -> false 
+2026-06-20 06:46:19 DEBUG key -> dataLocation, value -> cn 
+2026-06-20 06:46:19 DEBUG key -> useUnicode, value -> true 
+2026-06-20 06:46:19 DEBUG key -> redis.pass, value -> e5968b5bd4f916e4 
+2026-06-20 06:46:19 DEBUG key -> jmxPass, value -> g6UoONwr6joi1ApG 
+2026-06-20 06:46:19 DEBUG key -> appId, value -> 100962 
+2026-06-20 06:46:19 DEBUG key -> jks, value -> sanguo-lb1.linlongyx.com 
+2026-06-20 06:46:19 DEBUG key -> so.keepalive, value -> true 
+2026-06-20 06:46:19 DEBUG key -> http.port, value -> 19202 
+2026-06-20 06:46:19 DEBUG key -> jdbc.driverClassName, value -> com.mysql.jdbc.Driver 
+2026-06-20 06:46:19 DEBUG key -> cchId, value -> 392 
+2026-06-20 06:46:19 DEBUG key -> workerThreadCount, value -> 14 
+2026-06-20 06:46:19 DEBUG key -> bossThreadCount, value -> 1 
+2026-06-20 06:46:19 DEBUG key -> redis.host, value -> 127.0.0.1 
+2026-06-20 06:46:19 DEBUG key -> logserver.host, value -> 127.0.0.1 
+2026-06-20 06:46:19 DEBUG key -> openTime, value -> 2017-09-02 00:00:00 
+2026-06-20 06:46:19 DEBUG key -> logserver.dataPath, value -> ./log 
+2026-06-20 06:46:19 DEBUG key -> wordLocation, value -> cn 
+2026-06-20 06:46:19 DEBUG key -> ws.port, value -> 19102 
+2026-06-20 06:46:19 DEBUG key -> jdbc.password, value -> X7kR9mP2qN5wL8jZ 
+2026-06-20 06:46:19 DEBUG key -> logicRmi.cmport, value -> 17006 
+2026-06-20 06:46:19 DEBUG key -> path, value -> webgame/platform/ 
+2026-06-20 06:46:19 DEBUG key -> rmi.url, value -> rmi://127.0.0.1:19850/crossRankRMI 
+2026-06-20 06:46:19 DEBUG key -> tag, value -> 24b0d14d02f7970e270d2b70dfab4ea62fc2390a 
+2026-06-20 06:46:19 DEBUG key -> logicRmi.host, value -> 127.0.0.1 
+2026-06-20 06:46:19 DEBUG key -> jmxName, value -> llyx-sanguo 
+2026-06-20 06:46:19 DEBUG key -> crossUrl, value -> wss://sanguo-lb1.linlongyx.com:5003/ws 
+2026-06-20 06:46:19 DEBUG key -> redis.maxWait, value -> 10000 
+2026-06-20 06:46:19 DEBUG key -> version, value -> 1.1000 
+2026-06-20 06:46:19 DEBUG key -> httpSwitch, value -> false 
+2026-06-20 06:46:19 DEBUG key -> ws, value -> true 
+2026-06-20 06:46:19 DEBUG key -> logicRmi.serviceName, value -> crossRankLogicRMI 
+2026-06-20 06:46:19 DEBUG key -> redis.maxIdle, value -> 300 
+2026-06-20 06:46:20 INFO  {dataSource-1} inited
+2026-06-20 06:46:20 INFO  Loaded JDBC driver: com.mysql.jdbc.Driver
+2026-06-20 06:46:23 ERROR LogicRmiManager::publish rmi service url: {} rmi://127.0.0.1:17005/crossRankLogicRMI 
+2026-06-20 06:46:41 ERROR ContinuityParameter {1={"actId":1,"startTime":1504818000,"endTime":1504904400,"closeTime":0}, 2={"actId":2,"startTime":1504558800,"endTime":1505163600,"closeTime":0}, 3={"actId":3,"startTime":1551733200,"endTime":1552337999,"closeTime":0}} 
+2026-06-20 06:46:43 DEBUG {conn-10004, pstmt-20016} enter cache
+2026-06-20 06:46:43 DEBUG {conn-10004, pstmt-20017} enter cache
+2026-06-20 06:46:43 ERROR update group Pre:update tb_group set id=10001000000 + id where id != 0 and id<=10001000000; 
+2026-06-20 06:46:43 ERROR update groupMember Pre:update tb_groupMember set id=10001000000 + id where id != 0 and id<=10001000000; 
+2026-06-20 06:46:43 ERROR ArenaRankError 10001000325 10001000293 3001 
+2026-06-20 06:46:43 ERROR ArenaRankError 10001000293 10001000242 3001 
+2026-06-20 06:46:43 ERROR ArenaRankError 10001000242 10001000281 3001 
+2026-06-20 06:46:43 ERROR ArenaRankError 10001000281 10001000292 3001 
+2026-06-20 06:46:43 DEBUG server open days: 3214, rankAct id: 8, state: Expire 
+2026-06-20 06:46:43 DEBUG server open days: 3214, rankAct id: 9, state: Expire 
+2026-06-20 06:46:43 DEBUG server open days: 3214, rankAct id: 10, state: Expire 
+2026-06-20 06:46:43 DEBUG server open days: 3214, rankAct id: 11, state: Expire 
+2026-06-20 06:46:43 DEBUG server open days: 3214, rankAct id: 12, state: Expire 
+2026-06-20 06:46:43 DEBUG server open days: 3214, rankAct id: 13, state: Expire 
+2026-06-20 06:46:43 DEBUG server open days: 3214, rankAct id: 14, state: Expire 
+2026-06-20 06:46:44 WARN  Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x1ee9042e]'
+2026-06-20 06:46:44 WARN  Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x6c59fdc4]'
+2026-06-20 06:46:45 INFO  Using default implementation for ThreadExecutor
+2026-06-20 06:46:45 INFO  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-06-20 06:46:45 INFO  Quartz Scheduler v.1.8.6 created.
+2026-06-20 06:46:45 INFO  Registering Quartz Job Initialization Plug-in.
+2026-06-20 06:46:45 INFO  RAMJobStore initialized.
+2026-06-20 06:46:45 INFO  Scheduler meta-data: Quartz Scheduler (v1.8.6) 'AUTO' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-06-20 06:46:45 INFO  Quartz scheduler 'AUTO' initialized from default resource file in Quartz package: 'quartz.properties'
+2026-06-20 06:46:45 INFO  Quartz scheduler version: 1.8.6
+2026-06-20 06:46:45 DEBUG Utilizing schema packaged in local quartz distribution jar.
+2026-06-20 06:46:45 INFO  Parsing XML file: quartz_jobs.xml with systemId: quartz_jobs.xml
+2026-06-20 06:46:45 DEBUG Found 0 delete job group commands.
+2026-06-20 06:46:45 DEBUG Found 0 delete trigger group commands.
+2026-06-20 06:46:45 DEBUG Found 0 delete job commands.
+2026-06-20 06:46:45 DEBUG Found 0 delete trigger commands.
+2026-06-20 06:46:45 DEBUG Directive 'overwrite-existing-data' not specified, defaulting to true
+2026-06-20 06:46:45 DEBUG Directive 'ignore-duplicates' not specified, defaulting to false
+2026-06-20 06:46:45 DEBUG Found 1 job definitions.
+2026-06-20 06:46:45 DEBUG Parsed job definition: JobDetail 'AUTO.JOBS':  jobClass: 'com.linlongyx.sanguo.webgame.quartz.QuartzJob isStateful: false isVolatile: false isDurable: false requestsRecovers: false
+2026-06-20 06:46:45 DEBUG Found 11 trigger definitions.
+2026-06-20 06:46:45 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10000':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:46:45 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10001':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:46:45 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10002':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:46:45 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10010':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:46:45 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10011':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:46:45 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10012':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:46:45 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20001':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:46:45 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20003':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:46:45 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20004':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:46:45 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20005':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:46:45 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20006':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:46:45 INFO  Adding 1 jobs, 11 triggers.
+2026-06-20 06:46:45 INFO  Adding job: AUTO.JOBS
+2026-06-20 06:46:45 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10000
+2026-06-20 06:46:45 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10001
+2026-06-20 06:46:45 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10002
+2026-06-20 06:46:45 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10010
+2026-06-20 06:46:45 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10011
+2026-06-20 06:46:45 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10012
+2026-06-20 06:46:45 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20001
+2026-06-20 06:46:45 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20003
+2026-06-20 06:46:45 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20004
+2026-06-20 06:46:45 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20005
+2026-06-20 06:46:45 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20006
+2026-06-20 06:46:45 INFO  Scheduler AUTO_$_NON_CLUSTERED started.
+2026-06-20 06:46:45 DEBUG Reading descriptors ( dom ) 27
+2026-06-20 06:46:45 DEBUG Using existing MBeanServer 0
+2026-06-20 06:46:45 DEBUG default constructor
+2026-06-20 06:46:45 DEBUG preRegister com.linlongyx.sanguo.webgame.service.LookUpService@2d8f2f3a onlineNum:Click=ShowDetail
+2026-06-20 06:46:45 DEBUG default constructor
+2026-06-20 06:46:45 DEBUG preRegister com.linlongyx.sanguo.webgame.service.JsonTableService@2024293c reload:Click=reloadJson
+2026-06-20 06:46:45 DEBUG default constructor
+2026-06-20 06:46:45 DEBUG preRegister com.linlongyx.core.utils.ChatUtil@7048f722 reload:Click=reloadSensitive
+2026-06-20 06:46:45 ERROR Started version:  110000 
+2026-06-20 06:46:46 DEBUG Checking for available updated version of Quartz...
+2026-06-20 06:46:46 DEBUG Quartz version update check failed: Server returned HTTP response code: 403 for URL: http://www.terracotta.org/kit/reflector?kitID=quartz&pageID=update.properties&id=-1062731413&os-name=Windows+10&jvm-name=Java+HotSpot%28TM%29+64-Bit+Server+VM&jvm-version=1.8.0_181&platform=amd64&tc-version=1.8.6&tc-product=Quartz&source=Quartz&uptime-secs=1&patch=UNKNOWN
+2026-06-20 06:47:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:47:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:47:00 INFO  触发cmd：20005
+2026-06-20 06:47:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:47:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:47:30 INFO  触发cmd：20005
+2026-06-20 06:48:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:48:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:48:00 INFO  触发cmd：20005
+2026-06-20 06:48:23 ERROR rankBossTimeOut 1001 
+2026-06-20 06:48:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:48:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:48:30 INFO  触发cmd：20005
+2026-06-20 06:49:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:49:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:49:00 INFO  触发cmd：20005
+2026-06-20 06:49:23 ERROR rankBossReBorn 1001 
+2026-06-20 06:49:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:49:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:49:30 INFO  触发cmd：20005
+2026-06-20 06:50:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:50:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:50:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:50:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:50:00 INFO  触发cmd：20003
+2026-06-20 06:50:00 INFO  触发cmd：20005
+2026-06-20 06:50:00 ERROR destiny rank refresh 
+2026-06-20 06:50:03 ERROR rankBossTimeOut 1002 
+2026-06-20 06:50:25 INFO  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@61064425: startup date [Sat Jun 20 06:50:25 EET 2026]; root of context hierarchy
+2026-06-20 06:50:25 INFO  Loading XML bean definitions from class path resource [webgame/beans/server-beans.xml]
+2026-06-20 06:50:25 INFO  Loading XML bean definitions from class path resource [webgame/beans/mysql-beans.xml]
+2026-06-20 06:50:25 INFO  Loading XML bean definitions from class path resource [webgame/beans/service-beans.xml]
+2026-06-20 06:50:25 INFO  Loading XML bean definitions from class path resource [webgame/beans/mysql-beans.xml]
+2026-06-20 06:50:25 INFO  Loading XML bean definitions from class path resource [webgame/beans/data-beans.xml]
+2026-06-20 06:50:26 INFO  Loading properties file from class path resource [webgame/props/webgame.properties]
+2026-06-20 06:50:26 INFO  Loading properties file from class path resource [webgame/props/mysql.properties]
+2026-06-20 06:50:26 INFO  Loading properties file from class path resource [webgame/props/redis.properties]
+2026-06-20 06:50:26 INFO  Loading properties file from class path resource [version.properties]
+2026-06-20 06:50:26 DEBUG 加载配置文件 
+2026-06-20 06:50:26 DEBUG key -> platform, value -> test 
+2026-06-20 06:50:26 DEBUG key -> businessThreadCount, value -> 10 
+2026-06-20 06:50:26 DEBUG key -> svn, value -> 32883 
+2026-06-20 06:50:26 DEBUG key -> jdbc.url, value -> jdbc:mysql://127.0.0.1:3306/sanguo_game2?useUnicode=true&characterEncoding=utf8 
+2026-06-20 06:50:26 DEBUG key -> secretKey, value -> 5Jqxjo10Yl2ElQCwJm 
+2026-06-20 06:50:26 DEBUG key -> so.backlog, value -> 128 
+2026-06-20 06:50:26 DEBUG key -> url, value -> http://127.0.0.1:8080/ 
+2026-06-20 06:50:26 DEBUG key -> redis.testOnBorrow, value -> true 
+2026-06-20 06:50:26 DEBUG key -> serverId, value -> 10001 
+2026-06-20 06:50:26 DEBUG key -> redis.maxTotal, value -> 600 
+2026-06-20 06:50:26 DEBUG key -> serverName, value -> å°æ¸¸æ2æ 
+2026-06-20 06:50:26 DEBUG key -> logserver.isOpen, value -> false 
+2026-06-20 06:50:26 DEBUG key -> redis.port, value -> 6379 
+2026-06-20 06:50:26 DEBUG key -> jmxPort, value -> 19302 
+2026-06-20 06:50:26 DEBUG key -> redis.db, value -> 14 
+2026-06-20 06:50:26 DEBUG key -> redis.timeout, value -> 5000 
+2026-06-20 06:50:26 DEBUG key -> logserver.port, value -> 6000 
+2026-06-20 06:50:26 DEBUG key -> jdbc.user, value -> root 
+2026-06-20 06:50:26 DEBUG key -> keystorePass, value ->  
+2026-06-20 06:50:26 DEBUG key -> characterEncoding, value -> UTF-8 
+2026-06-20 06:50:26 DEBUG key -> logicRmi.port, value -> 17005 
+2026-06-20 06:50:26 DEBUG key -> debug, value -> true 
+2026-06-20 06:50:26 DEBUG key -> wss, value -> false 
+2026-06-20 06:50:26 DEBUG key -> dataLocation, value -> cn 
+2026-06-20 06:50:26 DEBUG key -> useUnicode, value -> true 
+2026-06-20 06:50:26 DEBUG key -> redis.pass, value -> e5968b5bd4f916e4 
+2026-06-20 06:50:26 DEBUG key -> jmxPass, value -> g6UoONwr6joi1ApG 
+2026-06-20 06:50:26 DEBUG key -> appId, value -> 100962 
+2026-06-20 06:50:26 DEBUG key -> jks, value -> sanguo-lb1.linlongyx.com 
+2026-06-20 06:50:26 DEBUG key -> so.keepalive, value -> true 
+2026-06-20 06:50:26 DEBUG key -> http.port, value -> 19202 
+2026-06-20 06:50:26 DEBUG key -> jdbc.driverClassName, value -> com.mysql.jdbc.Driver 
+2026-06-20 06:50:26 DEBUG key -> cchId, value -> 392 
+2026-06-20 06:50:26 DEBUG key -> workerThreadCount, value -> 14 
+2026-06-20 06:50:26 DEBUG key -> bossThreadCount, value -> 1 
+2026-06-20 06:50:26 DEBUG key -> redis.host, value -> 127.0.0.1 
+2026-06-20 06:50:26 DEBUG key -> logserver.host, value -> 127.0.0.1 
+2026-06-20 06:50:26 DEBUG key -> openTime, value -> 2017-09-02 00:00:00 
+2026-06-20 06:50:26 DEBUG key -> logserver.dataPath, value -> ./log 
+2026-06-20 06:50:26 DEBUG key -> wordLocation, value -> cn 
+2026-06-20 06:50:26 DEBUG key -> ws.port, value -> 19102 
+2026-06-20 06:50:26 DEBUG key -> jdbc.password, value -> X7kR9mP2qN5wL8jZ 
+2026-06-20 06:50:26 DEBUG key -> logicRmi.cmport, value -> 17006 
+2026-06-20 06:50:26 DEBUG key -> path, value -> webgame/platform/ 
+2026-06-20 06:50:26 DEBUG key -> rmi.url, value -> rmi://127.0.0.1:19850/crossRankRMI 
+2026-06-20 06:50:26 DEBUG key -> tag, value -> 24b0d14d02f7970e270d2b70dfab4ea62fc2390a 
+2026-06-20 06:50:26 DEBUG key -> logicRmi.host, value -> 127.0.0.1 
+2026-06-20 06:50:26 DEBUG key -> jmxName, value -> llyx-sanguo 
+2026-06-20 06:50:26 DEBUG key -> crossUrl, value -> wss://sanguo-lb1.linlongyx.com:5003/ws 
+2026-06-20 06:50:26 DEBUG key -> redis.maxWait, value -> 10000 
+2026-06-20 06:50:26 DEBUG key -> version, value -> 1.1000 
+2026-06-20 06:50:26 DEBUG key -> httpSwitch, value -> false 
+2026-06-20 06:50:26 DEBUG key -> ws, value -> true 
+2026-06-20 06:50:26 DEBUG key -> logicRmi.serviceName, value -> crossRankLogicRMI 
+2026-06-20 06:50:26 DEBUG key -> redis.maxIdle, value -> 300 
+2026-06-20 06:50:28 INFO  {dataSource-1} inited
+2026-06-20 06:50:28 INFO  Loaded JDBC driver: com.mysql.jdbc.Driver
+2026-06-20 06:50:31 ERROR LogicRmiManager::publish rmi service url: {} rmi://127.0.0.1:17005/crossRankLogicRMI 
+2026-06-20 06:50:53 ERROR ContinuityParameter {1={"actId":1,"startTime":1504818000,"endTime":1504904400,"closeTime":0}, 2={"actId":2,"startTime":1504558800,"endTime":1505163600,"closeTime":0}, 3={"actId":3,"startTime":1551733200,"endTime":1552337999,"closeTime":0}} 
+2026-06-20 06:50:54 DEBUG {conn-10004, pstmt-20016} enter cache
+2026-06-20 06:50:54 DEBUG {conn-10004, pstmt-20017} enter cache
+2026-06-20 06:50:54 ERROR update group Pre:update tb_group set id=10001000000 + id where id != 0 and id<=10001000000; 
+2026-06-20 06:50:54 ERROR update groupMember Pre:update tb_groupMember set id=10001000000 + id where id != 0 and id<=10001000000; 
+2026-06-20 06:50:54 ERROR ArenaRankError 10001000181 10001000018 3001 
+2026-06-20 06:50:54 ERROR ArenaRankError 10001000018 10001000309 3001 
+2026-06-20 06:50:54 ERROR ArenaRankError 10001000309 10001000148 3001 
+2026-06-20 06:50:54 ERROR ArenaRankError 10001000148 10001000258 3001 
+2026-06-20 06:50:54 ERROR ArenaRankError 10001000258 10001000233 3001 
+2026-06-20 06:50:54 ERROR ArenaRankError 10001000233 10001000292 3001 
+2026-06-20 06:50:54 DEBUG server open days: 3214, rankAct id: 8, state: Expire 
+2026-06-20 06:50:54 DEBUG server open days: 3214, rankAct id: 9, state: Expire 
+2026-06-20 06:50:54 DEBUG server open days: 3214, rankAct id: 10, state: Expire 
+2026-06-20 06:50:54 DEBUG server open days: 3214, rankAct id: 11, state: Expire 
+2026-06-20 06:50:54 DEBUG server open days: 3214, rankAct id: 12, state: Expire 
+2026-06-20 06:50:54 DEBUG server open days: 3214, rankAct id: 13, state: Expire 
+2026-06-20 06:50:54 DEBUG server open days: 3214, rankAct id: 14, state: Expire 
+2026-06-20 06:50:56 WARN  Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0xc8425d4d]'
+2026-06-20 06:50:56 WARN  Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x5177fc55]'
+2026-06-20 06:50:56 INFO  Using default implementation for ThreadExecutor
+2026-06-20 06:50:56 INFO  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-06-20 06:50:56 INFO  Quartz Scheduler v.1.8.6 created.
+2026-06-20 06:50:56 INFO  Registering Quartz Job Initialization Plug-in.
+2026-06-20 06:50:56 INFO  RAMJobStore initialized.
+2026-06-20 06:50:56 INFO  Scheduler meta-data: Quartz Scheduler (v1.8.6) 'AUTO' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-06-20 06:50:56 INFO  Quartz scheduler 'AUTO' initialized from default resource file in Quartz package: 'quartz.properties'
+2026-06-20 06:50:56 INFO  Quartz scheduler version: 1.8.6
+2026-06-20 06:50:56 DEBUG Utilizing schema packaged in local quartz distribution jar.
+2026-06-20 06:50:56 INFO  Parsing XML file: quartz_jobs.xml with systemId: quartz_jobs.xml
+2026-06-20 06:50:56 DEBUG Found 0 delete job group commands.
+2026-06-20 06:50:56 DEBUG Found 0 delete trigger group commands.
+2026-06-20 06:50:56 DEBUG Found 0 delete job commands.
+2026-06-20 06:50:56 DEBUG Found 0 delete trigger commands.
+2026-06-20 06:50:56 DEBUG Directive 'overwrite-existing-data' not specified, defaulting to true
+2026-06-20 06:50:56 DEBUG Directive 'ignore-duplicates' not specified, defaulting to false
+2026-06-20 06:50:56 DEBUG Found 1 job definitions.
+2026-06-20 06:50:56 DEBUG Parsed job definition: JobDetail 'AUTO.JOBS':  jobClass: 'com.linlongyx.sanguo.webgame.quartz.QuartzJob isStateful: false isVolatile: false isDurable: false requestsRecovers: false
+2026-06-20 06:50:56 DEBUG Found 11 trigger definitions.
+2026-06-20 06:50:56 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10000':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:50:56 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10001':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:50:56 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10002':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:50:56 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10010':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:50:56 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10011':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:50:56 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10012':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:50:56 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20001':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:50:56 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20003':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:50:56 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20004':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:50:56 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20005':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:50:57 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20006':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:50:57 INFO  Adding 1 jobs, 11 triggers.
+2026-06-20 06:50:57 INFO  Adding job: AUTO.JOBS
+2026-06-20 06:50:57 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10000
+2026-06-20 06:50:57 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10001
+2026-06-20 06:50:57 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10002
+2026-06-20 06:50:57 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10010
+2026-06-20 06:50:57 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10011
+2026-06-20 06:50:57 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10012
+2026-06-20 06:50:57 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20001
+2026-06-20 06:50:57 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20003
+2026-06-20 06:50:57 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20004
+2026-06-20 06:50:57 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20005
+2026-06-20 06:50:57 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20006
+2026-06-20 06:50:57 INFO  Scheduler AUTO_$_NON_CLUSTERED started.
+2026-06-20 06:50:57 DEBUG Reading descriptors ( dom ) 18
+2026-06-20 06:50:57 DEBUG Using existing MBeanServer 0
+2026-06-20 06:50:57 DEBUG default constructor
+2026-06-20 06:50:57 DEBUG preRegister com.linlongyx.sanguo.webgame.service.LookUpService@2d8f2f3a onlineNum:Click=ShowDetail
+2026-06-20 06:50:57 DEBUG default constructor
+2026-06-20 06:50:57 DEBUG preRegister com.linlongyx.sanguo.webgame.service.JsonTableService@2024293c reload:Click=reloadJson
+2026-06-20 06:50:57 DEBUG default constructor
+2026-06-20 06:50:57 DEBUG preRegister com.linlongyx.core.utils.ChatUtil@7048f722 reload:Click=reloadSensitive
+2026-06-20 06:50:57 ERROR Started version:  110000 
+2026-06-20 06:50:57 DEBUG Checking for available updated version of Quartz...
+2026-06-20 06:50:58 DEBUG Quartz version update check failed: Server returned HTTP response code: 403 for URL: http://www.terracotta.org/kit/reflector?kitID=quartz&pageID=update.properties&id=-1062731413&os-name=Windows+10&jvm-name=Java+HotSpot%28TM%29+64-Bit+Server+VM&jvm-version=1.8.0_181&platform=amd64&tc-version=1.8.6&tc-product=Quartz&source=Quartz&uptime-secs=1&patch=UNKNOWN
+2026-06-20 06:51:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:51:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:51:00 INFO  触发cmd：20005
+2026-06-20 06:51:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:51:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:51:30 INFO  触发cmd：20005
+2026-06-20 06:52:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:52:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:52:00 INFO  触发cmd：20005
+2026-06-20 06:52:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:52:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:52:30 INFO  触发cmd：20005
+2026-06-20 06:52:34 ERROR rankBossTimeOut 1001 
+2026-06-20 06:53:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:53:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:53:00 INFO  触发cmd：20005
+2026-06-20 06:53:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:53:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:53:30 INFO  触发cmd：20005
+2026-06-20 06:53:34 ERROR rankBossReBorn 1001 
+2026-06-20 06:54:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:54:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:54:00 INFO  触发cmd：20005
+2026-06-20 06:54:14 ERROR rankBossTimeOut 1002 
+2026-06-20 06:54:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:54:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:54:30 INFO  触发cmd：20005
+2026-06-20 06:55:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:55:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:55:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:55:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:55:00 INFO  触发cmd：20003
+2026-06-20 06:55:00 INFO  触发cmd：20005
+2026-06-20 06:55:00 ERROR destiny rank refresh 
+2026-06-20 06:55:14 ERROR rankBossTimeOut 1001 
+2026-06-20 06:57:38 INFO  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@61064425: startup date [Sat Jun 20 06:57:38 EET 2026]; root of context hierarchy
+2026-06-20 06:57:38 INFO  Loading XML bean definitions from class path resource [webgame/beans/server-beans.xml]
+2026-06-20 06:57:38 INFO  Loading XML bean definitions from class path resource [webgame/beans/mysql-beans.xml]
+2026-06-20 06:57:38 INFO  Loading XML bean definitions from class path resource [webgame/beans/service-beans.xml]
+2026-06-20 06:57:38 INFO  Loading XML bean definitions from class path resource [webgame/beans/mysql-beans.xml]
+2026-06-20 06:57:39 INFO  Loading XML bean definitions from class path resource [webgame/beans/data-beans.xml]
+2026-06-20 06:57:39 INFO  Loading properties file from class path resource [webgame/props/webgame.properties]
+2026-06-20 06:57:39 INFO  Loading properties file from class path resource [webgame/props/mysql.properties]
+2026-06-20 06:57:39 INFO  Loading properties file from class path resource [webgame/props/redis.properties]
+2026-06-20 06:57:39 INFO  Loading properties file from class path resource [version.properties]
+2026-06-20 06:57:39 DEBUG 加载配置文件 
+2026-06-20 06:57:39 DEBUG key -> platform, value -> test 
+2026-06-20 06:57:39 DEBUG key -> businessThreadCount, value -> 10 
+2026-06-20 06:57:39 DEBUG key -> svn, value -> 32883 
+2026-06-20 06:57:39 DEBUG key -> jdbc.url, value -> jdbc:mysql://127.0.0.1:3306/sanguo_game2?useUnicode=true&characterEncoding=utf8 
+2026-06-20 06:57:39 DEBUG key -> secretKey, value -> 5Jqxjo10Yl2ElQCwJm 
+2026-06-20 06:57:39 DEBUG key -> so.backlog, value -> 128 
+2026-06-20 06:57:39 DEBUG key -> url, value -> http://127.0.0.1:8080/ 
+2026-06-20 06:57:39 DEBUG key -> redis.testOnBorrow, value -> true 
+2026-06-20 06:57:39 DEBUG key -> serverId, value -> 10001 
+2026-06-20 06:57:39 DEBUG key -> redis.maxTotal, value -> 600 
+2026-06-20 06:57:39 DEBUG key -> serverName, value -> å°æ¸¸æ2æ 
+2026-06-20 06:57:39 DEBUG key -> logserver.isOpen, value -> false 
+2026-06-20 06:57:39 DEBUG key -> redis.port, value -> 6379 
+2026-06-20 06:57:39 DEBUG key -> jmxPort, value -> 19302 
+2026-06-20 06:57:39 DEBUG key -> redis.db, value -> 14 
+2026-06-20 06:57:39 DEBUG key -> redis.timeout, value -> 5000 
+2026-06-20 06:57:39 DEBUG key -> logserver.port, value -> 6000 
+2026-06-20 06:57:39 DEBUG key -> jdbc.user, value -> root 
+2026-06-20 06:57:39 DEBUG key -> keystorePass, value ->  
+2026-06-20 06:57:39 DEBUG key -> characterEncoding, value -> UTF-8 
+2026-06-20 06:57:39 DEBUG key -> logicRmi.port, value -> 17005 
+2026-06-20 06:57:39 DEBUG key -> debug, value -> true 
+2026-06-20 06:57:39 DEBUG key -> wss, value -> false 
+2026-06-20 06:57:39 DEBUG key -> dataLocation, value -> cn 
+2026-06-20 06:57:39 DEBUG key -> useUnicode, value -> true 
+2026-06-20 06:57:39 DEBUG key -> redis.pass, value -> e5968b5bd4f916e4 
+2026-06-20 06:57:39 DEBUG key -> jmxPass, value -> g6UoONwr6joi1ApG 
+2026-06-20 06:57:39 DEBUG key -> appId, value -> 100962 
+2026-06-20 06:57:39 DEBUG key -> jks, value -> sanguo-lb1.linlongyx.com 
+2026-06-20 06:57:39 DEBUG key -> so.keepalive, value -> true 
+2026-06-20 06:57:39 DEBUG key -> http.port, value -> 19202 
+2026-06-20 06:57:39 DEBUG key -> jdbc.driverClassName, value -> com.mysql.jdbc.Driver 
+2026-06-20 06:57:39 DEBUG key -> cchId, value -> 392 
+2026-06-20 06:57:39 DEBUG key -> workerThreadCount, value -> 14 
+2026-06-20 06:57:39 DEBUG key -> bossThreadCount, value -> 1 
+2026-06-20 06:57:39 DEBUG key -> redis.host, value -> 127.0.0.1 
+2026-06-20 06:57:39 DEBUG key -> logserver.host, value -> 127.0.0.1 
+2026-06-20 06:57:39 DEBUG key -> openTime, value -> 2017-09-02 00:00:00 
+2026-06-20 06:57:39 DEBUG key -> logserver.dataPath, value -> ./log 
+2026-06-20 06:57:39 DEBUG key -> wordLocation, value -> cn 
+2026-06-20 06:57:39 DEBUG key -> ws.port, value -> 19102 
+2026-06-20 06:57:39 DEBUG key -> jdbc.password, value -> X7kR9mP2qN5wL8jZ 
+2026-06-20 06:57:39 DEBUG key -> logicRmi.cmport, value -> 17006 
+2026-06-20 06:57:39 DEBUG key -> path, value -> webgame/platform/ 
+2026-06-20 06:57:39 DEBUG key -> rmi.url, value -> rmi://127.0.0.1:19850/crossRankRMI 
+2026-06-20 06:57:39 DEBUG key -> tag, value -> 24b0d14d02f7970e270d2b70dfab4ea62fc2390a 
+2026-06-20 06:57:39 DEBUG key -> logicRmi.host, value -> 127.0.0.1 
+2026-06-20 06:57:39 DEBUG key -> jmxName, value -> llyx-sanguo 
+2026-06-20 06:57:39 DEBUG key -> crossUrl, value -> wss://sanguo-lb1.linlongyx.com:5003/ws 
+2026-06-20 06:57:39 DEBUG key -> redis.maxWait, value -> 10000 
+2026-06-20 06:57:39 DEBUG key -> version, value -> 1.1000 
+2026-06-20 06:57:39 DEBUG key -> httpSwitch, value -> false 
+2026-06-20 06:57:39 DEBUG key -> ws, value -> true 
+2026-06-20 06:57:39 DEBUG key -> logicRmi.serviceName, value -> crossRankLogicRMI 
+2026-06-20 06:57:39 DEBUG key -> redis.maxIdle, value -> 300 
+2026-06-20 06:57:40 INFO  {dataSource-1} inited
+2026-06-20 06:57:40 INFO  Loaded JDBC driver: com.mysql.jdbc.Driver
+2026-06-20 06:57:41 ERROR LogicRmiManager::publish rmi service url: {} rmi://127.0.0.1:17005/crossRankLogicRMI 
+2026-06-20 06:57:48 ERROR ContinuityParameter {1={"actId":1,"startTime":1504818000,"endTime":1504904400,"closeTime":0}, 2={"actId":2,"startTime":1504558800,"endTime":1505163600,"closeTime":0}, 3={"actId":3,"startTime":1551733200,"endTime":1552337999,"closeTime":0}} 
+2026-06-20 06:57:49 DEBUG {conn-10004, pstmt-20016} enter cache
+2026-06-20 06:57:49 DEBUG {conn-10004, pstmt-20017} enter cache
+2026-06-20 06:57:49 ERROR update group Pre:update tb_group set id=10001000000 + id where id != 0 and id<=10001000000; 
+2026-06-20 06:57:49 ERROR update groupMember Pre:update tb_groupMember set id=10001000000 + id where id != 0 and id<=10001000000; 
+2026-06-20 06:57:49 ERROR ArenaRankError 10001000257 10001000353 3001 
+2026-06-20 06:57:49 ERROR ArenaRankError 10001000353 10001000321 3001 
+2026-06-20 06:57:49 ERROR ArenaRankError 10001000321 10001000233 3001 
+2026-06-20 06:57:49 ERROR ArenaRankError 10001000233 10001000292 3001 
+2026-06-20 06:57:49 DEBUG server open days: 3214, rankAct id: 8, state: Expire 
+2026-06-20 06:57:49 DEBUG server open days: 3214, rankAct id: 9, state: Expire 
+2026-06-20 06:57:49 DEBUG server open days: 3214, rankAct id: 10, state: Expire 
+2026-06-20 06:57:49 DEBUG server open days: 3214, rankAct id: 11, state: Expire 
+2026-06-20 06:57:49 DEBUG server open days: 3214, rankAct id: 12, state: Expire 
+2026-06-20 06:57:49 DEBUG server open days: 3214, rankAct id: 13, state: Expire 
+2026-06-20 06:57:49 DEBUG server open days: 3214, rankAct id: 14, state: Expire 
+2026-06-20 06:57:50 WARN  Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x32fe4b21]'
+2026-06-20 06:57:50 WARN  Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0xafd30d34]'
+2026-06-20 06:57:51 INFO  Using default implementation for ThreadExecutor
+2026-06-20 06:57:51 INFO  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-06-20 06:57:51 INFO  Quartz Scheduler v.1.8.6 created.
+2026-06-20 06:57:51 INFO  Registering Quartz Job Initialization Plug-in.
+2026-06-20 06:57:51 INFO  RAMJobStore initialized.
+2026-06-20 06:57:51 INFO  Scheduler meta-data: Quartz Scheduler (v1.8.6) 'AUTO' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-06-20 06:57:51 INFO  Quartz scheduler 'AUTO' initialized from default resource file in Quartz package: 'quartz.properties'
+2026-06-20 06:57:51 INFO  Quartz scheduler version: 1.8.6
+2026-06-20 06:57:51 DEBUG Utilizing schema packaged in local quartz distribution jar.
+2026-06-20 06:57:51 INFO  Parsing XML file: quartz_jobs.xml with systemId: quartz_jobs.xml
+2026-06-20 06:57:51 DEBUG Found 0 delete job group commands.
+2026-06-20 06:57:51 DEBUG Found 0 delete trigger group commands.
+2026-06-20 06:57:51 DEBUG Found 0 delete job commands.
+2026-06-20 06:57:51 DEBUG Found 0 delete trigger commands.
+2026-06-20 06:57:51 DEBUG Directive 'overwrite-existing-data' not specified, defaulting to true
+2026-06-20 06:57:51 DEBUG Directive 'ignore-duplicates' not specified, defaulting to false
+2026-06-20 06:57:51 DEBUG Found 1 job definitions.
+2026-06-20 06:57:51 DEBUG Parsed job definition: JobDetail 'AUTO.JOBS':  jobClass: 'com.linlongyx.sanguo.webgame.quartz.QuartzJob isStateful: false isVolatile: false isDurable: false requestsRecovers: false
+2026-06-20 06:57:51 DEBUG Found 11 trigger definitions.
+2026-06-20 06:57:51 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10000':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:57:51 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10001':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:57:51 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10002':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:57:51 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10010':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:57:51 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10011':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:57:51 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10012':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:57:51 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20001':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:57:51 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20003':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:57:51 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20004':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:57:51 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20005':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:57:51 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20006':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 06:57:51 INFO  Adding 1 jobs, 11 triggers.
+2026-06-20 06:57:51 INFO  Adding job: AUTO.JOBS
+2026-06-20 06:57:51 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10000
+2026-06-20 06:57:51 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10001
+2026-06-20 06:57:51 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10002
+2026-06-20 06:57:51 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10010
+2026-06-20 06:57:51 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10011
+2026-06-20 06:57:51 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10012
+2026-06-20 06:57:51 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20001
+2026-06-20 06:57:51 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20003
+2026-06-20 06:57:51 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20004
+2026-06-20 06:57:51 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20005
+2026-06-20 06:57:51 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20006
+2026-06-20 06:57:51 INFO  Scheduler AUTO_$_NON_CLUSTERED started.
+2026-06-20 06:57:51 DEBUG Reading descriptors ( dom ) 37
+2026-06-20 06:57:51 DEBUG Using existing MBeanServer 0
+2026-06-20 06:57:51 DEBUG default constructor
+2026-06-20 06:57:51 DEBUG preRegister com.linlongyx.sanguo.webgame.service.LookUpService@2d8f2f3a onlineNum:Click=ShowDetail
+2026-06-20 06:57:51 DEBUG default constructor
+2026-06-20 06:57:51 DEBUG preRegister com.linlongyx.sanguo.webgame.service.JsonTableService@2024293c reload:Click=reloadJson
+2026-06-20 06:57:51 DEBUG default constructor
+2026-06-20 06:57:51 DEBUG preRegister com.linlongyx.core.utils.ChatUtil@7048f722 reload:Click=reloadSensitive
+2026-06-20 06:57:51 ERROR Started version:  110000 
+2026-06-20 06:57:52 DEBUG Checking for available updated version of Quartz...
+2026-06-20 06:57:52 DEBUG Quartz version update check failed: Server returned HTTP response code: 403 for URL: http://www.terracotta.org/kit/reflector?kitID=quartz&pageID=update.properties&id=-1062731413&os-name=Windows+10&jvm-name=Java+HotSpot%28TM%29+64-Bit+Server+VM&jvm-version=1.8.0_181&platform=amd64&tc-version=1.8.6&tc-product=Quartz&source=Quartz&uptime-secs=1&patch=UNKNOWN
+2026-06-20 06:58:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:58:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:58:00 INFO  触发cmd：20005
+2026-06-20 06:58:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:58:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:58:30 INFO  触发cmd：20005
+2026-06-20 06:59:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:59:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:59:00 INFO  触发cmd：20005
+2026-06-20 06:59:29 ERROR rankBossTimeOut 1001 
+2026-06-20 06:59:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 06:59:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 06:59:30 INFO  触发cmd：20005
+2026-06-20 07:00:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 07:00:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 07:00:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 07:00:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 07:00:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 07:00:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 07:00:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 07:00:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 07:00:00 INFO  触发cmd：20001
+2026-06-20 07:00:00 INFO  触发cmd：20005
+2026-06-20 07:00:00 INFO  HttpSender.socket：127.0.0.1:19202 GET /?cmd=10012&signature=c18c989c08dea6f64754a0d42eb61183 HTTP/1.1
+
+2026-06-20 07:00:00 INFO  触发cmd：10012
+2026-06-20 07:00:00 INFO  触发cmd：20003
+2026-06-20 07:00:00 INFO  HttpServerHandler.channelRead0:cmd=10012,signature=c18c989c08dea6f64754a0d42eb61183,
+2026-06-20 07:00:00 ERROR destiny rank refresh 
+2026-06-20 07:00:01 INFO  ProcessingHttpEvents.trigger.income.cmd:10012 method:
+2026-06-20 07:00:02 DEBUG ProcessingHttpEvents.trigger.cmd:10012 method: spendTime:801 p:{cmd=[10012], signature=[c18c989c08dea6f64754a0d42eb61183]}
+2026-06-20 07:00:29 ERROR rankBossReBorn 1001 
+2026-06-20 07:00:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 07:00:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 07:00:30 INFO  触发cmd：20005
+2026-06-20 07:01:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 07:01:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 07:01:00 INFO  触发cmd：20005
+2026-06-20 18:05:25 INFO  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@61064425: startup date [Sat Jun 20 18:05:25 EET 2026]; root of context hierarchy
+2026-06-20 18:05:25 INFO  Loading XML bean definitions from class path resource [webgame/beans/server-beans.xml]
+2026-06-20 18:05:25 INFO  Loading XML bean definitions from class path resource [webgame/beans/mysql-beans.xml]
+2026-06-20 18:05:25 INFO  Loading XML bean definitions from class path resource [webgame/beans/service-beans.xml]
+2026-06-20 18:05:25 INFO  Loading XML bean definitions from class path resource [webgame/beans/mysql-beans.xml]
+2026-06-20 18:05:25 INFO  Loading XML bean definitions from class path resource [webgame/beans/data-beans.xml]
+2026-06-20 18:05:26 INFO  Loading properties file from class path resource [webgame/props/webgame.properties]
+2026-06-20 18:05:26 INFO  Loading properties file from class path resource [webgame/props/mysql.properties]
+2026-06-20 18:05:26 INFO  Loading properties file from class path resource [webgame/props/redis.properties]
+2026-06-20 18:05:26 INFO  Loading properties file from class path resource [version.properties]
+2026-06-20 18:05:26 DEBUG 加载配置文件 
+2026-06-20 18:05:26 DEBUG key -> platform, value -> test 
+2026-06-20 18:05:26 DEBUG key -> businessThreadCount, value -> 10 
+2026-06-20 18:05:26 DEBUG key -> svn, value -> 32883 
+2026-06-20 18:05:26 DEBUG key -> jdbc.url, value -> jdbc:mysql://127.0.0.1:3306/sanguo_game2?useUnicode=true&characterEncoding=utf8 
+2026-06-20 18:05:26 DEBUG key -> secretKey, value -> 5Jqxjo10Yl2ElQCwJm 
+2026-06-20 18:05:26 DEBUG key -> so.backlog, value -> 128 
+2026-06-20 18:05:26 DEBUG key -> url, value -> http://127.0.0.1:8080/ 
+2026-06-20 18:05:26 DEBUG key -> redis.testOnBorrow, value -> true 
+2026-06-20 18:05:26 DEBUG key -> serverId, value -> 10001 
+2026-06-20 18:05:26 DEBUG key -> redis.maxTotal, value -> 600 
+2026-06-20 18:05:26 DEBUG key -> serverName, value -> å°æ¸¸æ2æ 
+2026-06-20 18:05:26 DEBUG key -> logserver.isOpen, value -> false 
+2026-06-20 18:05:26 DEBUG key -> redis.port, value -> 6379 
+2026-06-20 18:05:26 DEBUG key -> jmxPort, value -> 19302 
+2026-06-20 18:05:26 DEBUG key -> redis.db, value -> 14 
+2026-06-20 18:05:26 DEBUG key -> redis.timeout, value -> 5000 
+2026-06-20 18:05:26 DEBUG key -> logserver.port, value -> 6000 
+2026-06-20 18:05:26 DEBUG key -> jdbc.user, value -> root 
+2026-06-20 18:05:26 DEBUG key -> keystorePass, value ->  
+2026-06-20 18:05:26 DEBUG key -> characterEncoding, value -> UTF-8 
+2026-06-20 18:05:26 DEBUG key -> logicRmi.port, value -> 17005 
+2026-06-20 18:05:26 DEBUG key -> debug, value -> true 
+2026-06-20 18:05:26 DEBUG key -> wss, value -> false 
+2026-06-20 18:05:26 DEBUG key -> dataLocation, value -> cn 
+2026-06-20 18:05:26 DEBUG key -> useUnicode, value -> true 
+2026-06-20 18:05:26 DEBUG key -> redis.pass, value -> e5968b5bd4f916e4 
+2026-06-20 18:05:26 DEBUG key -> jmxPass, value -> g6UoONwr6joi1ApG 
+2026-06-20 18:05:26 DEBUG key -> appId, value -> 100962 
+2026-06-20 18:05:26 DEBUG key -> jks, value -> sanguo-lb1.linlongyx.com 
+2026-06-20 18:05:26 DEBUG key -> so.keepalive, value -> true 
+2026-06-20 18:05:26 DEBUG key -> http.port, value -> 19202 
+2026-06-20 18:05:26 DEBUG key -> jdbc.driverClassName, value -> com.mysql.jdbc.Driver 
+2026-06-20 18:05:26 DEBUG key -> cchId, value -> 392 
+2026-06-20 18:05:26 DEBUG key -> workerThreadCount, value -> 14 
+2026-06-20 18:05:26 DEBUG key -> bossThreadCount, value -> 1 
+2026-06-20 18:05:26 DEBUG key -> redis.host, value -> 127.0.0.1 
+2026-06-20 18:05:26 DEBUG key -> logserver.host, value -> 127.0.0.1 
+2026-06-20 18:05:26 DEBUG key -> openTime, value -> 2017-09-02 00:00:00 
+2026-06-20 18:05:26 DEBUG key -> logserver.dataPath, value -> ./log 
+2026-06-20 18:05:26 DEBUG key -> wordLocation, value -> cn 
+2026-06-20 18:05:26 DEBUG key -> ws.port, value -> 19102 
+2026-06-20 18:05:26 DEBUG key -> jdbc.password, value -> X7kR9mP2qN5wL8jZ 
+2026-06-20 18:05:26 DEBUG key -> logicRmi.cmport, value -> 17006 
+2026-06-20 18:05:26 DEBUG key -> path, value -> webgame/platform/ 
+2026-06-20 18:05:26 DEBUG key -> rmi.url, value -> rmi://127.0.0.1:19850/crossRankRMI 
+2026-06-20 18:05:26 DEBUG key -> tag, value -> 24b0d14d02f7970e270d2b70dfab4ea62fc2390a 
+2026-06-20 18:05:26 DEBUG key -> logicRmi.host, value -> 127.0.0.1 
+2026-06-20 18:05:26 DEBUG key -> jmxName, value -> llyx-sanguo 
+2026-06-20 18:05:26 DEBUG key -> crossUrl, value -> wss://sanguo-lb1.linlongyx.com:5003/ws 
+2026-06-20 18:05:26 DEBUG key -> redis.maxWait, value -> 10000 
+2026-06-20 18:05:26 DEBUG key -> version, value -> 1.1000 
+2026-06-20 18:05:26 DEBUG key -> httpSwitch, value -> false 
+2026-06-20 18:05:26 DEBUG key -> ws, value -> true 
+2026-06-20 18:05:26 DEBUG key -> logicRmi.serviceName, value -> crossRankLogicRMI 
+2026-06-20 18:05:26 DEBUG key -> redis.maxIdle, value -> 300 
+2026-06-20 18:05:26 INFO  {dataSource-1} inited
+2026-06-20 18:05:26 INFO  Loaded JDBC driver: com.mysql.jdbc.Driver
+2026-06-20 18:05:28 ERROR LogicRmiManager::publish rmi service url: {} rmi://127.0.0.1:17005/crossRankLogicRMI 
+2026-06-20 18:05:37 ERROR ContinuityParameter {1={"actId":1,"startTime":1504818000,"endTime":1504904400,"closeTime":0}, 2={"actId":2,"startTime":1504558800,"endTime":1505163600,"closeTime":0}, 3={"actId":3,"startTime":1551733200,"endTime":1552337999,"closeTime":0}} 
+2026-06-20 18:05:38 DEBUG {conn-10004, pstmt-20016} enter cache
+2026-06-20 18:05:38 DEBUG {conn-10004, pstmt-20017} enter cache
+2026-06-20 18:05:38 ERROR update group Pre:update tb_group set id=10001000000 + id where id != 0 and id<=10001000000; 
+2026-06-20 18:05:38 ERROR update groupMember Pre:update tb_groupMember set id=10001000000 + id where id != 0 and id<=10001000000; 
+2026-06-20 18:05:38 ERROR ArenaRankError 10001000231 10001000167 3001 
+2026-06-20 18:05:38 ERROR ArenaRankError 10001000167 10001000321 3001 
+2026-06-20 18:05:38 ERROR ArenaRankError 10001000321 10001000233 3001 
+2026-06-20 18:05:38 ERROR ArenaRankError 10001000233 10001000292 3001 
+2026-06-20 18:05:38 DEBUG server open days: 3214, rankAct id: 8, state: Expire 
+2026-06-20 18:05:38 DEBUG server open days: 3214, rankAct id: 9, state: Expire 
+2026-06-20 18:05:38 DEBUG server open days: 3214, rankAct id: 10, state: Expire 
+2026-06-20 18:05:38 DEBUG server open days: 3214, rankAct id: 11, state: Expire 
+2026-06-20 18:05:38 DEBUG server open days: 3214, rankAct id: 12, state: Expire 
+2026-06-20 18:05:38 DEBUG server open days: 3214, rankAct id: 13, state: Expire 
+2026-06-20 18:05:38 DEBUG server open days: 3214, rankAct id: 14, state: Expire 
+2026-06-20 18:05:40 WARN  Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x36709f53]'
+2026-06-20 18:05:40 WARN  Unknown channel option 'SO_KEEPALIVE' for channel '[id: 0x8cd44f17]'
+2026-06-20 18:05:40 INFO  Using default implementation for ThreadExecutor
+2026-06-20 18:05:40 INFO  Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-06-20 18:05:40 INFO  Quartz Scheduler v.1.8.6 created.
+2026-06-20 18:05:40 INFO  Registering Quartz Job Initialization Plug-in.
+2026-06-20 18:05:40 INFO  RAMJobStore initialized.
+2026-06-20 18:05:40 INFO  Scheduler meta-data: Quartz Scheduler (v1.8.6) 'AUTO' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-06-20 18:05:40 INFO  Quartz scheduler 'AUTO' initialized from default resource file in Quartz package: 'quartz.properties'
+2026-06-20 18:05:40 INFO  Quartz scheduler version: 1.8.6
+2026-06-20 18:05:40 DEBUG Utilizing schema packaged in local quartz distribution jar.
+2026-06-20 18:05:40 INFO  Parsing XML file: quartz_jobs.xml with systemId: quartz_jobs.xml
+2026-06-20 18:05:40 DEBUG Found 0 delete job group commands.
+2026-06-20 18:05:40 DEBUG Found 0 delete trigger group commands.
+2026-06-20 18:05:40 DEBUG Found 0 delete job commands.
+2026-06-20 18:05:40 DEBUG Found 0 delete trigger commands.
+2026-06-20 18:05:40 DEBUG Directive 'overwrite-existing-data' not specified, defaulting to true
+2026-06-20 18:05:40 DEBUG Directive 'ignore-duplicates' not specified, defaulting to false
+2026-06-20 18:05:40 DEBUG Found 1 job definitions.
+2026-06-20 18:05:40 DEBUG Parsed job definition: JobDetail 'AUTO.JOBS':  jobClass: 'com.linlongyx.sanguo.webgame.quartz.QuartzJob isStateful: false isVolatile: false isDurable: false requestsRecovers: false
+2026-06-20 18:05:40 DEBUG Found 11 trigger definitions.
+2026-06-20 18:05:40 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10000':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 18:05:40 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10001':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 18:05:40 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10002':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 18:05:40 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10010':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 18:05:40 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10011':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 18:05:40 DEBUG Parsed trigger definition: Trigger 'DEFAULT.10012':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 18:05:40 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20001':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 18:05:40 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20003':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 18:05:40 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20004':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 18:05:40 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20005':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 18:05:40 DEBUG Parsed trigger definition: Trigger 'DEFAULT.20006':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: null
+2026-06-20 18:05:40 INFO  Adding 1 jobs, 11 triggers.
+2026-06-20 18:05:40 INFO  Adding job: AUTO.JOBS
+2026-06-20 18:05:40 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10000
+2026-06-20 18:05:40 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10001
+2026-06-20 18:05:40 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10002
+2026-06-20 18:05:40 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10010
+2026-06-20 18:05:40 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10011
+2026-06-20 18:05:40 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.10012
+2026-06-20 18:05:40 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20001
+2026-06-20 18:05:40 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20003
+2026-06-20 18:05:40 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20004
+2026-06-20 18:05:40 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20005
+2026-06-20 18:05:40 DEBUG Scheduling job: AUTO.JOBS with trigger: DEFAULT.20006
+2026-06-20 18:05:40 INFO  Scheduler AUTO_$_NON_CLUSTERED started.
+2026-06-20 18:05:41 DEBUG Reading descriptors ( dom ) 35
+2026-06-20 18:05:41 DEBUG Using existing MBeanServer 0
+2026-06-20 18:05:41 DEBUG default constructor
+2026-06-20 18:05:41 DEBUG preRegister com.linlongyx.sanguo.webgame.service.LookUpService@2d8f2f3a onlineNum:Click=ShowDetail
+2026-06-20 18:05:41 DEBUG default constructor
+2026-06-20 18:05:41 DEBUG preRegister com.linlongyx.sanguo.webgame.service.JsonTableService@2024293c reload:Click=reloadJson
+2026-06-20 18:05:41 DEBUG default constructor
+2026-06-20 18:05:41 DEBUG preRegister com.linlongyx.core.utils.ChatUtil@7048f722 reload:Click=reloadSensitive
+2026-06-20 18:05:41 ERROR Started version:  110000 
+2026-06-20 18:05:41 DEBUG Checking for available updated version of Quartz...
+2026-06-20 18:05:41 DEBUG Quartz version update check failed: Server returned HTTP response code: 403 for URL: http://www.terracotta.org/kit/reflector?kitID=quartz&pageID=update.properties&id=-1062731413&os-name=Windows+10&jvm-name=Java+HotSpot%28TM%29+64-Bit+Server+VM&jvm-version=1.8.0_181&platform=amd64&tc-version=1.8.6&tc-product=Quartz&source=Quartz&uptime-secs=1&patch=UNKNOWN
+2026-06-20 18:06:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:06:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:06:00 INFO  触发cmd：20005
+2026-06-20 18:06:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:06:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:06:30 INFO  触发cmd：20005
+2026-06-20 18:07:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:07:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:07:00 INFO  触发cmd：20005
+2026-06-20 18:07:18 ERROR rankBossTimeOut 1001 
+2026-06-20 18:07:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:07:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:07:30 INFO  触发cmd：20005
+2026-06-20 18:08:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:08:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:08:00 INFO  触发cmd：20005
+2026-06-20 18:08:18 ERROR rankBossReBorn 1001 
+2026-06-20 18:08:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:08:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:08:30 INFO  触发cmd：20005
+2026-06-20 18:08:58 ERROR rankBossTimeOut 1002 
+2026-06-20 18:09:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:09:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:09:00 INFO  触发cmd：20005
+2026-06-20 18:09:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:09:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:09:30 INFO  触发cmd：20005
+2026-06-20 18:09:58 ERROR rankBossTimeOut 1001 
+2026-06-20 18:10:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:10:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:10:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:10:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:10:00 INFO  触发cmd：20003
+2026-06-20 18:10:00 INFO  触发cmd：20005
+2026-06-20 18:10:00 ERROR destiny rank refresh 
+2026-06-20 18:10:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:10:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:10:30 INFO  触发cmd：20005
+2026-06-20 18:10:38 ERROR rankBossTimeOut 1003 
+2026-06-20 18:10:58 ERROR rankBossReBorn 1001 
+2026-06-20 18:11:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:11:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:11:00 INFO  触发cmd：20005
+2026-06-20 18:11:28 ERROR rankBossReBorn 1002 
+2026-06-20 18:11:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:11:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:11:30 INFO  触发cmd：20005
+2026-06-20 18:12:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:12:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:12:00 INFO  触发cmd：20005
+2026-06-20 18:12:30 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:12:30 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:12:30 INFO  触发cmd：20005
+2026-06-20 18:12:38 ERROR rankBossTimeOut 1001 
+2026-06-20 18:13:00 DEBUG Producing instance of Job 'AUTO.JOBS', class=com.linlongyx.sanguo.webgame.quartz.QuartzJob
+2026-06-20 18:13:00 DEBUG Calling execute on job AUTO.JOBS
+2026-06-20 18:13:00 INFO  触发cmd：20005

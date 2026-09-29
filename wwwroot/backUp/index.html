@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>仙剑奇侠传</title>
+    <!-- 搜狗强制全屏 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no,minimal-ui"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="true" />
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait" />
+    <!-- QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="x5-page-mode" content="app">
+    <!-- 360强制全屏 -->
+    <meta name="360-fullscreen" content="true" />
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #ffffff;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+        .loading.g1 .t1 {
+            text-align: center;
+            margin-top: 0.7em;
+        }
+        .loading.g1 .t1 p {
+            margin: 0 0 0.24414063em;
+            font-size: 0.9em;
+            font-family: "Microsoft YaHei";
+            color: #573b3b;
+        }
+        .loading.g1 .t1 p span {
+            color: #efd332;
+            font-size: 1.2em;
+        }
+        .loading.g1 .t1 p.blue {
+            color: #00c0ff;
+        }
+        .pic1 {
+            background: url("module/loading/index.jpg?v=20170901") no-repeat;
+            /*width: 20em;
+            height: 12em;*/
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-position: center;
+            margin: 0 auto;
+            position: relative;
+            /*top:2%;*/
+            /*margin-top: 20%;*/
+        }
+        .loading .loading-progress {
+            margin-top: 8vh;
+        }
+        .loading .loading-progress-bar {
+            width: 20em;
+            height: 0.7em;
+            background: url("module/loading/bar.png?v=20170901") no-repeat;
+            margin: 0 auto;
+            background-size:20em 0.7em;
+            margin-top: 0.96em;
+        }
+        .loading .loading-progress-hw{
+            width:20em;
+            height: 1.4em;
+            background: url("module/loading/bar_top.png?v=20170901") no-repeat;
+            margin: 0 auto;
+            background-size: contain;
+            position: relative;
+            top:-93%;
+        }
+        .loading .loading-progress-finish {
+            width: 0;
+            height: 0.7em;
+            background: url("module/loading/bar_pro.png?v=20170901") no-repeat;
+            margin-left: 0.02em;
+            position: relative;
+            background-size:20em 0.7em;
+            top:2%;
+        }
+        .loading .loading-progress-effect{
+            width:10em;
+            height: 16em;
+            background: url("module/loading/bar_effect.png?v=20170901") no-repeat; 
+            margin-left: -3.4em;
+            position: relative;
+            top:-180%;            
+        }
+        .loading .loading-into-info{
+            color: #fbfafa;
+            position: absolute;
+            top: 0.625em;
+            right: 0.625em;
+            width: 12.5em;
+            height: 6.5625em;
+            overflow: hidden;
+        }
+        .loading .loading-into-info-list{
+            position: relative;
+            text-align: left;
+            top: 5em;
+        }
+        .loading .loading-into-info-list span{
+            font-size: 1em;
+        }
+    </style>
+    <script src="https://h5game.shengli.com/js/cmge_h5game_v1.js?v=20170901"></script>
+</head>
+
+<body onload="ready()">
+<div class="loading g1" id='loadingUi' style='overflow: hidden; margin: auto;width: 100%;height: 100%;position:absolute;z-index:2;background-color: white;'>
+<div class="pic1"></div>
+<div id="prossDiv" style="display: none;width: 100%;height: 100%;position:relative;top:-30%;">
+<div class="loading-progress">
+    <div class="loading-progress-bar">
+        <div class="loading-progress-finish" id='loadingBar'></div>
+        <!--<div class="loading-progress-hw"></div>-->
+        <div class="loading-progress-effect" id="effect"></div>
+    </div>
+</div>
+<div class="t1" style="position:relative;bottom:8%;">
+    <p class="006eff">正在进入高清仙剑游戏世界……</p>
+</div>
+<div class="loading-into-info">
+    <div class="loading-into-info-list">
+    </div>
+</div>
+</div>
+</div>
+<div style="margin: auto;width: 100%;height: 100%;background-color: black;" class="egret-player" data-entry-class="Main" data-orientation="auto" data-scale-mode="showAll" data-frame-rate="30" data-content-width="480"
+data-content-height="800" data-show-paint-rect="false" data-multi-fingered="2" data-show-fps="false" data-show-log="false"
+data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+</div>
+<script src="libs/fingerprint/fingerprint2.js"></script>
+<script egret="lib" src="libs/jszip/jszip.min.js"></script>
+<!-- <script egret="lib" src="libs/vconsole/vconsole.min.js"></script>-->
+<script>
+
+    isReadyOver = false;
+    userOnlyId = "";
+
+    function ready() {
+        var progressInterID;
+        window["platform"] = "egret";
+        var loadingUi = document.getElementById('loadingUi');
+        var lbar = document.getElementById('loadingBar');
+        var t1 = document.getElementsByClassName("t1")[0].firstElementChild;
+        var effect = document.getElementById('effect');
+        document.getElementById('prossDiv').style.display = "block";
+        var loadpercent = 0;
+        var loadpercent1 = 0;
+        var maxWidth = 356;
+        var percent = 0.6;
+        var percent1 = 0.1;
+        var tempTime = 0;
+        var rateTime = 10;
+        var lbIndex = 0;
+        var showLbList = ["正在进入高清仙剑游戏世界……","首次加载游戏耗时较长，请耐心等待","如长时间无法加载，请尝试刷新网页"];
+        if (location.search.search("login_type=guest") > 0) {
+            var pic1 = document.getElementsByClassName("pic1")[0];
+            pic1.className = "pic2";
+            var pic1 = document.getElementsByClassName("loading-progress")[0];
+            pic1.className = "loading-progress1";
+        }
+        // var prefixStr = "每分钟就会爆发<span>8次</span>大规模团战";
+        var prefixStr = showLbList[lbIndex];
+
+        overLoad = function () {
+            console.log("index overLoad");
+            clearInterval(progressInterID);
+            effect.style.visibility = 'hidden';
+            lbar.style.width = "99.5%";
+            t1.innerHTML = prefixStr;
+            if (loadingUi.parentNode)
+                loadingUi.parentNode.removeChild(loadingUi);
+        }
+
+        var tick = function () {
+            tempTime += rateTime;
+            if (tempTime >= 1000) {
+                // prefixStr = "还有<span>5秒</span>即可进入游戏";
+                lbIndex ++ ;
+                if(lbIndex > 2)
+                    lbIndex = 0;
+                prefixStr = showLbList[lbIndex];
+                tempTime = 0;
+            }
+            loadpercent += percent;
+            if (loadpercent > 100) {
+                loadpercent = isReadyOver ? 100 : 0;
+            }
+            loadpercent1 += percent1;
+            if (loadpercent1 >= 100) {
+                loadpercent1 = 100;
+                if (isReadyOver) {
+                    overLoad();
+                    return;
+                }
+            } else if (isReadyOver) {
+                percent = 3;
+                percent1 = 2;
+            }
+            var targetPercent = loadpercent1 >= 99.5 ? 99.5 : loadpercent1;
+            effect.style.left = targetPercent + "%";
+            lbar.style.width = targetPercent + "%";
+            // t1.innerHTML = prefixStr + "（" + Math.floor(loadpercent1) + "%）";
+            t1.innerHTML = prefixStr ;
+        }
+
+
+        setTimeout(function () {
+            progressInterID = setInterval(tick, rateTime);
+        }, 100);
+    }
+    //加载egret的引擎库
+    // try {
+    //     if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i))
+    //     {
+    //         console.info("手机平台，加载vconsole文件");
+    //         loadZip("./libs/vconsole/vconsole.cfg", function (zip) {
+    //             createScript(zip, "vconsole.min.js");
+    //         });
+    //     }
+        //console.time("zip耗时:");
+    
+        loadZip("./libs/egret.cfg", function (zip) {
+            var files = ["egret.min.js", "egret.web.min.js", "game.min.js", "res.min.js", "tween.min.js", "socket.min.js"];
+            for (var i = 0; i < files.length; i++) {
+                createScript(zip, files[i]);
+            }
+            //加载游戏代码
+            loadZip("./main.cfg?v=1504671257974", function (zip) {
+                createScript(zip, "main.min.js");
+                // console.ee
+                //全部加载完成，启动游戏
+                startEgret();
+            });
+        });
+    // }
+    // catch (e) {
+    //     //一个个加载文件
+    //     console.error("jszip解压文件报错，进行普通文件加载");
+    // }
+
+    function loadZip(url, callBack) {
+        var xhrZip = new XMLHttpRequest();
+        xhrZip.open("GET", url, true);
+        xhrZip.responseType = "arraybuffer";
+        xhrZip.addEventListener("load", function (oEvent) {
+            var arrayBuffer = xhrZip.response; // 注意:不是oReq.responseText
+            if (!arrayBuffer) {
+                console.log(url + "解析异常:" + xhrZip);
+                throw new Error("zip异常");
+            }
+            callBack(new JSZip(arrayBuffer));
+        });
+        xhrZip.send(null);
+    }
+    function createScript(zip, file) {
+        //解压出来变成script脚本
+        var text = zip.file(file).asText();
+        var script = document.createElement("script");
+        script.setAttribute("type", "text/javascript");
+        script.text = text;
+        document.body.appendChild(script);
+        document.body.removeChild(script);
+    }
+    function startEgret() {
+        //结束index的loading
+        console.log("全部文件都加载完成啦");
+        // isOver = true;
+        // overLoad();
+
+
+        if (!window.onMenuShareWechat) {
+            window.onMenuShareWechat = function () {
+                console.log("客户端自己模拟onMenuShareWechat");
+            }
+        }
+        var userAgent = navigator.userAgent;
+        console.log("userAgent:" + userAgent);
+        new Fingerprint2({ excludeJsFonts: true, excludeWebGL: true, excludeCanvas: true }).get(function (key, value) {
+            console.info(key);
+            // console.log(value);
+            userOnlyId = key;
+        });
+        //华为手机，并且不是UC浏览器
+        //不是chrome / firefox
+        if (userAgent.indexOf("hrome") == -1 && userAgent.indexOf("irefox") == -1 && userAgent.indexOf("ogou") == -1) {
+            //有些手机不是高清视网膜的话，设置retina为true会有显示异常的问题
+            //华为的特殊处理,避开华为的默认浏览器
+            if (userAgent.indexOf("HUAWEILON-AL00") != -1 || userAgent.indexOf("HUAWEIEVA") != -1) {
+                console.log("HUAWEIEVA特殊处理");
+                egret.runEgret({ renderMode: "webgl", audioType: 0 });
+            }
+            else {
+                console.log("正常跑白鹭程序啦");
+                egret.runEgret({ renderMode: "webgl", audioType: 0, screenAdapter: null, antialias: false, retina: true });
+            }
+        }
+        else {
+            console.log("正常跑白鹭程序啦");
+            egret.runEgret({ renderMode: "webgl", audioType: 0, screenAdapter: null, antialias: false, retina: true });
+        }
+    }
+</script>
+</body>
+
+</html>

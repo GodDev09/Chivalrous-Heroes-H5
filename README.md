@@ -424,27 +424,44 @@ Repo dùng **Git LFS** cho asset binary. Cấu hình ở `.gitattributes`.
 
 ### Phân bố
 
+Tính theo dung lượng file (raw):
+
 | | Dung lượng | Số file |
 |---|---|---|
-| **Git LFS** | 764,1 MB | 10.772 |
-| **Git thường** | 136,6 MB | 16.411 |
-| **Tổng** | 900,8 MB | 27.183 |
+| **Git LFS** | 1.072,0 MB | 11.600 |
+| **Git thường** | 1.292,3 MB | 19.356 |
+| **Tổng** | **2.364,2 MB** (2,31 GB) | **30.956** |
 
-LFS chiếm **84,8%** dung lượng repo.
+Nhưng **quota GitHub đếm theo object unique**, không phải raw. Repo này trùng lặp rất nhiều
+(`game/`, `game2/`, `center/` có `lib/` và `data/cn/` y hệt nhau; `Java/jdk.../jre/lib` trùng
+`Java/jre.../lib`). Đo thực tế trên commit đầu: 10.772 file LFS → **7.093 object unique,
+490 MB** (dedup 36%).
+
+| | Raw | Unique thực tế |
+|---|---|---|
+| LFS commit "init project" (core project) | 764 MB | **490 MB** — đã đo |
+| LFS thêm từ `Java/` + `phpstudy_pro/` | 306 MB | ~180–300 MB — ước tính sau dedup jdk/jre |
+| **LFS tổng dự kiến** | 1.072 MB | **~670–796 MB** ✅ dưới quota Free 1 GB |
+
+Con số này đã tính cả `phpstudy_pro/`, `Java/`, database MySQL và log — xem §13.
 
 ### Đưa vào LFS
 
-| Loại | Dung lượng | Ghi chú |
+| Loại | Dung lượng (raw) | Ghi chú |
 |---|---|---|
-| `*.png` | 346 MB / 9.338 file | Asset game, lớn nhất |
-| `*.jar` | 173 MB / 201 file | `tools.jar` 17,4 MB × 3 |
-| `*.jpg` `*.jpeg` `*.gif` `*.bmp` `*.webp` `*.tga` `*.ico` | 62 MB | |
-| `*.psd` | 36 MB / 22 file | File nguồn art — cân nhắc gitignore nếu không cần |
+| `*.jar` | 477 MB / 935 file | 201 jar ở `game/game2/center/lib` (3 bản y hệt → ~58 MB unique) + 733 jar trong `Java/` JDK+JRE |
+| `*.png` | 346 MB / 9.338 file | Asset game |
 | 5 file JSON chỉ định theo path | 85 MB | `wwwroot/config/cfg.json`, `wwwroot/config/cfg/cfg.json`, `**/webgame/data/cn/monster.json` |
+| `*.jpg` `*.jpeg` `*.gif` `*.bmp` `*.webp` `*.tga` `*.ico` | 62 MB | |
+| `*.psd` | 36 MB / 22 file | File nguồn art |
 | `*.min.js` | 19 MB | Bundle đã minify, không diff được |
 | Font (`ttf/otf/eot/woff/woff2`) | 9,5 MB | |
 | Audio (`mp3/ogg/wav/m4a`) | 4 MB | |
 | `*.bin` `*.swf` `*.fla` | nhỏ | Asset đóng gói Egret |
+
+> **Đừng đổi dòng `*.jar` trong `.gitattributes`.** Jar đã được commit ở dạng LFS pointer
+> từ commit "init project". Bỏ nó khỏi LFS sẽ buộc phải chạy `git add --renormalize` trên
+> 27.000 file và rewrite history, mà không tiết kiệm được gì vì quota vẫn dưới 1 GB.
 
 ### Cố ý KHÔNG đưa vào LFS
 
@@ -452,30 +469,33 @@ LFS chiếm **84,8%** dung lượng repo.
 |---|---|
 | `*.json` (trừ 5 file trên) | Là **cấu hình gameplay sửa tay thường xuyên** — cần `git diff`/merge |
 | `*.class` (19,7 MB / 6.094 file) | Trung bình ~3 KB/file. Pointer LFS 130 byte không tiết kiệm gì, chỉ thêm 6.094 LFS object |
+| `*.dll` `*.exe` `*.ibd` | Binary của `phpstudy_pro/` và `Java/`. Giữ ngoài LFS để không đội quota |
 | `*.svg` (9,9 MB / 3.131 file) | Là text |
 | `*.php` `*.js` `*.css` `*.ts` | Source code |
 
-### ⚠️ Cảnh báo quota GitHub
+### Quota GitHub
 
-Remote hiện tại: `github.com/GodDev09/Chivalrous-Heroes-H5`
+Remote: `github.com/GodDev09/Chivalrous-Heroes-H5` (**private**)
 
-| | GitHub Free | Repo này cần |
+| | GitHub Free | Repo này |
 |---|---|---|
-| LFS storage | 1 GB | 764 MB (vừa đủ, không còn chỗ tăng) |
-| LFS bandwidth | **1 GB / tháng** | **764 MB mỗi lần clone** |
+| Giới hạn cứng mỗi file | 100 MB | ✅ File lớn nhất 76 MB (`ibdata1`) |
+| LFS storage | 1 GB | ⚠️ ~670–796 MB unique — vừa, còn ít chỗ tăng |
+| LFS bandwidth | 1 GB / tháng | ⚠️ ~700 MB mỗi lần clone → **1 lần clone/tháng** |
+| Dung lượng repo | khuyến nghị < 5 GB | ⚠️ 2,31 GB — push được nhưng chậm |
 
-Nghĩa là: **clone đầy đủ 1 lần là gần hết quota bandwidth của cả tháng.** Lần clone thứ hai
-sẽ bị GitHub chặn tải LFS object (`batch response: This repository is over its data quota`).
+Nếu cần clone nhiều hơn 1 lần/tháng, hoặc thêm asset làm LFS vượt 1 GB: mua Data Pack
+5 USD/tháng (50 GB storage + 50 GB bandwidth), hoặc dùng `GIT_LFS_SKIP_SMUDGE=1` khi clone
+(xem lệnh bên dưới).
 
-Lựa chọn:
-1. **Mua Data Pack** — 5 USD/tháng cho 50 GB storage + 50 GB bandwidth. Đơn giản nhất.
-2. **Giảm dung lượng LFS** — gitignore thêm `*.psd` (36 MB, file nguồn art không cần
-   runtime), `wwwroot/debugLibs/`, `wwwroot/svnres/` nếu trùng với `wwwroot/assets/`.
-3. **Tách repo** — `wwwroot/` (541 MB asset) thành repo riêng hoặc dùng CDN, repo chính
-   chỉ giữ server + web.
-4. **Không dùng LFS, chuyển sang backup thủ công** — repo 901 MB vẫn push được lên GitHub
-   (giới hạn cứng là 100 MB/file, file lớn nhất ở đây 19 MB), chỉ bị cảnh báo dung lượng.
-   Bỏ LFS: xoá `.gitattributes` và chạy `git lfs uninstall --local`.
+### Hai nhóm file bị loại
+
+`.gitignore` chỉ còn chặn 2 nhóm, vì GitHub chặn cứng file > 100 MB:
+
+| Nhóm | Dung lượng | Lý do |
+|---|---|---|
+| `wwwroot/tankherocdn/` | 244 MB / 4 file | **Rác của game khác.** Nội dung là game Cocos2d-x Lua (Tank Hero): `luascript/*.lua`, `allianceWar/`, `arImage/`, `homeBuilding/`. Project này chạy Egret + TypeScript, không có Lua runtime. Grep `tankhero` và `luascript` trên toàn bộ `.php`/`.js`/`.json`/`.html` → 0 reference. 2 file `full/luascript.zip` mỗi cái 121,3 MB |
+| `ib_logfile0`, `ib_logfile1` | 512 MB / 2 file | InnoDB redo log, mỗi file đúng 256 MB. MySQL tự sinh lại khi khởi động, nội dung đổi mỗi lần chạy → commit vào git chỉ làm repo phồng vô hạn. Phần còn lại của `data/` (`ibdata1`, `*.ibd`, `*.frm`) **vẫn được đưa lên** |
 
 ### Lệnh thường dùng
 
@@ -499,3 +519,63 @@ git lfs env
 > **Lưu ý:** mọi máy clone repo này **phải cài `git-lfs`** trước, nếu không sẽ nhận được
 > file pointer text 130 byte thay vì asset thật, và server/client sẽ không chạy.
 > Cài: https://git-lfs.com — kiểm tra bằng `git lfs version`.
+
+---
+
+## 13. 🔒 REPO NÀY PHẢI LUÔN LÀ PRIVATE
+
+> **Không được chuyển repo sang public. Không được thêm collaborator ngoài.**
+
+Theo quyết định của chủ project, toàn bộ project được đưa lên git **nguyên trạng**, bao gồm
+cả những thứ bình thường không bao giờ được commit. Đây là danh sách chính xác những gì
+đang nằm trong git history:
+
+### Mật khẩu plaintext
+
+| Nội dung | File |
+|---|---|
+| Mật khẩu MySQL `root` | `{game,game2,center}/target/classes/webgame/props/mysql.properties` |
+| Mật khẩu Redis | `.../props/redis.properties` |
+| Mật khẩu JMX (cho phép thực thi mã trên JVM) | `.../props/webgame.properties` |
+| `secretKey` | `center/target/classes/webgame/props/webgame.properties` |
+| Mật khẩu MySQL `root` | `Web/db.php`, `wwwroot/db.php`, `wwwroot/global/config.php` |
+| Mật khẩu MySQL `root` hardcode inline | `function/{buy,oauth/checkcdk,task}/index.php`, `Web/user/ajax/{role,task}.php`, `Web/user/api/role.php`, `wwwroot/pay/index.php` |
+
+### Dữ liệu người dùng thật
+
+`phpstudy_pro/Extensions/MySQL5.7.26/data/` là **database MySQL đang chạy thật**, không phải
+schema mẫu:
+
+| Database | Nội dung |
+|---|---|
+| `account` | `account.ibd` — username + mật khẩu người chơi · `gc_admin.ibd` — tài khoản admin · `gc_lognap.ibd` — log nạp tiền · `gc_logxu.ibd` — log tiêu xu |
+| `sanguo_game`, `sanguo_game2`, `sanguo_game3` | Dữ liệu nhân vật người chơi |
+| `mysql` | DB hệ thống — **bảng `user` chứa hash mật khẩu MySQL root** |
+| `web` | — |
+
+### Hệ quả
+
+1. **Push là không thu hồi được.** Xoá file rồi commit lại **không** xoá khỏi git history.
+   Các bản fork, clone, và cache của GitHub vẫn giữ. Muốn xoá thật phải
+   `git filter-repo` + force-push + xoá toàn bộ fork, hoặc xoá hẳn repo.
+2. **Nếu repo chuyển sang public**, bot quét secret sẽ index mật khẩu trong vài phút.
+   Bắt buộc đổi ngay toàn bộ mật khẩu MySQL/Redis/JMX + `secretKey`.
+3. **Thêm collaborator = cấp cho họ toàn bộ mật khẩu và dữ liệu người chơi.**
+4. GitHub Actions / CI đọc được repo cũng đọc được mật khẩu.
+
+### Nếu sau này muốn làm sạch
+
+```bash
+# 1. Đổi hết mật khẩu trước (mật khẩu trong history thành mật khẩu hết hạn → lộ cũng vô hại)
+change_mysql_pass.bat
+
+# 2. Sửa 7 file PHP hardcode credentials → include db.php (xem §9)
+
+# 3. Xoá khỏi history
+git filter-repo --path phpstudy_pro/Extensions/MySQL5.7.26/data --invert-paths
+git filter-repo --path-glob '**/props/*.properties' --invert-paths
+git push --force
+
+# 4. Backup database đúng cách, không commit file .ibd
+mysqldump -u root -p --all-databases > backup.sql
+```
