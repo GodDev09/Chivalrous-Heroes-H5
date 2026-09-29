@@ -1,0 +1,7 @@
+{"file":"bag.png","frames":{
+"bag_bg":{"x":1,"y":1,"w":236,"h":213,"offX":0,"offY":0,"sourceW":236,"sourceH":213},
+"bag_img1":{"x":1,"y":220,"w":505,"h":79,"offX":0,"offY":0,"sourceW":505,"sourceH":79},
+"bag_img2":{"x":243,"y":1,"w":149,"h":28,"offX":0,"offY":0,"sourceW":149,"sourceH":28},
+"bag_img3":{"x":243,"y":35,"w":49,"h":28,"offX":0,"offY":0,"sourceW":49,"sourceH":28},
+"bag_img4":{"x":398,"y":1,"w":64,"h":61,"offX":0,"offY":0,"sourceW":64,"sourceH":61},
+"bag_starimg":{"x":468,"y":1,"w":35,"h":21,"offX":0,"offY":0,"sourceW":35,"sourceH":21}}}

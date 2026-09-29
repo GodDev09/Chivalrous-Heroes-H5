@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html>
+
+
+<!-- Mirrored from h5tranhba.online:81/svnres/default/assets/wanba.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 May 2021 10:01:06 GMT -->
+<head>
+	<meta charset="utf-8">
+	<title>小小三国志</title>
+	<!-- 搜狗强制全屏 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no,minimal-ui"
+	/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="true" />
+	<meta name="browsermode" content="application">
+	<meta name="screen-orientation" content="portrait" />
+	<!-- QQ强制全屏 -->
+	<meta name="x5-orientation" content="portrait" />
+	<meta name="x5-fullscreen" content="true" />
+	<meta name="x5-page-mode" content="app">
+	<!-- 360强制全屏 -->
+	<meta name="360-fullscreen" content="true" />
+	<link rel="stylesheet" type="text/css" href="xinghui8a34.css?v=1.1370" />
+</head>
+
+<body>
+	<div class="loading g1" id='loadingUi' style="overflow: hidden; margin: auto;width: 100%;height: 100%;position:absolute;z-index:2;" >
+<div id="loadbgId" class="pic1"></div>
+<div id="prossDiv" style="display: block;width: 100%;height: 100%;position:relative;top:-30%;">
+<div class="loading-progress">
+	<div class="loading-progress-bar">
+		<div class="loading-progress-finish" id='loadingBar'></div>
+	</div>
+</div>
+<div class="t1">
+	<p class="006eff">正在进入高清三国游戏世界……</p>
+</div>
+<div class="loading-into-info">
+	<div class="loading-into-info-list">
+	</div>
+</div>
+</div>
+</div>
+<div id="screenTip" style="display: none;position: absolute;z-index: 999;width: 100%;height: 100%;top: 20px" >
+<img src="module/screentip3860-2.png?v=1">
+</div>
+<div id="mainDiv" style="margin:auto;width: 100%;height: 100%;" class="egret-player" data-entry-class="Main" data-orientation="auto" data-scale-mode="fixedWidth" data-frame-rate="30"
+data-content-width="672" data-content-height="1120" data-show-paint-rect="false" data-multi-fingered="2" data-show-fps="false"
+data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+</div>
+
+<script type="text/javascript" src="index.js"></script>
+<script>
+	var gameURLParams = {};
+	var OPEN_DATA;
+	var channelUID = 'wanba';
+	var main;
+	var initialed;
+
+	var urlStr = location.href.split("?")[1].split("&");
+	var urlObj = {};
+	for (var i = 0, len = urlStr.length; i < len; i++) {
+		var arr = urlStr[i].split("=");
+		urlObj[arr[0]] = arr[1];
+	}
+
+
+	/** 加载iphoneX适配css文件 */
+	function loadCSSFile() {
+		if (window.OPEN_DATA && window.OPEN_DATA.qua) {
+			var mobileType = window.OPEN_DATA.qua.os; //操作系统：AND-安卓，IPH-IOS，其它为null
+			var app = window.OPEN_DATA.qua.app; //平台：SQ-手Q，QZ-手空，WX-微信，其它为null
+		}
+
+		if (mobileType == "IPH" && (app == "SQ" || app == "QZ")) {
+			var fileref = document.createElement('link');
+			fileref.setAttribute('rel', 'stylesheet');
+			fileref.setAttribute('href', "css/iphonex5689.css?ran=" + Math.random());
+			document.getElementsByTagName('head')[0].appendChild(fileref);
+		}
+	}
+
+	//初始化参数
+	var initialParam = function () {
+		initialed = false;
+		//异步方式获取登录态
+		setTimeout(paramInited, 1000);
+		window.getOpenKey(function (d) {
+			paramInited();
+		});
+	}
+
+	var paramInited = function () {
+		if (initialed)
+			return;
+		initialed = true;
+		OPEN_DATA = window["OPEN_DATA"];
+		OPEN_DATA['urlObj'] = urlObj;
+		window.wanbaOpenData = OPEN_DATA;
+		window.isIphone = OPEN_DATA.isIOS;
+		console.log(OPEN_DATA);
+		if (OPEN_DATA.via && OPEN_DATA.via == "H5.LIMIXIU") {
+			channelUID = "limi";
+		}
+		loadBG();
+		loginCP();
+		loadMain();
+		if (OPEN_DATA.pf.indexOf('weixin') >= 0) {
+			window.addEventListener('orientationchange', checkScreen);
+			checkScreen();
+		}
+	}
+
+	//登录游戏后台
+	var loginCP = function () {
+		var zoneid = OPEN_DATA.platform;
+		var xhrLogin = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+		var loginUrl = 'https://login-xxsgzh5.rastargame.com/';
+		var constent = 'openid=' + OPEN_DATA.openid +
+			"&openkey=" + OPEN_DATA.openkey +
+			"&channelUID=" + channelUID +
+			"&pf=" + OPEN_DATA.pf +
+			"&zoneid=" + zoneid;
+		xhrLogin.open("GET-2.html", loginUrl + "/wanba/login?" + constent, true);
+		xhrLogin.onreadystatechange = function () {
+			if (xhrLogin.readyState == 4) { //验证成功
+				try {
+					var data = JSON.parse(xhrLogin.responseText);
+					console.info("校验返回：", data);
+					if (data.code == 1) {
+						gameURLParams['loginURL'] = loginUrl;
+						gameURLParams['channelUID'] = data.channelUID;
+						gameURLParams['openid'] = data.openid;
+						gameURLParams['loginTime'] = data.loginTime;
+						gameURLParams['myChannelUID'] = data.myChannelUID;
+						var tmp = data.cdn.lastIndexOf('http://h5tranhba.online:81/');
+						gameURLParams['zoneid'] = zoneid;
+						gameURLParams['cdn'] = data.cdn.substr(0, tmp + 1);
+						gameURLParams['session_key'] = data.session_key;
+						gameURLParams['sign'] = data.sign;
+						gameURLParams['control'] = '/wanba';
+						gameURLParams['wxVerify'] = data.close ? 1 : 0;
+						gameURLParams['sg_ver'] = window.sg_ver;
+						window.urlParam = gameURLParams;
+						tryEnterMain();
+						return
+					} else {
+						window.alert(data.msg)
+						window.location.reload(true);
+					}
+				} catch (err) {
+					window.alert(err.message)
+					window.location.reload(true);
+				}
+			}
+		}
+		xhrLogin.send();
+	}
+
+	//开始进入游戏准备
+	var loadMain = function () {
+		var xhrJs = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+		xhrJs.onreadystatechange = null;
+		xhrJs.open("GET-2.html", "./manifest.json?v=" + Math.random(), true);
+		xhrJs.addEventListener("load", function () {
+			var mainfest = JSON.parse(xhrJs.response);
+			var list = mainfest.initial.concat(mainfest.game);
+			//开始加载脚本
+			loadScript(list, function () {
+				console.info("全部文件加载完成");
+				egret.runEgret({
+					renderMode: "webgl",
+					audioType: 2,
+					calculateCanvasScaleFactor: function (context) {
+						console.log("egret.Capabilities.isMobile：" + egret.Capabilities.isMobile);
+						if (!egret.Capabilities.isMobile) {
+							return 2;
+						}
+						var backingStore = context.backingStorePixelRatio ||
+							context.webkitBackingStorePixelRatio ||
+							context.mozBackingStorePixelRatio ||
+							context.msBackingStorePixelRatio ||
+							context.oBackingStorePixelRatio ||
+							context.backingStorePixelRatio || 1;
+						return (window.devicePixelRatio || 1) / backingStore;
+					}
+				});
+				main = egret.lifecycle.stage.getChildAt(0);
+				tryEnterMain();
+			});
+		})
+		xhrJs.send();
+		//加载单个脚本
+		var loadSingleScript = function (src, callBack) {
+			var s = document.createElement("script");
+			s.async = false;
+			s.src = src;
+			s.addEventListener("load", function () {
+				s.parentNode.removeChild(s);
+				s.removeEventListener("load", arguments.callee, false);
+				if (callBack)
+					callBack();
+			}, false);
+			document.body.appendChild(s);
+		}
+		//加载所有脚本
+		var loadScript = function (list, callBack) {
+			var loaded = 0;
+			var loadNext = function () {
+				loadSingleScript(list[loaded], function () {
+					loaded++;
+					if (loaded >= list.length) {
+						callBack();
+					} else {
+						loadNext();
+					}
+				})
+			}
+			loadNext();
+		}
+	}
+
+	var tryEnterMain = function () {
+		if (main && window.urlParam) {
+			main.initialPlatform(hideLoading, window);
+		}
+	}
+
+	//加载页面背景图
+	var loadBG = function () {
+		var win_w = document.body.clientWidth;
+		var win_h = document.body.clientHeight;
+		console.info('client width and height:', win_w, win_h);
+
+		var div = document.getElementById("loadbgId");
+		//div.style.background = "url(module/loading/" + channelUID + "_html.jpg)";
+		if (!OPEN_DATA.isMobile && (win_w > .8 * win_h)) {
+			div.style.backgroundRepeat = "no-repeat";
+			div.style.backgroundPosition = "center";
+			div.style.backgroundSize = "contain";
+			div.style.position = "relative";
+		} else {
+			div.style.backgroundRepeat = "no-repeat";
+			div.style.backgroundPosition = "center";
+			div.style.backgroundSize = "100% 100%";
+			div.style.position = "relative";
+		}
+		div.style.width = "100%";
+		div.style.height = "100%";
+		div.style.margin = "0 auto";
+	}
+
+
+	var checkScreen = function () {
+		var iwidth, iheight;
+		var sw = window.screen.width;
+		var sh = window.screen.height;
+		if (sh > sw) {
+			var tem = sh
+			sh = sw;
+			sw = tem;
+		}
+		iwidth = sw;
+		iheight = sh;
+		var margin_toppx = iheight / 2 - 150
+		var margin_leftpx = iwidth / 2 - 163
+
+		var tip = document.getElementById("screenTip")
+		var gameCanvas = document.getElementById("mainDiv");
+		var loadingUi = document.getElementById("loadingUi");
+
+		if (window.orientation == 90 || window.orientation == -90) {
+			tip.style.display = "block"
+			tip.style.left = margin_leftpx + 'px'
+			tip.style.top = margin_toppx + 'px'
+			if (loadingUi) {
+				loadingUi.style.display = 'none';
+			}
+			gameCanvas.style.display = "none";
+		} else {
+			tip.style.display = "none"
+			if (loadingUi) {
+				loadingUi.style.display = 'block';
+			}
+			gameCanvas.style.display = "block"
+		}
+	}
+
+
+
+	loadCSSFile();
+	initialParam();
+
+
+</script>
+</body>
+
+
+<!-- Mirrored from h5tranhba.online:81/svnres/default/assets/wanba.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 May 2021 10:01:08 GMT -->
+</html>

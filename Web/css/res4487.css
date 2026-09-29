@@ -1,0 +1,186 @@
+@media only screen and (min-width: 1600px) {
+    .wrapper-out.home .wrapper .page-main main {
+        transform: scale(.9);
+        min-width: 850px;
+    }
+    .home footer {
+        position: fixed;
+        bottom: 0
+    }
+}
+
+@media only screen and (max-width: 1047px) {
+    .categoryNews .posts__tab li a {
+        padding: 5px 20px;
+    }
+    .wrapper-out.detail .wrapper,
+    .wrapper-out.categoryNews .wrapper {
+        background: url(../imgs_mobile/bg_list.jpg) no-repeat;
+        background-size: 100%;
+    }
+    .wrapper-out.detail,
+    .wrapper-out.categoryNews {
+        background: #d7e2f4;
+    }
+    .wrapper-out.home .wrapper {
+        background: url(../imgs_mobile/mobile-bg-tth.jpg) no-repeat center top;
+        background-size: 100%;
+    }
+    .wrapper-out.home.toi .wrapper {
+        background: url(../imgs_mobile/bg_home-t.jpg) no-repeat center top;
+        background-size: 100%;
+    }
+    .posts__tab li a:hover,
+    .posts__tab li a.active {
+        color: #fff;
+        border-bottom: 3px solid #fff
+    }
+    .home section.post_megry {
+        background: url(../imgs_mobile/bg_content.png) no-repeat top;
+        background-size: 100% 100%;
+    }
+    .home .posts__tab li.active {
+        background: url(../imgs_mobile/arrow.png) no-repeat center bottom;
+    }
+    .posts__list li .posts__post-title {
+        font-size: 2vw;
+        color: #fff;
+        background: url(../imgs_mobile/circle.png) no-repeat left center
+    }
+    #posts__view-all {
+        color: white;
+    }
+    .wrapper-out.home .wrapper .page-main--bot {
+        padding: 0;
+    }
+    .home #boxAudio .sound-video {
+        position: absolute;
+        width: 15%;
+        height: 10%;
+        top: 37%;
+        left: 85%;
+    }
+    .posts__tab li a {
+        font-size: 2.5vw;
+        padding: 1vw 0;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1047px) {}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper-out.home .wrapper .page-main main {
+        margin-top: 56vw !important;
+        margin-bottom: 5rem;
+        width: 100%;
+        max-width: 100%;
+    }
+    .navbar-brand {
+        margin-bottom: 0px;
+    }
+    .navbar-dark .navbar-toggler {
+        border: 0px;
+    }
+    .navbar-toggler {
+        font-size: 2.25rem;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        border-right: 0px;
+    }
+    .nav-item:first-child .nav-link::after {
+        content: '';
+        background: none;
+    }
+    #navbarSupportedContent {
+        padding-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 610px) and (max-width: 725px) {}
+
+@media only screen and (min-width: 480px) and (max-width: 609px) {}
+
+@media only screen and (max-width: 479px) {
+    .code_game {
+        display: none
+    }
+    .navbar-brand img {
+        width: 50%;
+    }
+    .home .banner {
+        width: 100%;
+    }
+    .posts__tab li a {
+        font-size: 3vw;
+        padding: 0;
+        font: unset;
+    }
+    .home .posts__tab li {
+        padding: 2vw .5vw;
+    }
+    .posts__list li .posts__post-title {
+        font-size: 3vw;
+    }
+    .home #boxAudio .sound-video {
+        width: 20%;
+        top: 21%;
+        left: 80%;
+    }
+    .wrapper-out.home .wrapper {
+        background-color: #697bb3;
+    }
+    .shortDesc {
+        height: calc(5*20px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 20px;
+    }
+    .posts__tab li a {
+        font: 14px/32px Arial;
+        margin-bottom: -5px;
+    }
+    .home section.post_megry {
+        width: 100vw
+    }
+    .detail .posts__tab li a,
+    .categoryNews .posts__tab li a {
+        padding: 0px 10px;
+        font-size: 12px;
+    }
+    .wrapper-out.detail .wrapper .page-header,
+    .wrapper-out.categoryNews .wrapper .page-header {
+        height: 100px
+    }
+    .wrapper-out.home .wrapper .page-main main {
+        margin-top: 45vh !important;
+    }
+    .wrapper-out.home .wrapper .page-main--bot {
+        padding-bottom: 3rem;
+    }
+    .footer {
+        width: 100%;
+    }
+    .footer p.Intro {
+        float: left;
+        line-height: 18px;
+        margin-top: 15px;
+        font-size: 8px;
+    }
+    iframe {
+        width: 100% !important;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+    .detail .posts__tab li a,
+    .categoryNews .posts__tab li a {
+        padding: 0px 6px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {}
+
+@media only screen and (max-width: 319px) {}
+
+@media only screen and (max-width: 220px) {}

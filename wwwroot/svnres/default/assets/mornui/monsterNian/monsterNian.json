@@ -1,0 +1,10 @@
+{"file":"monsterNian.png","frames":{
+"btn_nian":{"x":429,"y":1,"w":65,"h":272,"offX":0,"offY":0,"sourceW":65,"sourceH":272},
+"btn_nianadd":{"x":454,"y":281,"w":27,"h":27,"offX":0,"offY":0,"sourceW":27,"sourceH":27},
+"nian_img1":{"x":418,"y":281,"w":28,"h":99,"offX":0,"offY":0,"sourceW":28,"sourceH":99},
+"nian_img2":{"x":325,"y":175,"w":85,"h":308,"offX":0,"offY":0,"sourceW":85,"sourceH":308},
+"nian_mo":{"x":1,"y":1,"w":206,"h":166,"offX":0,"offY":0,"sourceW":206,"sourceH":166},
+"nian_mo1":{"x":1,"y":267,"w":315,"h":84,"offX":0,"offY":0,"sourceW":315,"sourceH":84},
+"nian_nu":{"x":215,"y":1,"w":206,"h":166,"offX":0,"offY":0,"sourceW":206,"sourceH":166},
+"nian_nu1":{"x":1,"y":175,"w":316,"h":84,"offX":0,"offY":0,"sourceW":316,"sourceH":84},
+"nian_taizi":{"x":1,"y":359,"w":250,"h":66,"offX":0,"offY":0,"sourceW":250,"sourceH":66}}}

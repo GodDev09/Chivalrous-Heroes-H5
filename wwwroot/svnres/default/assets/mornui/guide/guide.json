@@ -1,0 +1,4 @@
+{"file":"guide.png","frames":{
+"guide_cirle":{"x":0,"y":0,"w":128,"h":121,"offX":0,"offY":2,"sourceW":130,"sourceH":125},
+"guide_hand":{"x":140,"y":0,"w":93,"h":118,"offX":6,"offY":0,"sourceW":99,"sourceH":125},
+"guide_txt":{"x":0,"y":133,"w":147,"h":52,"offX":0,"offY":0,"sourceW":147,"sourceH":52}}}

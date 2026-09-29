@@ -1,0 +1,71 @@
+{
+    "frameRate": 10,
+    "name": "battleLoading",
+    "version": "5.5",
+    "compatibleVersion": "5.5",
+    "armature": [
+        {
+            "type": "Sheet",
+            "frameRate": 10,
+            "name": "Sprite",
+            "aabb": {
+                "x": -68.5,
+                "y": -83,
+                "width": 137,
+                "height": 166
+            },
+            "bone": [
+                {
+                    "name": "root"
+                }
+            ],
+            "slot": [
+                {
+                    "displayIndex": 1,
+                    "name": "sheetSlot",
+                    "parent": "root"
+                }
+            ],
+            "skin": [
+                {
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "display": [
+                                {
+                                    "name": "组 1"
+                                },
+                                {
+                                    "name": "组-2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "animation": [
+                {
+                    "duration": 2,
+                    "playTimes": 50,
+                    "name": "Sprite",
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "displayFrame": [
+                                {},
+                                {
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "defaultActions": [
+                {
+                    "gotoAndPlay": "Sprite"
+                }
+            ]
+        }
+    ]
+}

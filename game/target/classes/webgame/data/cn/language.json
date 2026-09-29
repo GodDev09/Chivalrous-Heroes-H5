@@ -1,0 +1,777 @@
+{
+	"101": {
+		"id": 101,
+		"text": "Game võ hiệp, treo máy thăng cấp đánh BOSS, hoan nghênh thiếu niên chinh chiến loạn thế!",
+		"serverParameter": ""
+	},
+	"102": {
+		"id": 102,
+		"text": "Có bất kỳ ý kiến vui lòng liên hệ fanpage!",
+		"serverParameter": ""
+	},
+	"103": {
+		"id": 103,
+		"text": "Thư hoan nghênh",
+		"serverParameter": ""
+	},
+	"104": {
+		"id": 104,
+		"text": "võ hiệp bá nghiệp, từ đó mở màn!",
+		"serverParameter": ""
+	},
+	"105": {
+		"id": 105,
+		"text": "Mở thú cưỡi",
+		"serverParameter": ""
+	},
+	"106": {
+		"id": 106,
+		"text": "Mở chức năng thú cưỡi",
+		"serverParameter": ""
+	},
+	"107": {
+		"id": 107,
+		"text": "Chúc mừng {playerName} đạt VIP{vipLevel}!",
+		"serverParameter": "playerName;vipLevel"
+	},
+	"108": {
+		"id": 108,
+		"text": "Chúc mừng {playerName} nạp lần đầu nhận x4 KNB!",
+		"serverParameter": "playerName"
+	},
+	"109": {
+		"id": 109,
+		"text": "Chúc mừng {playerName} mua quỹ trưởng thành!",
+		"serverParameter": "playerName"
+	},
+	"110": {
+		"id": 110,
+		"text": "Theo dõi có quà",
+		"serverParameter": ""
+	},
+	"111": {
+		"id": 111,
+		"text": "Cám ơn bạn đã theo dõi",
+		"serverParameter": ""
+	},
+	"112": {
+		"id": 112,
+		"text": "xóa nạp phản lợi",
+		"serverParameter": ""
+	},
+	"113": {
+		"id": 113,
+		"text": "Cám ơn bạn đã ủng hộ game trong lúc open beta, bạn được hoàn KNB, VIP, mốc nạp như sau",
+		"serverParameter": ""
+	},
+	"114": {
+		"id": 114,
+		"text": "Mở thần khí",
+		"serverParameter": ""
+	},
+	"115": {
+		"id": 115,
+		"text": "Chúc mừng nbạn đạt chương Thần khí, tặng bạn thẻ kích hoạt quỷ thần kiếm, chúc bạn chơi game vui vẻ!",
+		"serverParameter": ""
+	},
+	"201": {
+		"id": 201,
+		"text": "Chúc mừng {playerName} chiêu mộ tướng cam {fighterName}!",
+		"serverParameter": "playerName;fighterName"
+	},
+	"202": {
+		"id": 202,
+		"text": "Chúc mừng {playerName} chiêu mộ tướng đỏ {fighterName}!",
+		"serverParameter": "playerName;fighterName"
+	},
+	"203": {
+		"id": 203,
+		"text": "Chúc mừng {playerName} Chiêu mộ tướng hoàng kim {fighterName}!",
+		"serverParameter": "playerName;fighterName"
+	},
+	"204": {
+		"id": 204,
+		"text": "Chúc mừng {playerName} chiêu mộ tướng ám kim {fighterName}!",
+		"serverParameter": "playerName;fighterName"
+	},
+	"301": {
+		"id": 301,
+		"text": "Thưởng XH BOSS",
+		"serverParameter": ""
+	},
+	"302": {
+		"id": 302,
+		"text": "BOSS cấp {level}  bị đánh bại, mau nhận thưởng!",
+		"serverParameter": "level"
+	},
+	"303": {
+		"id": 303,
+		"text": "Thưởng XH BOSS TG",
+		"serverParameter": ""
+	},
+	"304": {
+		"id": 304,
+		"text": "Chúc mừng bạn XH {playerNum} BOSS TG, phần thưởng phát qua thư, mau đi nhận!",
+		"serverParameter": "playerNum"
+	},
+	"305": {
+		"id": 305,
+		"text": "Thưởng kích sát BOSS",
+		"serverParameter": ""
+	},
+	"306": {
+		"id": 306,
+		"text": "Chúc mừng bạn giết BOSS cấp {level}, thưởng phát qua thư",
+		"serverParameter": "level"
+	},
+	"307": {
+		"id": 307,
+		"text": "Thưởng chiếm BOSS dị tộc",
+		"serverParameter": ""
+	},
+	"308": {
+		"id": 308,
+		"text": "Chúc mừng bạn đánh lui BOSS cấp {level}, thưởng phát qua thư",
+		"serverParameter": "level"
+	},
+	"309": {
+		"id": 309,
+		"text": "BOSS dị tộc cấp {level} đã hồi sinh",
+		"serverParameter": "level"
+	},
+	"603": {
+		"id": 603,
+		"text": "{des}",
+		"serverParameter": "des"
+	},
+	"701": {
+		"id": 701,
+		"text": "Chúc mừng {playerName} đạt VIP{vipLevel}！",
+		"serverParameter": "playerName;vipLevel"
+	},
+	"702": {
+		"id": 702,
+		"text": "BOSS TG đã mở! Các lộ anh hùng hảo hán có thể tiến đến tiến đánh!",
+		"serverParameter": ""
+	},
+	"703": {
+		"id": 703,
+		"text": "Chúc mừng {playerName} Nhận pet cam {petName}！",
+		"serverParameter": "playerName;petName"
+	},
+	"704": {
+		"id": 704,
+		"text": "Chúc mừng {playerName} Nhận pet đỏ {petName}！",
+		"serverParameter": "playerName;petName"
+	},
+	"705": {
+		"id": 705,
+		"text": "Chúc mừng {playerName} Nhận pet vàng {petName}！",
+		"serverParameter": "playerName;petName"
+	},
+	"706": {
+		"id": 706,
+		"text": "Chúc mừng {playerName} nhận thú cưỡi cam {mountName}！",
+		"serverParameter": "playerName;mountName"
+	},
+	"707": {
+		"id": 707,
+		"text": "Chúc mừng {playerName} nhận thú cưỡi đỏ {mountName}！",
+		"serverParameter": "playerName;mountName"
+	},
+	"708": {
+		"id": 708,
+		"text": "Chúc mừng {playerName} nhận thú cưỡi vàng {mountName}！",
+		"serverParameter": "playerName;mountName"
+	},
+	"709": {
+		"id": 709,
+		"text": "Chúc mừng {playerName}đạt cấp 200!",
+		"serverParameter": "playerName"
+	},
+	"710": {
+		"id": 710,
+		"text": "Nhờ {playerName} bồi dưỡng, tướng tím {fighterName} đạt cấp 200!",
+		"serverParameter": "playerName;fighterName"
+	},
+	"711": {
+		"id": 711,
+		"text": "Nhờ {playerName} bồi dưỡng, tướng cam{fighterName} đạt cấp 200!",
+		"serverParameter": "playerName;fighterName"
+	},
+	"712": {
+		"id": 712,
+		"text": "Nhờ {playerName} bồi dưỡng, tướng đỏ {fighterName} đạt cấp 200!",
+		"serverParameter": "playerName;fighterName"
+	},
+	"713": {
+		"id": 713,
+		"text": "Nhờ {playerName} bồi dưỡng, tướng vàng {fighterName} đạt cấp 200!",
+		"serverParameter": "playerName;fighterName"
+	},
+	"714": {
+		"id": 714,
+		"text": "Chúc mừng {playerName} có tướng tím {fighterName} đạt max sao!",
+		"serverParameter": "playerName;fighterName"
+	},
+	"715": {
+		"id": 715,
+		"text": "Chúc mừng {playerName} có tướng cam{fighterName} đạt max sao!",
+		"serverParameter": "playerName;fighterName"
+	},
+	"716": {
+		"id": 716,
+		"text": "Chúc mừng {playerName} có tướng đỏ {fighterName} đạt max sao!",
+		"serverParameter": "playerName;fighterName"
+	},
+	"717": {
+		"id": 717,
+		"text": "Chúc mừng {playerName} có tướng vàng {fighterName} đạt max sao!",
+		"serverParameter": "playerName;fighterName"
+	},
+	"718": {
+		"id": 718,
+		"text": "Chúc mừng {playerName} trong đấu trường tăng lên hạng {playerNum}!",
+		"serverParameter": "playerName;playerNum"
+	},
+	"719": {
+		"id": 719,
+		"text": "Chúc mừng {playerName} có tướng đỏ {fighterName} đạt {num} sao!",
+		"serverParameter": "playerName;fighterName;num"
+	},
+	"720": {
+		"id": 720,
+		"text": "Chúc mừng {playerName} có tướng vàng {fighterName} đạt {num} sao!",
+		"serverParameter": "playerName;fighterName;num"
+	},
+	"721": {
+		"id": 721,
+		"text": "Chúc mừng {playerName} có tướng ám {fighterName} đạt {num} sao!",
+		"serverParameter": "playerName;fighterName;num"
+	},
+	"722": {
+		"id": 722,
+		"text": "Chúc mừng {playerName} có tướng ám {fighterName} đạt max sao!",
+		"serverParameter": "playerName;fighterName"
+	},
+	"723": {
+		"id": 723,
+		"text": "Nhờ {playerName} bồi dưỡng, tướng ám {fighterName} đạt cấp 200!",
+		"serverParameter": "playerName;fighterName"
+	},
+	"801": {
+		"id": 801,
+		"text": "Chúc mừng {playerName} trong nạp phản lợi nhận {num} KNB",
+		"serverParameter": "playerName;num"
+	},
+	"802": {
+		"id": 802,
+		"text": "{playerName} tiêu 1 KNB nhận {oneyuanName}",
+		"serverParameter": "playerName;oneyuanName"
+	},
+	"803": {
+		"id": 803,
+		"text": "{playerName} tiêu 3 KNB nhận {oneyuanName}",
+		"serverParameter": "playerName;oneyuanName"
+	},
+	"804": {
+		"id": 804,
+		"text": "{playerName} tiêu 8 KNB nhận {oneyuanName}",
+		"serverParameter": "playerName;oneyuanName"
+	},
+	"805": {
+		"id": 805,
+		"text": "{playerName} tiêu 12 KNB nhận {oneyuanName}",
+		"serverParameter": "playerName;oneyuanName"
+	},
+	"806": {
+		"id": 806,
+		"text": "{playerName} tiêu 18 KNB nhận {oneyuanName}",
+		"serverParameter": "playerName;oneyuanName"
+	},
+	"901": {
+		"id": 901,
+		"text": "Thông báo đổi tên",
+		"serverParameter": ""
+	},
+	"902": {
+		"id": 902,
+		"text": "Hảo hữu {oldName} đổi tên thành {newName}",
+		"serverParameter": "oldName;newName"
+	},
+	"903": {
+		"id": 903,
+		"text": "Nhờ giúp đỡ {militaryName}<clk=military#{playerId}>Tới ngay</clk>",
+		"serverParameter": "militaryName;playerId"
+	},
+	"904": {
+		"id": 904,
+		"text": "{blocName} chiêu mộ thành viên mới. <clk=army#{blocId}>Tham gia</clk>",
+		"serverParameter": "blocName;blocId"
+	},
+	"1101": {
+		"id": 1101,
+		"text": "Chuyển chủ guild",
+		"serverParameter": ""
+	},
+	"1102": {
+		"id": 1102,
+		"text": "Do chủ guild 7 ngày không online, chức vị chuyển cho",
+		"serverParameter": ""
+	},
+	"1103": {
+		"id": 1103,
+		"text": "Chuyển chủ guild",
+		"serverParameter": ""
+	},
+	"1104": {
+		"id": 1104,
+		"text": "Chức chủ guild chuyển nhượng cho {playerName}.",
+		"serverParameter": "playerName"
+	},
+	"1105": {
+		"id": 1105,
+		"text": "Trục xuất",
+		"serverParameter": ""
+	},
+	"1106": {
+		"id": 1106,
+		"text": "Bạn đã bị trục xuất khỏi guild {blocName}.",
+		"serverParameter": "blocName"
+	},
+	"1201": {
+		"id": 1201,
+		"text": "Thưởng XH {name} mở sv",
+		"serverParameter": "name"
+	},
+	"1202": {
+		"id": 1202,
+		"text": "Chúc mừng bạn trong mở sv {name} XH {rank}, thưởng phát qua thư",
+		"serverParameter": "name;rank"
+	},
+	"1203": {
+		"id": 1203,
+		"text": "Mở sv {name} thưởng",
+		"serverParameter": "name"
+	},
+	"1204": {
+		"id": 1204,
+		"text": "Đây là thưởng đạt mục tiêu mở sv {name}!",
+		"serverParameter": "name"
+	},
+	"1205": {
+		"id": 1205,
+		"text": "Mở sv {name} thưởng",
+		"serverParameter": "name"
+	},
+	"1206": {
+		"id": 1206,
+		"text": "Bạn hoạt động tích cực khi Mở sv {name}, mau nhận thưởng",
+		"serverParameter": "name"
+	},
+	"1701": {
+		"id": 1701,
+		"text": "Thưởng tổng kết đấu trường",
+		"serverParameter": ""
+	},
+	"1702": {
+		"id": 1702,
+		"text": "Bạn XH {rank} đấu trường, nhận thưởng như sau",
+		"serverParameter": "rank"
+	},
+	"1703": {
+		"id": 1703,
+		"text": "Thay đổi XH đấu trường",
+		"serverParameter": ""
+	},
+	"1704": {
+		"id": 1704,
+		"text": "{playerName} đánh bại bạn trong đấu trường, bạn XH {Num}",
+		"serverParameter": "playerName;Num"
+	},
+	"1901": {
+		"id": 1901,
+		"text": "Chúc mừng {playerName} mua thẻ tháng.",
+		"serverParameter": "playerName"
+	},
+	"1902": {
+		"id": 1902,
+		"text": "Chúc mừng {playerName} mua thẻ trọn đời.",
+		"serverParameter": "playerName"
+	},
+	"1903": {
+		"id": 1903,
+		"text": "Chúc mừng {playerName} mua thẻ tuần.",
+		"serverParameter": "playerName"
+	},
+	"2101": {
+		"id": 2101,
+		"text": "Mở sv {name} thưởng",
+		"serverParameter": "name"
+	},
+	"2102": {
+		"id": 2102,
+		"text": "Đây là thưởng đạt mục tiêu Mở sv {name}, mau nhận!",
+		"serverParameter": "name"
+	},
+	"2301": {
+		"id": 2301,
+		"text": "{name} thưởng",
+		"serverParameter": "name"
+	},
+	"2302": {
+		"id": 2302,
+		"text": "Đây là thưởng hoạt động {name}, mau nhận!",
+		"serverParameter": "name"
+	},
+	"2401": {
+		"id": 2401,
+		"text": "Chúc mừng {playerName} trong vòng quay nhận {Num} KNB",
+		"serverParameter": "playerName;Num"
+	},
+	"2801": {
+		"id": 2801,
+		"text": "Thưởng tổng kết thi đấu liên sv",
+		"serverParameter": ""
+	},
+	"2802": {
+		"id": 2802,
+		"text": "Chúc mừng bạn đạt cấp {Num} thi đấu liên sv, mau nhận thưởng.",
+		"serverParameter": "Num"
+	},
+	"2803": {
+		"id": 2803,
+		"text": "Thưởng bổ sung liên sv",
+		"serverParameter": ""
+	},
+	"2804": {
+		"id": 2804,
+		"text": "Đây là thưởng liên sv bạn chưa nhận tuần này, mau nhận!",
+		"serverParameter": ""
+	},
+	"2805": {
+		"id": 2805,
+		"text": "Liên sv Tranh bá thi đấu đã mở ra, hoan nghênh các vị chúa Công tiến về đại triển thân thủ.",
+		"serverParameter": ""
+	},
+	"2901": {
+		"id": 2901,
+		"text": "Chúc mừng {playerName} trong pháp bảo bảo khố rút {itemName}.",
+		"serverParameter": "playerName;itemName"
+	},
+	"3701": {
+		"id": 3701,
+		"text": "{insNum} PB đã mở/<clk=team#{insId}#{roomId}>Vào đội</clk>",
+		"serverParameter": "insNum;insId;roomId"
+	},
+	"3702": {
+		"id": 3702,
+		"text": "PB tổ đội mở ra, mời các vị chúa Công tiến về chinh chiến!",
+		"serverParameter": ""
+	},
+	"3703": {
+		"id": 3703,
+		"text": "Bát Quái Trận-{insNum} đã mở.<clk=team#{insId}#{roomId}>Vào đội</clk>",
+		"serverParameter": "insNum;insId;roomId"
+	},
+	"3801": {
+		"id": 3801,
+		"text": "Danh hiệu quá hạn",
+		"serverParameter": "insNum;insId;roomId"
+	},
+	"3802": {
+		"id": 3802,
+		"text": "Danh hiệu {name} của bạn đã quá hạn.",
+		"serverParameter": "name"
+	},
+	"4001": {
+		"id": 4001,
+		"text": "Thưởng kết toán {name}",
+		"serverParameter": "name"
+	},
+	"4002": {
+		"id": 4002,
+		"text": "Đây là thưởng {name} bạn chưa nhận, mau nhận!",
+		"serverParameter": "name"
+	},
+	"4101": {
+		"id": 4101,
+		"text": "{name} thưởng",
+		"serverParameter": "name"
+	},
+	"4102": {
+		"id": 4102,
+		"text": "Đây là thưởng {name} bạn chưa nhận, mau nhận!",
+		"serverParameter": "name"
+	},
+	"5001": {
+		"id": 5001,
+		"text": "Nhận thưởng",
+		"serverParameter": ""
+	},
+	"5002": {
+		"id": 5002,
+		"text": "Chúc mừng! Người chơi {playerName} thỏa mãn tâm nguyện, dâng lên {name}.",
+		"serverParameter": "playerName;name"
+	},
+	"5003": {
+		"id": 5003,
+		"text": "Thưởng quyên tặng",
+		"serverParameter": ""
+	},
+	"5004": {
+		"id": 5004,
+		"text": "Bạn giúp Người chơi {playerName} thỏa mãn tâm nguyện, nhận thưởng",
+		"serverParameter": "playerName"
+	},
+	"5005": {
+		"id": 5005,
+		"text": "{playerName}  thiếu 1 cái.{name}, mong các vị đại thần <clk=cardbook#{infoId}#{itemId}#{playerId}> giúp đỡ</clk>^_^",
+		"serverParameter": "playerName;name;infoId;itemId;playerId"
+	},
+	"5006": {
+		"id": 5006,
+		"text": "{playerName} thiếu 1 cái {name}, cần giúp đỡ^_^<clk=cardbook#{infoId}#{itemId}#{playerId}>Giúp ngay</clk>",
+		"serverParameter": "playerName;name;infoId;itemId;playerId"
+	},
+	"5509": {
+		"id": 5509,
+		"text": "Thưởng hồi phục đạo cụ đã xóa",
+		"serverParameter": ""
+	},
+	"5510": {
+		"id": 5510,
+		"text": "Đây là thưởng hồi phục đạo cụ {itemName}, mau nhận!",
+		"serverParameter": "itemName"
+	},
+	"7401": {
+		"id": 7401,
+		"text": "Thưởng XH chiến trườngg",
+		"serverParameter": ""
+	},
+	"7402": {
+		"id": 7402,
+		"text": "Bạn XH {Num} chiến trường Thiên Mệnh, mau nhận thưởng.",
+		"serverParameter": "Num"
+	},
+	"7403": {
+		"id": 7403,
+		"text": "Thưởng dự đoán chiến trường",
+		"serverParameter": ""
+	},
+	"7404": {
+		"id": 7404,
+		"text": "Bạn đoán thắng thi đấu chiến trường Thiên Mệnh tuần này, nhận thưởng",
+		"serverParameter": ""
+	},
+	"7405": {
+		"id": 7405,
+		"text": "Thưởng đấu Top chiến trường Thiên Mệnh",
+		"serverParameter": ""
+	},
+	"7406": {
+		"id": 7406,
+		"text": "Trong chiến trường thiên mệnh tuần này bạn đạt {Num}, mau nhận thưởng",
+		"serverParameter": "Num"
+	},
+	"7407": {
+		"id": 7407,
+		"text": "Thiên mệnh chiến trường sắp mở ra",
+		"serverParameter": ""
+	},
+	"7408": {
+		"id": 7408,
+		"text": "Tuần này thiên mệnh chiến trường thi đấu sắp mở ra, hoan nghênh các vị đến đây quan chiến.",
+		"serverParameter": "Num"
+	},
+	"7501": {
+		"id": 7501,
+		"text": "Thưởng nạp mỗi ngày",
+		"serverParameter": ""
+	},
+	"7502": {
+		"id": 7502,
+		"text": "Đây là thưởng đạt mục tiêu nạp hàng ngày, mau nhận!",
+		"serverParameter": ""
+	},
+	"4801": {
+		"id": 4801,
+		"text": "{playerName} lật thẻ rút trúng {name}.",
+		"serverParameter": "playerName;name"
+	},
+	"7601": {
+		"id": 7601,
+		"text": "Thưởng điểm danh",
+		"serverParameter": ""
+	},
+	"7602": {
+		"id": 7602,
+		"text": "Đây là thưởng điểm danh bạn chưa nhận, mau nhận!",
+		"serverParameter": ""
+	},
+	"7603": {
+		"id": 7603,
+		"text": "Thưởng điểm danh tuần",
+		"serverParameter": ""
+	},
+	"7604": {
+		"id": 7604,
+		"text": "Đây là thưởng điểm danh tuần bạn chưa nhận, mau nhận!",
+		"serverParameter": ""
+	},
+	"5101": {
+		"id": 5101,
+		"text": "Thưởng XH {luckyName}",
+		"serverParameter": "luckyName"
+	},
+	"5102": {
+		"id": 5102,
+		"text": "Tại {luckyName} bạn XH {num}, mau nhận!",
+		"serverParameter": "luckyName;num"
+	},
+	"5701": {
+		"id": 5701,
+		"text": "Thưởng may mắn",
+		"serverParameter": ""
+	},
+	"5702": {
+		"id": 5702,
+		"text": "Chúc mừng bạn XH {num} trong bói may mắn, mau nhận thưởng",
+		"serverParameter": "num"
+	},
+	"5703": {
+		"id": 5703,
+		"text": "Chúc mừng {playerName} trong bói may mắn nhận {itemName}。",
+		"serverParameter": "playerName;itemName"
+	},
+	"8101": {
+		"id": 8101,
+		"text": "{playerName} đang chiêu mộ đồng đội.<clk=crossTeam#{roomId}>Vào ngay</clk>",
+		"serverParameter": "playerName;roomId"
+	},
+	"8102": {
+		"id": 8102,
+		"text": "võ hiệp tranh bá 5 Phút sau sắp mở ra! Các vị chúa Công xin chuẩn bị kỹ lưỡng!",
+		"serverParameter": ""
+	},
+	"8103": {
+		"id": 8103,
+		"text": "võ hiệp tranh bá thi đấu đã mở ra! Các vị chúa Công có thể thông qua động đại sảnh tiến vào bản đồ!",
+		"serverParameter": ""
+	},
+	"8104": {
+		"id": 8104,
+		"text": "{camp}{playerName} chiếm {buildingName}!",
+		"serverParameter": "camp;playerName;buildingName"
+	},
+	"8105": {
+		"id": 8105,
+		"text": "{camp}{playerName} giết bạn, đoạt được thành trì bạn đang bảo vệ!",
+		"serverParameter": "camp;playerName"
+	},
+	"8106": {
+		"id": 8106,
+		"text": "Thưởng tích lũy võ hiệp tranh bá",
+		"serverParameter": "name"
+	},
+	"8107": {
+		"id": 8107,
+		"text": "Bạn XH {rank} trong võ hiệp tranh bá, mau nhận thưởng!",
+		"serverParameter": "name;rank"
+	},
+	"8108": {
+		"id": 8108,
+		"text": "Thưởng XH phe",
+		"serverParameter": ""
+	},
+	"8109": {
+		"id": 8109,
+		"text": "Phe {camp} của bạn XH {rank} trong võ hiệp Tranh Bá, mau nhận thưởng!",
+		"serverParameter": "camp;rank"
+	},
+	"5901": {
+		"id": 5901,
+		"text": "Liên sv {name} XH  thưởng",
+		"serverParameter": "name"
+	},
+	"5902": {
+		"id": 5902,
+		"text": "Chúc mừng bạn tại Liên sv {name} XH {rank},  mau nhận thưởng!",
+		"serverParameter": "name;rank"
+	},
+	"5903": {
+		"id": 5903,
+		"text": "Liên sv {name} thưởng",
+		"serverParameter": "name"
+	},
+	"5904": {
+		"id": 5904,
+		"text": "Đây là thưởng đạt mục tiêu Liên sv {name}, mau nhận!",
+		"serverParameter": "name"
+	},
+	"5905": {
+		"id": 5905,
+		"text": "Liên sv {name} thưởng",
+		"serverParameter": "name"
+	},
+	"5906": {
+		"id": 5906,
+		"text": "Đây là thưởng điểm tham gia Liên sv {name}, mau nhận!",
+		"serverParameter": "name"
+	},
+	"5801": {
+		"id": 5801,
+		"text": "Chúc mừng !{playerName} tầm bảo thu hoạch được đạo cụ hiếm {itemName}×{num}!",
+		"serverParameter": "playerName;itemName;num"
+	},
+	"5802": {
+		"id": 5802,
+		"text": "Thưởng XH Trận Pháp Điện",
+		"serverParameter": ""
+	},
+	"5803": {
+		"id": 5803,
+		"text": "Chúc mừng Bạn XH {rank} Trận Pháp Điện, mau nhận thưởng!",
+		"serverParameter": "rank"
+	},
+	"5601": {
+		"id": 5601,
+		"text": "Thưởng Trữ Tiền Quán",
+		"serverParameter": ""
+	},
+	"5602": {
+		"id": 5602,
+		"text": "Đây là thưởng bạn chưa nhận trong HĐ Trữ Tiền Quán, mau nhận",
+		"serverParameter": ""
+	},
+	"6701": {
+		"id": 6701,
+		"text": "Thưởng thủ tháp",
+		"serverParameter": ""
+	},
+	"6702": {
+		"id": 6702,
+		"text": "Đây là thưởng bảo vệ tháp {name}, mau nhận!",
+		"serverParameter": "name"
+	},
+	"4501": {
+		"id": 4501,
+		"text": "Thưởng XH Phù Văn Chi Địa",
+		"serverParameter": ""
+	},
+	"4502": {
+		"id": 4502,
+		"text": "Chúc mừng Bạn XH {num} điểm trong Phù Văn Chi Địa",
+		"serverParameter": "num"
+	},
+	"7801": {
+		"id": 7801,
+		"text": "Thưởng XH học sử",
+		"serverParameter": ""
+	},
+	"7802": {
+		"id": 7802,
+		"text": "Bạn XH {rank}  trong HĐ học sử, mau nhận thưởng!",
+		"serverParameter": "rank"
+	}
+}

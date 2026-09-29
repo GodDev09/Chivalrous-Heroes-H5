@@ -1,0 +1,6 @@
+{"file":"businessman.png","frames":{
+"bsman_bg1":{"x":663,"y":102,"w":147,"h":132,"offX":0,"offY":0,"sourceW":147,"sourceH":132},
+"bsman_bg2":{"x":1,"y":1,"w":654,"h":448,"offX":1,"offY":0,"sourceW":655,"sourceH":448},
+"bsman_bg3":{"x":663,"y":1,"w":327,"h":93,"offX":0,"offY":0,"sourceW":327,"sourceH":93},
+"bsman_bg4":{"x":818,"y":144,"w":176,"h":2,"offX":0,"offY":0,"sourceW":176,"sourceH":2},
+"bsman_bg5":{"x":818,"y":102,"w":185,"h":34,"offX":0,"offY":0,"sourceW":185,"sourceH":34}}}

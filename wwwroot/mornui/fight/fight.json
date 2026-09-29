@@ -1,0 +1,12 @@
+{"file":"fight.png","frames":{
+"fight_baoji":{"x":1,"y":30,"w":95,"h":62,"offX":0,"offY":0,"sourceW":95,"sourceH":62},
+"fight_hp_chen":{"x":150,"y":46,"w":48,"h":4,"offX":0,"offY":0,"sourceW":48,"sourceH":4},
+"fight_hp_di":{"x":150,"y":30,"w":52,"h":8,"offX":0,"offY":0,"sourceW":52,"sourceH":8},
+"fight_hp_hong":{"x":150,"y":52,"w":48,"h":4,"offX":0,"offY":0,"sourceW":48,"sourceH":4},
+"fight_hp_lv":{"x":150,"y":40,"w":48,"h":4,"offX":0,"offY":0,"sourceW":48,"sourceH":4},
+"fight_jia":{"x":204,"y":30,"w":19,"h":20,"offX":0,"offY":0,"sourceW":19,"sourceH":20},
+"fight_jian":{"x":225,"y":30,"w":19,"h":6,"offX":0,"offY":0,"sourceW":19,"sourceH":6},
+"fight_shanbi":{"x":98,"y":30,"w":50,"h":23,"offX":1,"offY":0,"sourceW":52,"sourceH":23},
+"numberLine_fight_1":{"x":1,"y":118,"w":187,"h":19,"offX":1,"offY":0,"sourceW":190,"sourceH":19},
+"numberLine_fight_2":{"x":1,"y":94,"w":168,"h":22,"offX":2,"offY":0,"sourceW":170,"sourceH":22},
+"numberLine_fight_3":{"x":1,"y":1,"w":240,"h":27,"offX":0,"offY":0,"sourceW":240,"sourceH":27}}}

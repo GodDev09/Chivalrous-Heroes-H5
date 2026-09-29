@@ -1,0 +1,16 @@
+{
+	"initial": [
+		"js/egret.min.js",
+		"js/egret.web.min.js",
+		"js/assetsmanager.min.js?v=5.2.17",
+		"js/tween.min.js",
+		"js/game.min.js",
+		"js/socket.min.js",
+		"js/promise.min.js",
+		"js/dragonBones.min.js",
+		"js/jszip.min.js"
+	],
+	"game": [
+		"js/main.min.js?v=201904121942"
+	]
+}

@@ -1,0 +1,11 @@
+﻿{
+  "ipIndex": 0,
+  "ips": [
+    {
+      "index": 0,
+      "name": "开发服",
+      "ip": "ws://192.168.124.12:19101/ws"
+    }
+  ],
+  "showTestBtn": true
+}

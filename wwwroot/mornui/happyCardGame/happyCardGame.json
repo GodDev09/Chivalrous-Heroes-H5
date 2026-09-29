@@ -1,0 +1,7 @@
+{"file":"happyCardGame.png","frames":{
+"btn_hpimg":{"x":383,"y":1,"w":92,"h":93,"offX":0,"offY":0,"sourceW":92,"sourceH":93},
+"hp_cardbg":{"x":158,"y":135,"w":149,"h":193,"offX":1,"offY":0,"sourceW":150,"sourceH":193},
+"hp_cardshow":{"x":315,"y":135,"w":148,"h":191,"offX":1,"offY":1,"sourceW":150,"sourceH":193},
+"hp_goldcard":{"x":1,"y":135,"w":149,"h":193,"offX":1,"offY":0,"sourceW":150,"sourceH":193},
+"hp_leftlabel":{"x":315,"y":334,"w":40,"h":41,"offX":0,"offY":0,"sourceW":40,"sourceH":41},
+"hp_notebg":{"x":1,"y":1,"w":374,"h":126,"offX":0,"offY":0,"sourceW":374,"sourceH":126}}}

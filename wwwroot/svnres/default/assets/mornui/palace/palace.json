@@ -1,0 +1,6 @@
+{"file":"palace.png","frames":{
+"palace_box1":{"x":337,"y":1,"w":57,"h":60,"offX":0,"offY":0,"sourceW":57,"sourceH":60},
+"palace_box2":{"x":402,"y":1,"w":55,"h":53,"offX":1,"offY":7,"sourceW":57,"sourceH":60},
+"palace_img1":{"x":146,"y":1,"w":183,"h":38,"offX":0,"offY":0,"sourceW":183,"sourceH":38},
+"palace_img2":{"x":1,"y":215,"w":442,"h":32,"offX":0,"offY":0,"sourceW":442,"sourceH":32},
+"palace_m4":{"x":1,"y":1,"w":137,"h":206,"offX":0,"offY":0,"sourceW":137,"sourceH":206}}}

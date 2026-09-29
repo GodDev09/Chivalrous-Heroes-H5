@@ -1,0 +1,13 @@
+{"file":"wan8.png","frames":{
+"wan8bg1":{"x":429,"y":775,"w":579,"h":2,"offX":0,"offY":0,"sourceW":579,"sourceH":2},
+"wan8bg2":{"x":941,"y":1,"w":43,"h":29,"offX":0,"offY":0,"sourceW":43,"sourceH":29},
+"wan8bg3":{"x":856,"y":86,"w":102,"h":28,"offX":0,"offY":0,"sourceW":102,"sourceH":28},
+"wan8collectbg":{"x":1,"y":497,"w":653,"h":272,"offX":0,"offY":0,"sourceW":653,"sourceH":272},
+"wan8collecttitle":{"x":620,"y":73,"w":230,"h":30,"offX":0,"offY":0,"sourceW":230,"sourceH":30},
+"wan8dailytitle":{"x":620,"y":1,"w":315,"h":30,"offX":0,"offY":0,"sourceW":315,"sourceH":30},
+"wan8line":{"x":620,"y":109,"w":60,"h":2,"offX":0,"offY":0,"sourceW":60,"sourceH":2},
+"wan8star":{"x":975,"y":36,"w":32,"h":31,"offX":0,"offY":0,"sourceW":32,"sourceH":31},
+"wan8titilebg":{"x":1,"y":775,"w":422,"h":60,"offX":0,"offY":0,"sourceW":422,"sourceH":60},
+"wan8vipimg":{"x":884,"y":37,"w":85,"h":43,"offX":0,"offY":0,"sourceW":85,"sourceH":43},
+"wan8viptitle":{"x":620,"y":37,"w":258,"h":30,"offX":0,"offY":0,"sourceW":258,"sourceH":30},
+"wdyl":{"x":1,"y":1,"w":613,"h":490,"offX":1,"offY":0,"sourceW":614,"sourceH":490}}}

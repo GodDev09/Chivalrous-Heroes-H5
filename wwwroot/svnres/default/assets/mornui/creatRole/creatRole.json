@@ -1,0 +1,10 @@
+{"file":"creatRole.png","frames":{
+"btn_dice":{"x":366,"y":123,"w":46,"h":47,"offX":0,"offY":0,"sourceW":46,"sourceH":47},
+"btn_enterGame":{"x":206,"y":0,"w":246,"h":62,"offX":0,"offY":0,"sourceW":246,"sourceH":62},
+"btn_head1":{"x":85,"y":0,"w":119,"h":134,"offX":0,"offY":1,"sourceW":119,"sourceH":136},
+"btn_head2":{"x":206,"y":64,"w":108,"h":123,"offX":0,"offY":0,"sourceW":108,"sourceH":123},
+"create_bg1":{"x":0,"y":0,"w":83,"h":247,"offX":0,"offY":0,"sourceW":83,"sourceH":247},
+"create_bg2":{"x":366,"y":64,"w":71,"h":57,"offX":0,"offY":0,"sourceW":71,"sourceH":57},
+"create_bg3":{"x":85,"y":136,"w":99,"h":38,"offX":0,"offY":0,"sourceW":99,"sourceH":38},
+"create_boyName":{"x":454,"y":0,"w":48,"h":217,"offX":0,"offY":0,"sourceW":48,"sourceH":217},
+"create_girlName":{"x":316,"y":64,"w":48,"h":217,"offX":0,"offY":0,"sourceW":48,"sourceH":217}}}

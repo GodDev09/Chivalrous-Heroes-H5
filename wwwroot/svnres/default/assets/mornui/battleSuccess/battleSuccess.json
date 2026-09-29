@@ -1,0 +1,11 @@
+{"file":"battleSuccess.png","frames":{
+"battlesuccess_1":{"x":352,"y":0,"w":440,"h":155,"offX":43,"offY":75,"sourceW":527,"sourceH":306},
+"battlesuccess_2":{"x":0,"y":0,"w":340,"h":340,"offX":0,"offY":0,"sourceW":340,"sourceH":340},
+"battlesuccess_3":{"x":890,"y":0,"w":111,"h":25,"offX":4,"offY":0,"sourceW":115,"sourceH":25},
+"battlesuccess_4":{"x":804,"y":85,"w":139,"h":33,"offX":0,"offY":0,"sourceW":139,"sourceH":33},
+"battlesuccess_5":{"x":646,"y":167,"w":259,"h":51,"offX":2,"offY":0,"sourceW":263,"sourceH":51},
+"battlesuccess_6":{"x":352,"y":167,"w":282,"h":51,"offX":0,"offY":0,"sourceW":282,"sourceH":51},
+"battlesuccess_bar":{"x":890,"y":37,"w":26,"h":22,"offX":0,"offY":0,"sourceW":26,"sourceH":22},
+"battlesuccess_bar2":{"x":928,"y":37,"w":26,"h":22,"offX":0,"offY":0,"sourceW":26,"sourceH":22},
+"battlesuccess_barbg":{"x":352,"y":230,"w":404,"h":26,"offX":0,"offY":0,"sourceW":404,"sourceH":26},
+"battlesuccess_star":{"x":804,"y":0,"w":74,"h":73,"offX":1,"offY":1,"sourceW":76,"sourceH":74}}}

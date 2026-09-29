@@ -1,0 +1,96 @@
+@font-face {
+	font-family: '方正艺黑简体';
+	src: url('linlong.woff') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+div {
+	font-family: "方正艺黑简体";
+	font-size: 20px;
+}
+
+html,
+body {
+	-ms-touch-action: none;
+	background: #000000;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	height: 100%;
+}
+
+.loading.g1 .t1 {
+	text-align: center;
+	margin-top: 0.1em;
+	position:relative;
+	bottom:8%;
+}
+
+.loading.g1 .t1 p {
+	margin: 0 0 0.24414063em;
+	font-size: 0.7em;
+	color: #ffffff;
+}
+
+.loading.g1 .t1 p span {
+	color: #efd332;
+	font-size: 1.5em;
+}
+
+.loading.g1 .t1 p.blue {
+	color: #00c0ff;
+}
+
+.pageBG {
+	background: url('module/loading/pageBG.jpg');
+	background-repeat: repeat;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: absolute;
+}
+
+.loading .loading-progress {
+	margin-top: 8vh;
+}
+
+.loading .loading-progress-bar {
+	width: 15em;
+	height: 1em;
+	background: url("module/loading/bar.png") no-repeat;
+	margin: 0 auto;
+	background-size: 20em 0.7em;
+	margin-top: 0.96em;
+}
+
+.loading .loading-progress-finish {
+	width: 0;
+	height: 1em;
+	background: url("module/loading/bar_pro.png") no-repeat;
+	margin-left: 0.02em;
+	position: relative;
+	background-size: 20em 0.7em;
+	top: 2%;
+}
+
+.loading .loading-into-info {
+	color: #fbfafa;
+	position: absolute;
+	top: 0.625em;
+	right: 0.625em;
+	width: 12.5em;
+	height: 6.5625em;
+	overflow: hidden;
+}
+
+.loading .loading-into-info-list {
+	position: relative;
+	text-align: left;
+	top: 5em;
+}
+
+.loading .loading-into-info-list span {
+	font-size: 1em;
+}

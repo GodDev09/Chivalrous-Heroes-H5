@@ -1,0 +1,110 @@
+# ============================================================
+#  Chivalrous-Heroes-H5 (XxSG) — .gitignore
+# ============================================================
+# Nguyên tắc: GIỮ lại phần là "sản phẩm" (target/classes/*.class,
+# lib/*.jar, data JSON, PHP, client Egret) vì project không có
+# source Java và không có build system — bỏ .class là mất server.
+# LOẠI phần là: bí mật, runtime, tool, bundle tải lại được.
+# ============================================================
+
+
+# ------------------------------------------------------------
+# 1. BÍ MẬT — ƯU TIÊN CAO NHẤT
+# ------------------------------------------------------------
+# Chứa MySQL root password, Redis password, JMX password, secretKey.
+# Sau khi clone phải tạo lại tay (xem README "Cài đặt").
+**/webgame/props/mysql.properties
+**/webgame/props/redis.properties
+**/webgame/props/webgame.properties
+
+# Chứa MySQL root password (PHP layer)
+db.php
+**/db.php
+**/global/config.php
+
+# Chứng chỉ SSL / keystore
+**/webgame/jks/
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+
+
+# ------------------------------------------------------------
+# 2. BUNDLE TẢI LẠI ĐƯỢC (nặng, không phải code của project)
+# ------------------------------------------------------------
+# Nginx + MySQL 5.7.26 + PHP + Redis + FTP + data MySQL (~1.9 GB)
+phpstudy_pro/
+
+# JDK/JRE 1.8.0_181 đóng gói kèm + [99]C.exe (71 MB)
+Java/
+
+# CFR Java decompiler (tool, không phải project)
+cfr.jar
+
+
+# ------------------------------------------------------------
+# 3. RUNTIME / LOG
+# ------------------------------------------------------------
+log/
+gamelog/
+*/log/
+*/gamelog/
+*.log
+*.log.*
+hs_err_pid*.log
+replay_pid*.log
+
+
+# ------------------------------------------------------------
+# 4. BUILD OUTPUT LẺ (bản patch compile ở thư mục gốc)
+# ------------------------------------------------------------
+# Bản đã build nằm sẵn trong game/target/classes/.../login/LoginUtil.class
+# Giữ LoginUtil.java làm source của patch.
+/LoginUtil.class
+/*.class
+
+
+# ------------------------------------------------------------
+# 5. BACKUP / ARCHIVE TRÙNG LẶP
+# ------------------------------------------------------------
+*.bak
+*.bak.*
+*~
+*.orig
+*.old
+wwwroot/backUp/
+**/webgame/data/cn.7z
+*.7z
+*.rar
+*.zip
+*_bak.json
+
+
+# ------------------------------------------------------------
+# 6. IDE / OS
+# ------------------------------------------------------------
+.idea/
+.vs/
+*.iml
+*.suo
+*.user
+.vscode/
+nbproject/
+Thumbs.db
+desktop.ini
+ehthumbs.db
+.DS_Store
+
+
+# ------------------------------------------------------------
+# 7. TẠM / UPLOAD / SESSION (PHP)
+# ------------------------------------------------------------
+tmp/
+temp/
+cache/
+sess_*
+*.tmp
+*.swp
+*.pid

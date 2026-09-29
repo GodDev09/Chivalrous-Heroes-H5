@@ -1,0 +1,5 @@
+{"file":"debug.png","frames":{
+"blank_debug":{"x":91,"y":45,"w":10,"h":10,"offX":0,"offY":0,"sourceW":10,"sourceH":10},
+"btn_debug":{"x":1,"y":1,"w":88,"h":66,"offX":0,"offY":0,"sourceW":88,"sourceH":66},
+"radiogroup_debug":{"x":91,"y":1,"w":14,"h":42,"offX":0,"offY":0,"sourceW":14,"sourceH":42},
+"radio_debug":{"x":107,"y":1,"w":14,"h":42,"offX":0,"offY":0,"sourceW":14,"sourceH":42}}}

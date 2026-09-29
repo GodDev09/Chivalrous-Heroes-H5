@@ -1,0 +1,51 @@
+{
+    "debug": false,
+    "showLog": 3,
+    "isPlatform": false,
+    "roleScale": 1,
+    "cfgVersion": "04151017",
+    "verJson": "201904151017",
+    "version": "201904151017",
+    "res": "svnres/default/assets/",
+    "serverId": 0,
+    "myserver": "http://h5xxjsdk.shengli.com/cmge/myServer",
+    "servers": "http://h5xxjsdk.shengli.com/cmge/servers",
+    "payServer": "http://h5xxjsdk.shengli.com/cmge/charge?",
+    "pointServer": "http://h5xxjsdk.shengli.com/dot/",
+    "placardURL": "https://sanguo-sdk.linlongyx.com/dot/channelNotice.do",
+    "questionURL": "https://sanguo-sdk.linlongyx.com/dot/question.do?",
+    "rechargeURL": "https://sanguo-sdk.linlongyx.com/dot/channelNotice.do",
+    "channelBG": {},
+    "weixin_1.1390": {
+        "cfgVersion": "04150137",
+        "verJson": "201904151012",
+        "version": "201904151012",
+        "verify": true,
+        "serverId": 10000,
+        "res": "https://sqh5.res.rastargame.com/slave/"
+    },
+    "bdmini_1.1390": {
+        "cfgVersion": "04150137",
+        "verJson": "201904151012",
+        "version": "201904151012",
+        "verify": true,
+        "serverId": 10000,
+        "res": "https://sqh5.res.rastargame.com/slave/"
+    },
+    "weixin_ttsg_1.1390": {
+        "cfgVersion": "04150137",
+        "verJson": "201904151012",
+        "version": "201904151012",
+        "verify": true,
+        "serverId": 10000,
+        "res": "https://sqh5.res.rastargame.com/mengDan_slave/"
+    },
+    "cjsgj_1.1390": {
+        "cfgVersion": "04150137",
+        "verJson": "201904151012",
+        "version": "201904151012",
+        "verify": true,
+        "serverId": 10000,
+        "res": "https://sqh5.res.rastargame.com/slave_cjsgj/"
+    }
+}

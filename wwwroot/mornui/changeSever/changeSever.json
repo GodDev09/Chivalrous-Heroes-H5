@@ -1,0 +1,11 @@
+{"file":"changeSever.png","frames":{
+"btn_changeserver1":{"x":816,"y":0,"w":67,"h":68,"offX":0,"offY":0,"sourceW":67,"sourceH":68},
+"btn_changeserver2":{"x":895,"y":0,"w":60,"h":69,"offX":0,"offY":0,"sourceW":60,"sourceH":69},
+"btn_server1":{"x":666,"y":0,"w":138,"h":114,"offX":0,"offY":0,"sourceW":138,"sourceH":114},
+"btn_sever2":{"x":666,"y":126,"w":209,"h":56,"offX":0,"offY":0,"sourceW":209,"sourceH":56},
+"changeserver_title":{"x":816,"y":81,"w":85,"h":20,"offX":0,"offY":0,"sourceW":85,"sourceH":20},
+"changeseverbg":{"x":0,"y":0,"w":654,"h":387,"offX":1,"offY":0,"sourceW":655,"sourceH":387},
+"changeseverbg2":{"x":0,"y":399,"w":390,"h":188,"offX":0,"offY":0,"sourceW":390,"sourceH":188},
+"changeseverbg3":{"x":967,"y":0,"w":31,"h":31,"offX":0,"offY":0,"sourceW":31,"sourceH":31},
+"changeseverdi":{"x":666,"y":194,"w":336,"h":23,"offX":0,"offY":0,"sourceW":336,"sourceH":23},
+"server_line":{"x":666,"y":229,"w":2,"h":662,"offX":0,"offY":0,"sourceW":2,"sourceH":662}}}

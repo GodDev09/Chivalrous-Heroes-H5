@@ -1,0 +1,7 @@
+{"file":"help.png","frames":{
+"help_bg":{"x":1,"y":1,"w":570,"h":329,"offX":0,"offY":0,"sourceW":570,"sourceH":329},
+"help_bg2":{"x":769,"y":132,"w":227,"h":63,"offX":0,"offY":0,"sourceW":227,"sourceH":63},
+"help_bg3":{"x":985,"y":1,"w":30,"h":25,"offX":0,"offY":0,"sourceW":30,"sourceH":25},
+"help_bg4":{"x":927,"y":1,"w":50,"h":45,"offX":0,"offY":0,"sourceW":50,"sourceH":45},
+"help_box":{"x":769,"y":1,"w":150,"h":123,"offX":0,"offY":0,"sourceW":150,"sourceH":123},
+"help_light":{"x":579,"y":1,"w":182,"h":182,"offX":16,"offY":18,"sourceW":216,"sourceH":216}}}

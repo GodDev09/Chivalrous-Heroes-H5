@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+
+
+<!-- Mirrored from h5tranhba.online:81/svnres/default/assets/af.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 May 2021 09:59:43 GMT -->
+<head>
+	<meta charset="utf-8">
+	<title>小小三国志</title>
+	<!-- 搜狗强制全屏 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no,minimal-ui"
+	/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="true" />
+	<meta name="browsermode" content="application">
+	<meta name="screen-orientation" content="portrait" />
+	<!-- QQ强制全屏 -->
+	<meta name="x5-orientation" content="portrait" />
+	<meta name="x5-fullscreen" content="true" />
+	<meta name="x5-page-mode" content="app">
+	<!-- 360强制全屏 -->
+	<meta name="360-fullscreen" content="true" />
+	<link rel="stylesheet" type="text/css" href="xinghui8a34.css?v=1.1370" />
+	<script src="linlongSDK5e1f.js?v=2"></script>
+</head>
+
+<body>
+	<div class="loading g1" id='loadingUi' style="overflow: hidden; margin: auto;width: 100%;height: 100%;position:absolute;z-index:2;background-color: black;" >
+<div id="loadbgId" class="pic1"></div>
+<div id="prossDiv" style="display: block;width: 100%;height: 100%;position:relative;top:-30%;">
+<div class="loading-progress">
+	<div class="loading-progress-bar">
+		<div class="loading-progress-finish" id='loadingBar'></div>
+	</div>
+</div>
+<div class="t1">
+	<p class="006eff">正在进入高清三国游戏世界……</p>
+</div>
+<div class="loading-into-info">
+	<div class="loading-into-info-list">
+	</div>
+</div>
+</div>
+</div>
+<div id="mainDiv" style="margin:auto;width: 100%;height: 100%;background-color: black;" class="egret-player" data-entry-class="Main" data-orientation="auto" data-scale-mode="fixedWidth" data-frame-rate="30"
+data-content-width="672" data-content-height="1120" data-show-paint-rect="false" data-multi-fingered="2" data-show-fps="false"
+data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+</div>
+
+<script type="text/javascript" src="../../../../h5tsource.rastargame.com/static/dist/js/page/sdk_xh_host.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script>
+		var gameURLParams = {};
+		var dataStr = [];
+		var channelUID = 'awy';
+		var loginData;
+		var main;
+		var uid = '';
+		//初始化参数
+		var initialParam = function () {
+			//解析url中的参数
+			var url = location.search; //获取url中"?"符后的字串
+			if (url.indexOf("?") != -1) {
+				//平台那边过来的需要使用decodeURIComponent。
+				url = decodeURIComponent(url);
+				console.info("重新解码:", url);
+				var str = url.substr(1);
+				var strs = str.split("&");
+				for (var i = 0; i < strs.length; i++) {
+					var params = strs[i].split("=");
+					if (params[0] == 'channelUID') {
+						channelUID = params[1];
+						dataStr.push(strs[i])
+						break;
+					}
+
+				}
+				console.info("channelUID:" + dataStr);
+			}
+			loadBG();
+
+			window.XH_SDK.getLoginData();
+		}
+
+		window.addEventListener("message", function (n) {
+			var o = n.data.action, e = n.data.info;
+			switch (o) {
+				case "getLoginData":
+					loginData = e;
+					loginCP();
+					loadMain();
+					break;
+				default:
+					return
+			}
+		})
+
+		//登录游戏后台
+		var loginCP = function () {
+			var xhrLogin = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+			window.linlongSDK.loginData = loginData;
+			var loginUrl = 'https://sanguo-awy.linlongyx.com/';
+			for (var key in loginData) {
+				if (key == "game_uri") {
+					loginUrl = loginData[key];
+					var index = loginUrl.lastIndexOf('/xinghuih5');
+					loginUrl = loginUrl.substr(0, index);
+					continue;
+				}
+				dataStr.push(key + "=" + loginData[key]);
+			}
+			console.log(loginData);
+			uid = loginData['channelUid'] ? loginData['channelUid'] : '';
+			dataStr.push('uid=' + uid);
+			var str = dataStr.join('&');
+			xhrLogin.open("GET-2.html", loginUrl + "/xinghuih5/login?" + str, true);
+			xhrLogin.onreadystatechange = function () {
+				if (xhrLogin.readyState == 4) { //验证成功
+					try {
+						var data = JSON.parse(xhrLogin.responseText);
+						console.info("校验返回：", data);
+						if (data.code == 1) {
+							window.linlongSDK.setUID(data.channelUID);
+							gameURLParams['loginURL'] = loginUrl;
+							gameURLParams['channelUID'] = data.channelUID;
+							gameURLParams['openid'] = data.openid;
+							gameURLParams['loginTime'] = data.loginTime;
+							gameURLParams['myChannelUID'] = data.myChannelUID;
+							var tmp = data.cdn.lastIndexOf('http://h5tranhba.online:81/');
+							gameURLParams['cdn'] = data.cdn.substr(0, tmp + 1);
+							gameURLParams['session_key'] = data.session_key;
+							gameURLParams['sign'] = data.sign;
+							gameURLParams['control'] = '/xinghuih5';
+							gameURLParams['wxVerify'] = data.close ? 1 : 0;
+							gameURLParams['sg_ver'] = window.sg_ver;
+							gameURLParams['uid'] = uid;
+							window.urlParam = gameURLParams;
+							tryEnterMain();
+						} else {
+							window.alert(data.msg)
+							window.location.reload(true);
+						}
+					} catch (err) {
+						window.alert(err.message)
+						window.location.reload(true);
+					}
+				}
+			}
+			xhrLogin.send();
+		}
+
+		//开始进入游戏准备
+		var loadMain = function () {
+			var xhrJs = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+			xhrJs.onreadystatechange = null;
+			xhrJs.open("GET-2.html", "./manifest.json?v=" + Math.random(), true);
+			xhrJs.addEventListener("load", function () {
+				var mainfest = JSON.parse(xhrJs.response);
+				var list = mainfest.initial.concat(mainfest.game);
+				//开始加载脚本
+				loadScript(list, function () {
+					console.info("全部文件加载完成");
+					egret.runEgret({
+						renderMode: "webgl",
+						audioType: 2,
+						calculateCanvasScaleFactor: function (context) {
+							console.log("egret.Capabilities.isMobile：" + egret.Capabilities.isMobile);
+							if (!egret.Capabilities.isMobile) {
+								return 2;
+							}
+							var backingStore = context.backingStorePixelRatio ||
+								context.webkitBackingStorePixelRatio ||
+								context.mozBackingStorePixelRatio ||
+								context.msBackingStorePixelRatio ||
+								context.oBackingStorePixelRatio ||
+								context.backingStorePixelRatio || 1;
+							return (window.devicePixelRatio || 1) / backingStore;
+						}
+					});
+					main = egret.lifecycle.stage.getChildAt(0);
+					tryEnterMain();
+				});
+			})
+			xhrJs.send();
+			//加载单个脚本
+			var loadSingleScript = function (src, callBack) {
+				var s = document.createElement("script");
+				s.async = false;
+				s.src = src;
+				s.addEventListener("load", function () {
+					s.parentNode.removeChild(s);
+					s.removeEventListener("load", arguments.callee, false);
+					if (callBack)
+						callBack();
+				}, false);
+				document.body.appendChild(s);
+			}
+			//加载所有脚本
+			var loadScript = function (list, callBack) {
+				var loaded = 0;
+				var loadNext = function () {
+					loadSingleScript(list[loaded], function () {
+						loaded++;
+						if (loaded >= list.length) {
+							callBack();
+						} else {
+							loadNext();
+						}
+					})
+				}
+				loadNext();
+			}
+		}
+
+		var tryEnterMain = function () {
+			if (main && window.urlParam) {
+				main.initialPlatform(hideLoading, window);
+			}
+		}
+
+		//加载页面背景图
+		var loadBG = function () {
+			var ua = navigator.userAgent.toLowerCase();
+			var isMobile = (ua.indexOf('mobile') != -1 || ua.indexOf('android') != -1);
+
+			var win_w = document.body.clientWidth;
+			var win_h = document.body.clientHeight;
+			console.info('client width and height:', win_w, win_h);
+
+			var div = document.getElementById("loadbgId");
+			//div.style.background="url(module/loading/"+channelUID+"_html.jpg)";
+			if (!isMobile && (win_w > .8 * win_h)) {
+				div.style.backgroundRepeat = "no-repeat";
+				div.style.backgroundPosition = "center";
+				div.style.backgroundSize = "contain";
+				div.style.position = "relative";
+			} else {
+				div.style.backgroundRepeat = "no-repeat";
+				div.style.backgroundPosition = "center";
+				div.style.backgroundSize = "100% 100%";
+				div.style.position = "relative";
+			}
+			div.style.width = "100%";
+			div.style.height = "100%";
+			div.style.margin = "0 auto";
+		}
+		initialParam();
+	</script>
+</body>
+
+
+<!-- Mirrored from h5tranhba.online:81/svnres/default/assets/af.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 May 2021 09:59:44 GMT -->
+</html>

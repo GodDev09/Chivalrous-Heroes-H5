@@ -1,0 +1,6 @@
+{"file":"boomegg.png","frames":{
+"boomEgg_bg":{"x":1,"y":1,"w":524,"h":664,"offX":0,"offY":0,"sourceW":524,"sourceH":664},
+"boomEgg_bg2":{"x":732,"y":1,"w":145,"h":30,"offX":0,"offY":0,"sourceW":145,"sourceH":30},
+"btn_boomEgg":{"x":533,"y":1,"w":191,"h":56,"offX":0,"offY":0,"sourceW":191,"sourceH":56},
+"btn_boomEgg1":{"x":942,"y":1,"w":40,"h":41,"offX":0,"offY":0,"sourceW":40,"sourceH":41},
+"btn_boomEgg2":{"x":885,"y":1,"w":49,"h":49,"offX":0,"offY":0,"sourceW":49,"sourceH":49}}}

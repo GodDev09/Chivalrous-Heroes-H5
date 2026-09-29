@@ -1,0 +1,23 @@
+RewriteEngine On
+RewriteBase /admin@@@@/
+RewriteRule ^([^\.]+)$ index.php?gc=$1
+RewriteRule ^add-admin.hga$ index.php?gc=admin&add=admin
+RewriteRule ^admin-edit-(.*).hga$ index.php?gc=edit&id=$1
+RewriteRule ^reward-([0-9]+).hga$ index.php?gc=reward&id=$1
+RewriteRule ^bai-viet-edit-([0-9]+).hga$ index.php?gc=bai-viet&id=$1
+RewriteRule ^server-edit-([0-9]+).hga$ index.php?gc=server&id=$1
+RewriteRule ^menu-edit-([0-9]+).hga$ index.php?gc=menu&id=$1
+RewriteRule ^shop-([0-9]+).hga$ index.php?gc=shop&id=$1
+RewriteRule ^del-(.*)-id-(.*).hga$ index.php?gc=del&del=$1&id=$2
+
+AuthUserFile C:/XxSG/Web/dgdgd/.htpasswd
+AuthType Basic
+AuthName "My restricted Area"
+Require valid-user
+
+ErrorDocument 400 /error.php
+ErrorDocument 401 /error.php
+ErrorDocument 403 /error.php
+ErrorDocument 404 /error.php
+ErrorDocument 500 /error.php
+ErrorDocument 502 /error.php

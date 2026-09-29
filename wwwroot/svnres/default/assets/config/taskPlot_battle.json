@@ -1,0 +1,666 @@
+{
+    "1": {
+        "type": 1,
+        "id": 99999,
+        "result": 1,
+        "lGroups": [
+            {
+			"candidateFighters":[],
+                "name": "子车倩雪",
+                "firstHandVal": 0,
+                "fighters": [
+                    {
+                        "guid": 1,
+                        "type": 1,
+                        "pos": 1,
+                        "fury": 4,
+                        "level": 0,
+                        "id": 2603,
+                        "hp": 3620,
+                        "maxHp": 3620,
+                        "attack": 96868,
+                        "phyDef": 231,
+                        "magDef": 277,
+                        "skills": [
+                            {
+                                "skillId": 26030101,
+                                "level": 1
+                            },
+                            {
+                                "skillId": 26030201,
+                                "level": 1
+                            },
+                            {
+                                "skillId": 26040301,
+                                "level": 1
+                            }
+                        ],
+                        "buffs": []
+                    },
+                    {
+                        "guid": 2,
+                        "type": 1,
+                        "pos": 2,
+                        "fury": 4,
+                        "level": 0,
+                        "id": 1701,
+                        "hp": 4880,
+                        "maxHp": 4880,
+                        "attack": 97603,
+                        "phyDef": 352,
+                        "magDef": 352,
+                        "skills": [
+                            {
+                                "skillId": 17010101,
+                                "level": 1
+                            },
+                            {
+                                "skillId": 17010201,
+                                "level": 1
+                            }
+                        ],
+                        "buffs": []
+                    },
+                    {
+                        "guid": 3,
+                        "type": 1,
+                        "pos": 3,
+                        "fury": 4,
+                        "level": 0,
+                        "id": 2701,
+                        "hp": 4880,
+                        "maxHp": 4880,
+                        "attack": 113870,
+                        "phyDef": 352,
+                        "magDef": 352,
+                        "skills": [
+                            {
+                                "skillId": 27010101,
+                                "level": 1
+                            },
+                            {
+                                "skillId": 27010201,
+                                "level": 1
+                            }
+                        ],
+                        "buffs": []
+                    },
+                    {
+                        "guid": 4,
+                        "type": 1,
+                        "pos": 4,
+                        "fury": 4,
+                        "level": 0,
+                        "id": 3701,
+                        "hp": 4880,
+                        "maxHp": 4880,
+                        "attack": 97603,
+                        "phyDef": 352,
+                        "magDef": 352,
+                        "skills": [
+                            {
+                                "skillId": 37010101,
+                                "level": 1
+                            },
+                            {
+                                "skillId": 37010201,
+                                "level": 1
+                            }
+                        ],
+                        "buffs": []
+                    },
+                    {
+                        "guid": 5,
+                        "type": 1,
+                        "pos": 5,
+                        "fury": 4,
+                        "level": 0,
+                        "id": 4701,
+                        "hp": 4880,
+                        "maxHp": 4880,
+                        "attack": 97603,
+                        "phyDef": 352,
+                        "magDef": 352,
+                        "skills": [
+                            {
+                                "skillId": 47010101,
+                                "level": 1
+                            },
+                            {
+                                "skillId": 47010201,
+                                "level": 1
+                            }
+                        ],
+                        "buffs": []
+                    },
+                    {
+                        "guid": 6,
+                        "type": 0,
+                        "pos": 6,
+                        "fury": 4,
+                        "level": 48,
+                        "id": 1001001095,
+                        "hp": 11520,
+                        "maxHp": 11520,
+                        "attack": 83744,
+                        "phyDef": 1152,
+                        "magDef": 1152,
+                        "skills": [
+                            {
+                                "skillId": 100201,
+                                "level": 1
+                            }
+                        ],
+                        "buffs": []
+                    }
+                ]
+            }
+        ],
+        "rGroups": [
+            {
+			"candidateFighters":[],
+                "name": "",
+                "firstHandVal": 0,
+                "fighters": [
+                    {
+                        "guid": 101,
+                        "type": 2,
+                        "pos": 7,
+                        "fury": 0,
+                        "level": 0,
+                        "id": 991,
+                        "hp": 300000,
+                        "maxHp": 300000,
+                        "attack": 30,
+                        "phyDef": 0,
+                        "magDef": 0,
+                        "skills": [
+                            {
+                                "skillId": 3001,
+                                "level": 1
+                            },
+                            {
+                                "skillId": 3062,
+                                "level": 1
+                            }
+                        ],
+                        "buffs": []
+                    },
+                    {
+                        "guid": 102,
+                        "type": 2,
+                        "pos": 8,
+                        "fury": 0,
+                        "level": 0,
+                        "id": 992,
+                        "hp": 300000,
+                        "maxHp": 300000,
+                        "attack": 30,
+                        "phyDef": 0,
+                        "magDef": 0,
+                        "skills": [
+                            {
+                                "skillId": 3001,
+                                "level": 1
+                            },
+                            {
+                                "skillId": 3062,
+                                "level": 1
+                            }
+                        ],
+                        "buffs": []
+                    },
+                    {
+                        "guid": 103,
+                        "type": 2,
+                        "pos": 9,
+                        "fury": 0,
+                        "level": 0,
+                        "id": 993,
+                        "hp": 300000,
+                        "maxHp": 300000,
+                        "attack": 30,
+                        "phyDef": 0,
+                        "magDef": 0,
+                        "skills": [
+                            {
+                                "skillId": 3001,
+                                "level": 1
+                            },
+                            {
+                                "skillId": 3062,
+                                "level": 1
+                            }
+                        ],
+                        "buffs": []
+                    },
+                    {
+                        "guid": 104,
+                        "type": 2,
+                        "pos": 10,
+                        "fury": 0,
+                        "level": 0,
+                        "id": 994,
+                        "hp": 300000,
+                        "maxHp": 300000,
+                        "attack": 30,
+                        "phyDef": 0,
+                        "magDef": 0,
+                        "skills": [
+                            {
+                                "skillId": 3001,
+                                "level": 1
+                            },
+                            {
+                                "skillId": 3062,
+                                "level": 1
+                            }
+                        ],
+                        "buffs": []
+                    },
+                    {
+                        "guid": 105,
+                        "type": 2,
+                        "pos": 11,
+                        "fury": 0,
+                        "level": 0,
+                        "id": 995,
+                        "hp": 1400000,
+                        "maxHp": 1400000,
+                        "attack": 30,
+                        "phyDef": 0,
+                        "magDef": 0,
+                        "skills": [
+                            {
+                                "skillId": 3001,
+                                "level": 1
+                            },
+                            {
+                                "skillId": 3062,
+                                "level": 1
+                            }
+                        ],
+                        "buffs": []
+                    },
+                    {
+                        "guid": 106,
+                        "type": 2,
+                        "pos": 12,
+                        "fury": 0,
+                        "level": 0,
+                        "id": 996,
+                        "hp": 300000,
+                        "maxHp": 300000,
+                        "attack": 30,
+                        "phyDef": 0,
+                        "magDef": 0,
+                        "skills": [
+                            {
+                                "skillId": 3001,
+                                "level": 1
+                            },
+                            {
+                                "skillId": 3062,
+                                "level": 1
+                            }
+                        ],
+                        "buffs": []
+                    }
+                ]
+            }
+        ],
+        "boutPlayData": [
+            {
+                "waveId": 0,
+                "roundId": 0,
+                "buffActions": [],
+                "skillDatas": [
+                    {
+                        "guid": 1,
+                        "fury": 0,
+                        "skillId": 26030201,
+                        "effectData": [
+                            {
+                                "effectId": 26030201,
+                                "guid": 101,
+                                "resultData": [
+                                    {
+                                        "targetGuid": 101,
+                                        "targeAction": 1,
+                                        "hp": -159316,
+                                        "atomData": []
+                                    },
+                                    {
+                                        "targetGuid": 102,
+                                        "targeAction": 0,
+                                        "hp": -106211,
+                                        "atomData": []
+                                    },
+                                    {
+                                        "targetGuid": 103,
+                                        "targeAction": 0,
+                                        "hp": -106211,
+                                        "atomData": []
+                                    }
+                                ]
+                            },
+                            {
+                                "effectId": 26030202,
+                                "guid": 1,
+                                "resultData": [
+                                    {
+                                        "targetGuid": 4,
+                                        "targeAction": 0,
+                                        "hp": 0,
+                                        "atomData": [
+                                            3,
+                                            4,
+                                            58120
+                                        ]
+                                    },
+                                    {
+                                        "targetGuid": 2,
+                                        "targeAction": 0,
+                                        "hp": 0,
+                                        "atomData": [
+                                            3,
+                                            2,
+                                            58120
+                                        ]
+                                    },
+                                    {
+                                        "targetGuid": 5,
+                                        "targeAction": 0,
+                                        "hp": 0,
+                                        "atomData": [
+                                            3,
+                                            5,
+                                            58120
+                                        ]
+                                    },
+                                    {
+                                        "targetGuid": 6,
+                                        "targeAction": 0,
+                                        "hp": 0,
+                                        "atomData": [
+                                            3,
+                                            6,
+                                            58120
+                                        ]
+                                    },
+                                    {
+                                        "targetGuid": 1,
+                                        "targeAction": 0,
+                                        "hp": 0,
+                                        "atomData": [
+                                            3,
+                                            1,
+                                            58120
+                                        ]
+                                    },
+                                    {
+                                        "targetGuid": 3,
+                                        "targeAction": 0,
+                                        "hp": 0,
+                                        "atomData": [
+                                            3,
+                                            3,
+                                            58120
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "guid": 101,
+                        "fury": 1,
+                        "skillId": 3001,
+                        "effectData": [
+                            {
+                                "effectId": 30011,
+                                "guid": 1,
+                                "resultData": [
+                                    {
+                                        "targetGuid": 1,
+                                        "targeAction": 2,
+                                        "hp": 0,
+                                        "atomData": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "guid": 2,
+                        "fury": 0,
+                        "skillId": 17010201,
+                        "effectData": [
+                            {
+                                "effectId": 17010201,
+                                "guid": 102,
+                                "resultData": [
+                                    {
+                                        "targetGuid": 101,
+                                        "targeAction": 1,
+                                        "hp": -351909,
+                                        "atomData": []
+                                    },
+                                    {
+                                        "targetGuid": 105,
+                                        "targeAction": 0,
+                                        "hp": -234606,
+                                        "atomData": []
+                                    },
+                                    {
+                                        "targetGuid": 104,
+                                        "targeAction": 0,
+                                        "hp": -234606,
+                                        "atomData": [
+                                            1,
+                                            17010201,
+                                            5,
+                                            10,
+                                            -58661
+                                        ]
+                                    },
+                                    {
+                                        "targetGuid": 106,
+                                        "targeAction": 0,
+                                        "hp": -234606,
+                                        "atomData": [
+                                            1,
+                                            17010201,
+                                            5,
+                                            10,
+                                            -58661
+                                        ]
+                                    },
+                                    {
+                                        "targetGuid": 102,
+                                        "targeAction": 0,
+                                        "hp": -234606,
+                                        "atomData": []
+                                    },
+                                    {
+                                        "targetGuid": 103,
+                                        "targeAction": 1,
+                                        "hp": -351909,
+                                        "atomData": []
+                                    }
+                                ]
+                            },
+                            {
+                                "effectId": 17010211,
+                                "guid": 2,
+                                "resultData": [
+                                    {
+                                        "targetGuid": 2,
+                                        "targeAction": 0,
+                                        "hp": 0,
+                                        "atomData": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "guid": 3,
+                        "fury": 0,
+                        "skillId": 27010201,
+                        "effectData": [
+                            {
+                                "effectId": 27010201,
+                                "guid": 106,
+                                "resultData": [
+                                    {
+                                        "targetGuid": 105,
+                                        "targeAction": 0,
+                                        "hp": -403964,
+                                        "atomData": []
+                                    },
+                                    {
+                                        "targetGuid": 104,
+                                        "targeAction": 0,
+                                        "hp": -403964,
+                                        "atomData": [
+                                            1,
+                                            27010201,
+                                            2
+                                        ]
+                                    },
+                                    {
+                                        "targetGuid": 106,
+                                        "targeAction": 1,
+                                        "hp": -605946,
+                                        "atomData": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "guid": 4,
+                        "fury": 0,
+                        "skillId": 37010201,
+                        "effectData": [
+                            {
+                                "effectId": 37010201,
+                                "guid": 105,
+                                "resultData": [
+                                    {
+                                        "targetGuid": 105,
+                                        "targeAction": 0,
+                                        "hp": 0,
+                                        "atomData": []
+                                    }
+                                ]
+                            },
+                            {
+                                "effectId": 37010211,
+                                "guid": 105,
+                                "resultData": [
+                                    {
+                                        "targetGuid": 105,
+                                        "targeAction": 0,
+                                        "hp": -234606,
+                                        "atomData": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "guid": 5,
+                        "fury": 0,
+                        "skillId": 47010201,
+                        "effectData": [
+                            {
+                                "effectId": 47010201,
+                                "guid": 105,
+                                "resultData": [
+                                    {
+                                        "targetGuid": 105,
+                                        "targeAction": 1,
+                                        "hp": -524205,
+                                        "atomData": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "guid": 105,
+                        "fury": 1,
+                        "skillId": 3001,
+                        "effectData": [
+                            {
+                                "effectId": 30011,
+                                "guid": 2,
+                                "resultData": [
+                                    {
+                                        "targetGuid": 2,
+                                        "targeAction": 2,
+                                        "hp": 0,
+                                        "atomData": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "guid": 6,
+                        "fury": 4,
+                        "skillId": 100201,
+                        "effectData": [
+                            {
+                                "effectId": 10020101,
+                                "guid": 105,
+                                "resultData": [
+                                    {
+                                        "targetGuid": 105,
+                                        "targeAction": 0,
+                                        "hp": -100672,
+                                        "atomData": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "fightersHp": [
+            {
+                "guid": 1,
+				"id":2603,
+                "hp": 3620
+            },
+            {
+                "guid": 2,
+				"id":1701,
+                "hp": 4880
+            },
+            {
+                "guid": 3,
+				"id":2701,
+                "hp": 4880
+            },
+            {
+                "guid": 4,
+				"id":3701,
+                "hp": 4880
+            },
+            {
+                "guid": 5,
+				"id":4701,
+                "hp": 4880
+            },
+            {
+                "guid": 6,
+				"id":1001001095,
+                "hp": 11520
+            }
+        ]
+    }
+}

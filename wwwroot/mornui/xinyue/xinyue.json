@@ -1,0 +1,6 @@
+{"file":"xinyue.png","frames":{
+"xinyue_bg1":{"x":1,"y":245,"w":572,"h":203,"offX":0,"offY":68,"sourceW":606,"sourceH":279},
+"xinyue_bg2":{"x":1,"y":456,"w":572,"h":190,"offX":0,"offY":4,"sourceW":572,"sourceH":194},
+"xinyue_btn":{"x":680,"y":1,"w":150,"h":56,"offX":0,"offY":0,"sourceW":150,"sourceH":56},
+"xinyue_title":{"x":1,"y":1,"w":671,"h":236,"offX":0,"offY":0,"sourceW":671,"sourceH":236},
+"xinyue_title1":{"x":838,"y":1,"w":147,"h":45,"offX":0,"offY":0,"sourceW":147,"sourceH":45}}}

@@ -1,0 +1,7 @@
+{"file":"question.png","frames":{
+"question_1":{"x":1,"y":1,"w":74,"h":227,"offX":0,"offY":0,"sourceW":74,"sourceH":227},
+"question_bar":{"x":83,"y":1,"w":122,"h":15,"offX":0,"offY":0,"sourceW":122,"sourceH":15},
+"question_barbg":{"x":163,"y":24,"w":41,"h":17,"offX":0,"offY":0,"sourceW":41,"sourceH":17},
+"question_check":{"x":213,"y":1,"w":35,"h":60,"offX":0,"offY":0,"sourceW":35,"sourceH":60},
+"question_inputbg":{"x":127,"y":24,"w":28,"h":38,"offX":0,"offY":0,"sourceW":28,"sourceH":38},
+"question_rewardbg":{"x":83,"y":24,"w":36,"h":34,"offX":0,"offY":0,"sourceW":36,"sourceH":34}}}

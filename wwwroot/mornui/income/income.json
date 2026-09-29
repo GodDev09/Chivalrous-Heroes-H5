@@ -1,0 +1,12 @@
+{"file":"income.png","frames":{
+"income_i1":{"x":98,"y":60,"w":45,"h":23,"offX":0,"offY":0,"sourceW":45,"sourceH":23},
+"income_i2":{"x":107,"y":89,"w":40,"h":39,"offX":0,"offY":0,"sourceW":40,"sourceH":39},
+"income_i3":{"x":0,"y":0,"w":132,"h":31,"offX":0,"offY":0,"sourceW":132,"sourceH":31},
+"income_i5":{"x":0,"y":31,"w":119,"h":29,"offX":0,"offY":0,"sourceW":119,"sourceH":29},
+"income_i6":{"x":0,"y":60,"w":98,"h":29,"offX":0,"offY":0,"sourceW":98,"sourceH":29},
+"income_i7":{"x":0,"y":89,"w":96,"h":29,"offX":0,"offY":0,"sourceW":96,"sourceH":29},
+"income_jiantou":{"x":143,"y":60,"w":29,"h":26,"offX":0,"offY":0,"sourceW":29,"sourceH":26},
+"income_ou":{"x":0,"y":118,"w":107,"h":25,"offX":0,"offY":0,"sourceW":107,"sourceH":25},
+"income_up1":{"x":119,"y":31,"w":33,"h":29,"offX":0,"offY":0,"sourceW":33,"sourceH":29},
+"income_up2":{"x":147,"y":89,"w":35,"h":35,"offX":0,"offY":0,"sourceW":35,"sourceH":35},
+"income_i4":{"x":0,"y":143,"w":512,"h":5,"offX":0,"offY":0,"sourceW":512,"sourceH":5}}}

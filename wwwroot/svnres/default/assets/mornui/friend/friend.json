@@ -1,0 +1,13 @@
+{"file":"friend.png","frames":{
+"friend_img1":{"x":580,"y":1,"w":216,"h":91,"offX":0,"offY":0,"sourceW":216,"sourceH":91},
+"friend_img2":{"x":521,"y":335,"w":353,"h":303,"offX":0,"offY":0,"sourceW":353,"sourceH":303},
+"friendapply":{"x":1,"y":335,"w":514,"h":284,"offX":0,"offY":0,"sourceW":514,"sourceH":284},
+"friendbg":{"x":1,"y":625,"w":510,"h":124,"offX":0,"offY":0,"sourceW":510,"sourceH":124},
+"friendbg1":{"x":802,"y":83,"w":190,"h":41,"offX":0,"offY":0,"sourceW":190,"sourceH":41},
+"friendbg3":{"x":1,"y":1,"w":573,"h":328,"offX":0,"offY":0,"sourceW":573,"sourceH":328},
+"friendpower":{"x":802,"y":1,"w":166,"h":76,"offX":0,"offY":0,"sourceW":166,"sourceH":76},
+"friendshop":{"x":795,"y":130,"w":82,"h":74,"offX":0,"offY":0,"sourceW":82,"sourceH":74},
+"getgift":{"x":580,"y":131,"w":75,"h":79,"offX":0,"offY":0,"sourceW":75,"sourceH":79},
+"hide":{"x":742,"y":210,"w":55,"h":31,"offX":0,"offY":0,"sourceW":55,"sourceH":31},
+"numberline_friend":{"x":580,"y":98,"w":209,"h":27,"offX":0,"offY":0,"sourceW":210,"sourceH":27},
+"sendgift":{"x":661,"y":131,"w":75,"h":79,"offX":0,"offY":0,"sourceW":75,"sourceH":79}}}

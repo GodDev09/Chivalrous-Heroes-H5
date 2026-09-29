@@ -1,0 +1,225 @@
+body {
+	background: url(../images/bg-mobile.jpg) no-repeat center top; 
+}
+.nav-logo {padding-left: 250px;}
+  .nav-logo img{
+	position: fixed;
+	width: 250px;
+	margin: -50px 0px 0px -255px;
+	}
+.nav-logo-m{
+	display: none;
+}
+@media only screen and (max-width: 992px) {
+  body {
+    background: url(../images/bg-mobile.jpg) no-repeat top left;
+    background-size: 100% !important;
+    background-color: #edf2fe !important;
+  }
+.nav-logo-m{
+	display: block;
+	float: left;
+}
+.nav-logo-m span{
+	margin-left: -195px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+.nav-logo-m img{
+	display: block !important;
+	width: 50px;
+	margin-top: -10px;
+}
+.nav-logo img{
+	  display: none;
+  }
+}
+.nav-hotline{
+	padding: 10px 15px 10px 15px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.nav-li{
+	padding: 0px 20px 0px 20px;
+}
+.main-site{
+	text-align: center;
+    margin-top: 30%;
+}
+.webgame-page-header>div a:hover{filter:brightness(130%)}
+.webgame-page-header {
+    position: relative;
+    float: left;
+    padding: 10px;
+	margin-bottom: 25px;
+	background: url(./../images/bg-download.png) no-repeat top center / 100% 100%;
+}
+
+.webgame-page-header>div {
+    display: block;
+    float: left;
+}
+.img {
+    max-width: 100%;
+    height: auto;
+}
+.img-logo
+{
+	width: 147px !important;
+	height: 99px !important
+}
+.webgame-page-header .recharge-button {
+    float: left;
+    margin-right: 10px;
+}
+.webgame-page-header .recharge-button a {
+    display: block;
+	margin-bottom: 5px;
+}
+
+.webgame-page-header .qr-code {
+    float: left;
+    padding-top: 8px;
+}
+.qr-code {
+    position: relative;
+}
+.webgame-page-header .block-play-now {
+    float: left;
+    width: 165px;
+    margin-right: 10px;
+}
+.webgame-page-header .block-play-now>div {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.giftcode a {
+    display: block;
+}
+.webgame-page-header .box>div {
+    display: inline-block;
+}
+.main-home{
+	display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+.main-home-content {
+    display: flex;
+    justify-content: left;
+    padding-top: 60px;
+    padding-left: 30px;
+    width: 100%;
+	position: fixed;
+}
+
+
+@media (max-width: 500px){
+.giftcode {
+	display: none !important;
+}
+.webgame-page-header>div {
+    display: block;
+    float: left;
+}
+}
+.modal-content{
+	text-align: center;
+}		  
+.tab {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.tab a {
+	background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    border-bottom: 3px solid #e2dfdf;
+}
+
+.tab a.active {
+	color: #419CF7 !important;
+    border-bottom: 3px solid #419CF7;
+}
+
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+.tabcontent-gift {
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.title-pay{
+	padding: 0px 10px 0px 10px;
+    border-bottom: solid 2px #dc3545;
+}
+.main-pay{
+	margin-top: 5px;
+}
+.info-pay{
+	border-radius: 8px;
+    -webkit-border-radius: 8px;
+    background: #aec2da;
+    color: #555;
+    padding: 3px 0px 3px 0px;
+	margin: 0px 0px 3px 0px;
+}
+.btn-submit{
+	display: block;
+    width: 100%;
+    padding: 12px 0;
+    border: 1px solid #30aaf5;
+    background: #30aaf5;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1;
+    border-radius: 18px;
+}
+
+.main-home-top
+{
+	display: flex;
+    justify-content: center;
+    top: 120px;
+    width: 100%;
+    position: fixed;
+}
+.webgame-page-giftcode strong
+{
+    font-size: 18px;
+    font-weight: bolder;
+    text-shadow: 0 0 5px #000;
+    color: white;
+    cursor: pointer;
+}

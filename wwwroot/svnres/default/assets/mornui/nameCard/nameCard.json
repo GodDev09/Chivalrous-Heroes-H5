@@ -1,0 +1,7 @@
+{"file":"nameCard.png","frames":{
+"btn_boy":{"x":1,"y":1,"w":99,"h":215,"offX":0,"offY":13,"sourceW":99,"sourceH":228},
+"btn_change":{"x":215,"y":129,"w":51,"h":49,"offX":0,"offY":0,"sourceW":51,"sourceH":49},
+"btn_create":{"x":215,"y":1,"w":246,"h":62,"offX":0,"offY":0,"sourceW":246,"sourceH":62},
+"btn_girl":{"x":108,"y":1,"w":99,"h":215,"offX":0,"offY":13,"sourceW":99,"sourceH":228},
+"name_icon":{"x":469,"y":1,"w":33,"h":38,"offX":0,"offY":0,"sourceW":33,"sourceH":38},
+"name_img1":{"x":215,"y":71,"w":237,"h":50,"offX":0,"offY":0,"sourceW":237,"sourceH":50}}}

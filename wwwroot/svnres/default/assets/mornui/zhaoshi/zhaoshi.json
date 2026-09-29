@@ -1,0 +1,13 @@
+{"file":"zhaoshi.png","frames":{
+"btn_zhenfa1":{"x":443,"y":313,"w":40,"h":61,"offX":0,"offY":0,"sourceW":40,"sourceH":61},
+"btn_zhenfa2":{"x":1,"y":343,"w":40,"h":57,"offX":0,"offY":0,"sourceW":40,"sourceH":57},
+"btn_zhenfa3":{"x":207,"y":313,"w":67,"h":72,"offX":0,"offY":0,"sourceW":67,"sourceH":72},
+"zahoshi_sx":{"x":49,"y":343,"w":74,"h":21,"offX":0,"offY":0,"sourceW":74,"sourceH":21},
+"zahoshi_sx2":{"x":340,"y":362,"w":74,"h":21,"offX":0,"offY":0,"sourceW":74,"sourceH":21},
+"zhaoshi_img1":{"x":1,"y":313,"w":198,"h":22,"offX":0,"offY":0,"sourceW":198,"sourceH":22},
+"zhaoshi_img2":{"x":475,"y":83,"w":17,"h":25,"offX":0,"offY":0,"sourceW":17,"sourceH":25},
+"zhaoshi_pre":{"x":1,"y":273,"w":499,"h":32,"offX":0,"offY":0,"sourceW":499,"sourceH":32},
+"zhenfa_char":{"x":282,"y":313,"w":50,"h":89,"offX":0,"offY":0,"sourceW":50,"sourceH":89},
+"zhenfa_img1":{"x":475,"y":1,"w":28,"h":74,"offX":0,"offY":0,"sourceW":28,"sourceH":74},
+"zhenfa_panzi":{"x":1,"y":1,"w":466,"h":264,"offX":0,"offY":0,"sourceW":466,"sourceH":264},
+"zhenfa_ttl":{"x":340,"y":313,"w":95,"h":41,"offX":0,"offY":0,"sourceW":95,"sourceH":41}}}

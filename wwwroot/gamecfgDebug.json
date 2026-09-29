@@ -1,0 +1,28 @@
+{
+	"debug": true,
+	"showLog": -1,
+	"isPlatform": true,
+	"mockPlatform": "",
+	"roleScale": 1,
+	"isVersion": true,
+	"cfgVersion": "2017091901",
+	"version": "2017091901",
+	"isOldPlacard": false,
+	"placard": "2017091101",
+	"placardURL": "http://sdk.linlongyx.com/dot/channelNotice.do",
+	"rechargeURL": "http://sdk.linlongyx.com/dot/channelNotice.do",
+	"myserver": "http://127.0.0.1:19248/cmge/myServer",
+	"servers": "http://127.0.0.1:19248/cmge/servers",
+	"payServer": "http://127.0.0.1:19248/cmge/charge?",
+	"res": "",
+	"assets": "",
+	"pointServer": "http://127.0.0.1:19248/dot/",
+	"serverPoint": "register_page.do",
+	"loginPoint": "before_server_login.do",
+	"createPoint": "after_server_login.do",
+	"ysdk": {
+		"myserver": "http://127.0.0.1:19248/ysdk/myServer",
+		"servers": "http://127.0.0.1:19248/ysdk/servers",
+		"payServer": "http://127.0.0.1:19248/ysdk/charge?"
+	}
+}

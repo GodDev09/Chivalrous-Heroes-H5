@@ -1,0 +1,115 @@
+{
+	"debug": true,
+	"showLog": 3,
+	"isPlatform": false,
+	"mockPlatform": "",
+	"roleScale": 1,
+	"isVersion": true,
+	"cfgVersion": "201803081035",
+	"version": "201803081035",
+	"isOldPlacard": false,
+	"placard": "20171120",
+	"myserver": "http://h5xxjsdk.shengli.com/cmge/myServer",
+	"servers": "http://h5xxjsdk.shengli.com/cmge/servers",
+	"payServer": "http://h5xxjsdk.shengli.com/cmge/charge?",
+	"res": "",
+	"assets": "",
+	"pointServer": "http://h5xxjsdk.shengli.com/dot/",
+	"placardURL": "channelNotice.do",
+	"serverPoint": "register_page.do",
+	"loginPoint": "before_server_login.do",
+	"createPoint": "after_server_login.do",
+	"apk_ios": {
+		"pointServer": "http://h5xxjsdk.shengli.com/dot/",
+		"myserver": "http://h5xxjsdk.shengli.com/apk/myServer",
+		"servers": "http://h5xxjsdk.shengli.com/apk/servers",
+		"payServer": "http://h5xxjsdk.shengli.com/ios/charge?",
+		"res": "http://cdnxjqxzh5.tisgame.com/master/"
+	},
+	"huawei": {
+		"pointServer": "https://h5xxjsdk.shengli.com/dot/",
+		"myserver": "https://h5xxjsdk.shengli.com/cmge/myServer",
+		"servers": "https://h5xxjsdk.shengli.com/cmge/servers",
+		"payServer": "https://h5xxjsdk.shengli.com/cmge/charge?",
+		"res": "https://cdnxjqxzh5.tisgame.com/master/"
+	},
+	"ysdk": {
+		"pointServer": "https://59b896ba-0.gz.1251316595.clb.myqcloud.com/dot/",
+		"myserver": "https://59b896ba-0.gz.1251316595.clb.myqcloud.com/ysdk/myServer",
+		"servers": "https://59b896ba-0.gz.1251316595.clb.myqcloud.com/ysdk/servers",
+		"payServer": "https://59b896ba-0.gz.1251316595.clb.myqcloud.com/ysdk/charge?",
+		"res": "https://cdnxjqxzh5.tisgame.com/master/"
+	},
+	"wanba": {
+		"pointServer": "https://59b896ba-0.gz.1251316595.clb.myqcloud.com/dot/",
+		"myserver": "https://59b896ba-0.gz.1251316595.clb.myqcloud.com/cmge/myServer",
+		"servers": "https://59b896ba-0.gz.1251316595.clb.myqcloud.com/cmge/servers",
+		"payServer": "https://59b896ba-0.gz.1251316595.clb.myqcloud.com/cmge/charge?",
+		"res": "https://cdnxjqxzh5.tisgame.com/master/"
+	},
+	"yybao": {
+		"pointServer": "http://59b896ba-0.gz.1251316595.clb.myqcloud.com/dot/",
+		"myserver": "http://59b896ba-0.gz.1251316595.clb.myqcloud.com/cmge/myServer",
+		"servers": "http://59b896ba-0.gz.1251316595.clb.myqcloud.com/cmge/servers",
+		"payServer": "http://59b896ba-0.gz.1251316595.clb.myqcloud.com/cmge/charge?"
+	},
+	"qqbrowser": {
+		"pointServer": "http://59b896ba-0.gz.1251316595.clb.myqcloud.com/dot/",
+		"myserver": "http://59b896ba-0.gz.1251316595.clb.myqcloud.com/cmge/myServer",
+		"servers": "http://59b896ba-0.gz.1251316595.clb.myqcloud.com/cmge/servers",
+		"payServer": "http://59b896ba-0.gz.1251316595.clb.myqcloud.com/cmge/charge?"
+	},
+	"apk_chanyou": {
+		"myserver": "http://h5xxjsdk.shengli.com/chanyou/myServer",
+		"servers": "http://h5xxjsdk.shengli.com/apk/servers",
+		"payServer": "http://h5xxjsdk.shengli.com/chanyou/charge?",
+		"res": "http://cdnxjqxzh5.tisgame.com/master/"
+	},
+	"apk_tvhb": {
+		"pointServer": "http://sdk.52bug.me/dot/",
+		"myserver": "http://sdk.52bug.me/tvhb/myServer",
+		"servers": "http://sdk.52bug.me/apk/servers",
+		"payServer": "http://sdk.52bug.me/tvhb/charge?",
+		"res": ""
+	},
+	"apk_tvhb2": {
+		"myserver": "http://h5xxjsdk.shengli.com/tvhb/myServer",
+		"servers": "http://h5xxjsdk.shengli.com/apk/servers",
+		"payServer": "http://h5xxjsdk.shengli.com/tvhb/charge?",
+		"res": "http://cdnxjqxzh5.tisgame.com/master/"
+	},
+	"apk_yysdk": {
+		"pointServer": "http://192.168.0.241:8080/dot/",
+		"myserver": "http://192.168.0.241:8080/apk/myServer",
+		"servers": "http://192.168.0.241:8080/apk/servers",
+		"payServer": "http://192.168.0.241:8080/yysdk/charge?",
+		"res": ""
+	},
+	"douqu": {
+		"myserver": "http://120.92.159.203:19248/cmge/myServer",
+		"servers": "http://120.92.159.203:19248/cmge/servers",
+		"payServer": "http://120.92.159.203:19248/cmge/charge?"
+	},
+	"douqu2": {
+		"myserver": "http://h5xxjsdk.shengli.com/cmge/myServer",
+		"servers": "http://h5xxjsdk.shengli.com/cmge/servers",
+		"payServer": "http://h5xxjsdk.shengli.com/cmge/charge?"
+	},
+	"11503": {
+		"myserver": "http://120.92.159.203:19248/44755/myServer",
+		"servers": "http://120.92.159.203:19248/44755/servers",
+		"payServer": "http://120.92.159.203:19248/44755/charge?"
+	},
+	"11504": {
+		"myserver": "http://120.92.159.203:19248/44755/myServer",
+		"servers": "http://120.92.159.203:19248/44755/servers",
+		"payServer": "http://120.92.159.203:19248/44755/charge?"
+	},
+	"apk_base": {
+		"pointServer": "http://192.168.0.241:8080/dot/",
+		"myserver": "http://192.168.0.241:8080/apk/myServer",
+		"servers": "http://192.168.0.241:8080/apk/servers",
+		"payServer": "",
+		"res": ""
+	}
+}

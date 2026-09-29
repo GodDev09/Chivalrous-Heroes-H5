@@ -1,0 +1,17 @@
+{
+	"debug": true,
+	"showLog": 3,
+	"isPlatform": true,
+	"mockPlatform": "?code=1&gameUID=xxjqxz&channelUID=shengli&cmgePlayerId=ecae42c7488488cb39263445bb8af6d0&loginTime=1501493655&extend={\"cps\":0,\"login\":\"\"}&userId=357&sign=e4c87c5b615ea3eb9890c7a58a7e84c0",
+	"roleScale": 1,
+	"version": "20170710",
+	"myserver": "http://sdk.linlongyx.com/cmge/myServer",
+	"servers": "http://sdk.linlongyx.com/cmge/servers",
+	"payServer": "http://sdk.linlongyx.com/cmge/charge?",
+	"res": "",
+	"assets": "",
+	"pointServer": "http://sdk.linlongyx.com/dot/",
+	"serverPoint": "register_page.do",
+	"loginPoint": "before_server_login.do",
+	"createPoint": "after_server_login.do"
+}

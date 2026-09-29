@@ -1,0 +1,4 @@
+{"file":"equip.png","frames":{
+"btn_equip":{"x":121,"y":0,"w":57,"h":59,"offX":0,"offY":0,"sourceW":57,"sourceH":59},
+"equipitembg":{"x":0,"y":0,"w":119,"h":142,"offX":0,"offY":0,"sourceW":119,"sourceH":142},
+"equip_img":{"x":0,"y":144,"w":173,"h":18,"offX":0,"offY":0,"sourceW":173,"sourceH":18}}}

@@ -1,0 +1,10 @@
+{"file":"talisman.png","frames":{
+"btn_talismanShop":{"x":864,"y":80,"w":84,"h":71,"offX":0,"offY":0,"sourceW":84,"sourceH":71},
+"talisman0":{"x":1,"y":1,"w":552,"h":227,"offX":0,"offY":0,"sourceW":552,"sourceH":227},
+"talisman1":{"x":561,"y":1,"w":207,"h":179,"offX":0,"offY":0,"sourceW":207,"sourceH":179},
+"talisman2":{"x":776,"y":178,"w":74,"h":21,"offX":0,"offY":0,"sourceW":74,"sourceH":21},
+"talisman3":{"x":864,"y":159,"w":89,"h":62,"offX":0,"offY":0,"sourceW":89,"sourceH":62},
+"talisman4":{"x":561,"y":188,"w":74,"h":21,"offX":0,"offY":0,"sourceW":74,"sourceH":21},
+"talisman5":{"x":967,"y":1,"w":17,"h":25,"offX":0,"offY":0,"sourceW":17,"sourceH":25},
+"talisman6":{"x":776,"y":80,"w":80,"h":90,"offX":0,"offY":0,"sourceW":80,"sourceH":90},
+"talisman7":{"x":776,"y":1,"w":183,"h":71,"offX":0,"offY":0,"sourceW":183,"sourceH":71}}}
