@@ -226,47 +226,74 @@ Xem `wwwroot/gm.txt`. Ví dụ:
 - Thư mục project **phải** đặt tại `C:\XxSG\` (hardcode trong mọi `.bat` và vhost Nginx)
 - Không cần cài Java/MySQL riêng — đã đóng gói trong `Java/` và `phpstudy_pro/`
 
-### Sau khi clone — bắt buộc tạo lại file bí mật
+### Clone sang máy mới — checklist
 
-Các file sau bị `.gitignore` (chứa mật khẩu), phải tạo tay:
+Credentials **đã nằm trong repo** (`props/*.properties`, `db.php`, `config.php`), không phải
+tạo lại. Nhưng clone về là **chưa chạy được**, có 6 thứ chặn:
 
 ```
-game/target/classes/webgame/props/mysql.properties
-game/target/classes/webgame/props/redis.properties
-game/target/classes/webgame/props/webgame.properties
-game2/target/classes/webgame/props/   (3 file tương tự)
-center/target/classes/webgame/props/  (3 file tương tự)
-Web/db.php
-wwwroot/db.php
-wwwroot/global/config.php
+1. Cài git-lfs                     → https://git-lfs.com    (TRƯỚC khi clone)
+2. Cài VC++ Redistributable x64    → aka.ms/vs/17/release/vc_redist.x64.exe
+3. git clone <url> C:\XxSG         ← BẮT BUỘC đúng đường dẫn này
+4. Trên máy cũ: mysqldump -u root -p --all-databases > backup.sql
+5. Máy mới: [1]StartWeb.bat → import backup.sql → [2] → [3] → [4]
+6. Mở http://127.0.0.1/user/login
 ```
 
-Mẫu `mysql.properties`:
-```properties
-jdbc.driverClassName=com.mysql.jdbc.Driver
-jdbc.url=jdbc:mysql://127.0.0.1:3306/sanguo_game?useUnicode=true&characterEncoding=utf8
-jdbc.user=<user>
-jdbc.password=<password>
-useUnicode=true
-characterEncoding=UTF-8
-```
-(S2 dùng database `sanguo_game2`)
+#### 1. Phải clone vào đúng `C:\XxSG\`
 
-Mẫu `db.php`:
-```php
-<?php
-$conn = mysqli_connect("localhost", "<user>", "<password>", "account")
-    or die("Không thể kết nối đến CSDL");
-mysqli_set_charset($conn, "UTF8");
-?>
-```
+**23 file hardcode đường dẫn tuyệt đối.** Đặt chỗ khác là phải sửa hết:
 
-Mẫu `wwwroot/global/config.php` — cần các define: `DBIP`, `DBUSER`, `DBPWD`,
-`DBPPORT`, `DBNAME` (= `account`), `WEBNAME`.
+| Nhóm | File |
+|---|---|
+| Launcher | `[1]StartWeb.bat`, `[2]StartCenter.bat`, `[3]StartS1.bat`, `[4]StartS2.bat`, `change_mysql_pass.bat` |
+| Server start | `center/start.bat`, `game/start.bat`, `game2/start.bat` — classpath `C:\XxSG\game\lib\*` |
+| MySQL | `phpstudy_pro/Extensions/MySQL5.7.26/my.ini` — `basedir=C:/XxSG/...`, `datadir=C:/XxSG/.../data/` |
+| Nginx | 3 vhost `0localhost_{80,81,8080}.conf` — `root "C:/XxSG/Web"` v.v. |
+| Apache | `httpd.conf` + 3 vhost |
+| PHP | 3 `php.ini` (5.4 / 5.6 / 7.3) |
+| Redis | `Extensions/redis3.0.504/start_redis.bat` |
+| phpstudy | `COM/setting.ini`, `COM/xp.ini` |
+| Khác | `Web/dgdgd/.htaccess` |
 
-`webgame.properties` cần: `ws.port`, `http.port`, `jmxPort`, `serverId`, `serverName`,
-`openTime`, `platform`, `rmi.url`, `logicRmi.*`, `jmxName`, `jmxPass`, `path=webgame/platform/`.
-`center/webgame.properties` thêm: `wss.port`, thread count, `dataLocation`, `secretKey`, `jks`.
+#### 2. Phải cài `git-lfs` trước khi clone
+
+Không cài → nhận 10.772 file pointer text 130 byte thay vì asset thật. Client Egret không
+load, jar không chạy. Kiểm tra: `git lfs version`.
+
+#### 3. ⚠️ MySQL có thể không khởi động được
+
+`my.ini` đặt `innodb_log_file_size=256M`, khớp đúng 2 file `ib_logfile0/1` bị loại khỏi repo
+vì vượt giới hạn 100 MB của GitHub.
+
+MySQL 5.7 **chỉ** tự tạo lại redo log nếu lần shutdown trước là **clean**. Nếu `ibdata1` ở
+trạng thái dirty, InnoDB cần redo log để crash recovery → thiếu là từ chối start.
+`[0]StopAll.bat` dùng `taskkill /F /IM mysqld.exe` — **luôn kill cứng**, nên khả năng cao
+lần tắt gần nhất không clean.
+
+Xử lý, theo thứ tự ưu tiên:
+1. **`mysqldump -u root -p --all-databases > backup.sql`** trên máy nguồn, copy file `.sql`
+   sang, import. Cách đúng.
+2. Copy tay 2 file `ib_logfile0/1` (512 MB) qua USB/zip cùng với clone.
+3. Cuối cùng mới dùng `innodb_force_recovery=1..6` trong `my.ini` — có thể mất dữ liệu.
+
+#### 4. Snapshot InnoDB có thể bị torn
+
+Các `.ibd` trong repo được copy từ đĩa ở trạng thái bất kỳ, không qua
+`FLUSH TABLES WITH READ LOCK`. Kể cả khi MySQL start được, bảng vẫn có thể lỗi. Lại về
+giải pháp `mysqldump`.
+
+#### 5. Cần Visual C++ Redistributable
+
+`nginx.exe`, `mysqld.exe`, `php-cgi.exe` link động tới MSVC runtime (2015–2019). Runtime
+**không** nằm trong repo. Thiếu là lỗi `0xc0000135` hoặc "The application was unable to
+start correctly".
+
+#### 6. phpstudy_pro không portable hoàn toàn
+
+`COM/setting.ini` và `COM/xp.ini` lưu đường dẫn cài đặt. Nginx/MySQL có thể đã được
+register làm Windows service trên máy cũ — trên máy mới `phpstudy_pro.exe` phải tự start
+lại process, hoặc register service lại qua GUI.
 
 ### Thứ tự khởi động
 ```
@@ -495,7 +522,7 @@ Nếu cần clone nhiều hơn 1 lần/tháng, hoặc thêm asset làm LFS vư�
 | Nhóm | Dung lượng | Lý do |
 |---|---|---|
 | `wwwroot/tankherocdn/` | 244 MB / 4 file | **Rác của game khác.** Nội dung là game Cocos2d-x Lua (Tank Hero): `luascript/*.lua`, `allianceWar/`, `arImage/`, `homeBuilding/`. Project này chạy Egret + TypeScript, không có Lua runtime. Grep `tankhero` và `luascript` trên toàn bộ `.php`/`.js`/`.json`/`.html` → 0 reference. 2 file `full/luascript.zip` mỗi cái 121,3 MB |
-| `ib_logfile0`, `ib_logfile1` | 512 MB / 2 file | InnoDB redo log, mỗi file đúng 256 MB. MySQL tự sinh lại khi khởi động, nội dung đổi mỗi lần chạy → commit vào git chỉ làm repo phồng vô hạn. Phần còn lại của `data/` (`ibdata1`, `*.ibd`, `*.frm`) **vẫn được đưa lên** |
+| `ib_logfile0`, `ib_logfile1` | 512 MB / 2 file | InnoDB redo log, mỗi file đúng 256 MB (khớp `innodb_log_file_size=256M` trong `my.ini`), nội dung đổi mỗi lần chạy. ⚠️ **MySQL chỉ tự sinh lại nếu lần shutdown trước là clean** — xem §7.3, đây là lý do phải dùng `mysqldump` khi chuyển máy. Phần còn lại của `data/` (`ibdata1`, `*.ibd`, `*.frm`) **vẫn được đưa lên** |
 
 ### Lệnh thường dùng
 
